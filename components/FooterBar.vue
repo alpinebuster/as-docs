@@ -1,9 +1,7 @@
 <template>
 	<footer id="footer">
 		<div id="footer_content">
-			<a href="https://www.netlify.com" target="_blank" rel="noopener">
-				This site is hosted by <img id="netlify_logo" src="~assets/netlify-full-logo-dark.svg" alt="Deploys by Netlify" />
-			</a>
+			<label>Last Updated By <a target="_blank" rel="noopener" href="https://github.com/alpinebuster">alpinebuster</a>, September 2025</label>
 			<nav>
 				<nuxt-link to='/about'>About</nuxt-link>
 				<nuxt-link to='/imprint'>Imprint</nuxt-link>
