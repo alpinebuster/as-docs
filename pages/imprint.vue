@@ -3,7 +3,7 @@
 		<div class="content">
 			
 			<h1>Imprint</h1>
-			<p>Information provided according to China BeiAn</p>
+			<p>Information provided according to China BeiAn.</p>
 			<h3 id="m46">Service Provider</h3>
 			<p>
 			alpinebuster<br>
