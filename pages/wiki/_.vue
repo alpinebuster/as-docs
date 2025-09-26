@@ -46,18 +46,18 @@ export default {
 			if (this.doc.path.includes('/api/')) {
 				description = 'AS API Reference';
 			} else {
-				description = 'AS Wiki';
+				description = 'AS Documentations';
 			}
 		}
 		return {
-			title: `${this.doc.title} - AS Wiki`,
+			title: `${this.doc.title} - AS Docs`,
 			meta: [
 				{ hid: 'description', name: 'description', content: description },
 				// Open Graph
-				{ hid: 'og:title', property: 'og:title', content: `${this.doc.title} - AS Wiki` },
+				{ hid: 'og:title', property: 'og:title', content: `${this.doc.title} - AS Docs` },
 				{ hid: 'og:description', property: 'og:description', content: description },
 				// Twitter Card
-				{ hid: 'twitter:title', name: 'twitter:title', content: `${this.doc.title} - AS Wiki` },
+				{ hid: 'twitter:title', name: 'twitter:title', content: `${this.doc.title} - AS Docs` },
 				{ hid: 'twitter:description', name: 'twitter:description', content: description },
 				{ hid: 'og:image', name: 'og:image', property: 'og:image', content: 'https://www.ai-stomatology.tech/images/wiki/wiki.png' },
 				{ hid: 'twitter:card', name: 'twitter:card', property: 'twitter:card', content: 'summary_large_image' }

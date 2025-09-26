@@ -1,8 +1,8 @@
 <template>
 	<div class="content">
-		<h1>Welcome to the Wiki!</h1>
+		<h1>Welcome to the Documentations!</h1>
 
-		<p>Welcome to the AS Wiki, the central place for knowledge about AS!</p>
+		<p>Welcome to the AS Documentations, the central place for knowledge about AS!</p>
 		<p>If you are new to AS, make sure to check out the <nuxt-link to="/quickstart">Quickstart Wizard</nuxt-link> to learn about the different formats and find beginner tutorials!</p>
 
 		<img src="~assets/wiki/wiki.png" id="wiki_main_image" width="938" alt="Wiki Illustration" >
@@ -31,15 +31,15 @@ export default {
 	layout: 'wiki',
 	head() {
 		return {
-			title: `AS Wiki`,
+			title: `AS Documentations`,
 			meta: [
-				{ hid: 'description', name: 'description', content: 'Welcome to the AS Wiki, the central place for knowledge about AS!' },
+				{ hid: 'description', name: 'description', content: 'Welcome to the AS Documentations, the central place for knowledge about AS!' },
 				// Open Graph
-				{ hid: 'og:title', property: 'og:title', content: `AS Wiki` },
-				{ hid: 'og:description', property: 'og:description', content: 'Welcome to the AS Wiki, the central place for knowledge about AS!' },
+				{ hid: 'og:title', property: 'og:title', content: `AS Documentations` },
+				{ hid: 'og:description', property: 'og:description', content: 'Welcome to the AS Documentations, the central place for knowledge about AS!' },
 				// Twitter Card
-				{ hid: 'twitter:title', name: 'twitter:title', content: `AS Wiki` },
-				{ hid: 'twitter:description', name: 'twitter:description', content: 'Welcome to the AS Wiki, the central place for knowledge about AS!' },
+				{ hid: 'twitter:title', name: 'twitter:title', content: `AS Documentations` },
+				{ hid: 'twitter:description', name: 'twitter:description', content: 'Welcome to the AS Documentations, the central place for knowledge about AS!' },
 				// Img
 				{ hid: 'og:image', name: 'og:image', property: 'og:image', content: 'https://www.ai-stomatology.tech/images/wiki/wiki.png' },
 				{ hid: 'twitter:card', name: 'twitter:card', property: 'twitter:card', content: 'summary_large_image' }

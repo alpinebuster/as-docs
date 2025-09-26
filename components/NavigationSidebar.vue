@@ -5,7 +5,7 @@
 		</div>
 		<nav id="navigation_wrapper">
 
-			<div id="nav_title">AS Wiki</div>
+			<div id="nav_title">AS Documentations</div>
 
 			<SearchBar v-model="search_term" />
 
