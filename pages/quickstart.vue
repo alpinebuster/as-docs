@@ -30,7 +30,7 @@
 					<p>Which target platform do you want to create a model for?</p>
 
 					<div class="answer" @click="loadPage('generic')">Game Engine (Godot, Unity, Unreal Engine etc.)</div>
-					<div class="answer" @click="loadPage('generic')">For rendering / Just for fun</div>
+					<div class="answer" @click="loadPage('generic')">For Rendering / Mesh Modeling</div>
 				</template>
 			</div>
 
