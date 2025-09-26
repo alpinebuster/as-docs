@@ -38,6 +38,10 @@ authors:
 	margin-bottom: 34px;
 	border-radius: 10px;
 	padding-bottom: 6px;">
+	<a href="/images/logos/icon_beta.png" target="_blank" style="display: inline-block; text-align: center; margin: 10px" rel="noopener noreferrer">
+		<img width="150px" style="display: block;" src="/images/logos/icon_beta.png">
+		<label>Beta Logo</label>
+	</a>
 	<a href="/images/logos/icon.png" target="_blank" style="display: inline-block; text-align: center; margin: 10px" rel="noopener noreferrer">
 		<img width="150px" style="display: block;" src="/images/logos/icon.png">
 		<label>Main Logo</label>
