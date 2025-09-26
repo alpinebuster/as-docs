@@ -5,6 +5,11 @@
 			<nuxt-link id="home_link" to='/'>
 				<img src="~assets/as_logo_text_white.svg" alt="AS" height="32px" />
 			</nuxt-link>
+			<div id="app_name">
+				<nuxt-link to="/">
+					<span>AI Stomatology</span>
+				</nuxt-link>
+			</div>
 
 			<div id="mobile_menu_toggle" @click="show_menu = !show_menu">
 				<fa icon="bars" />
@@ -12,8 +17,8 @@
 
 			<nav id="menu" :class="{folded: !show_menu}" @click="show_menu = false">
 				<nuxt-link to='/quickstart'>Quickstart</nuxt-link>
+				<nuxt-link to='/wiki'>Documentations</nuxt-link>
 				<nuxt-link to='/plugins'>Plugins</nuxt-link>
-				<nuxt-link to='/wiki'>Wiki</nuxt-link>
 				<nuxt-link to='/downloads'>Download</nuxt-link>
 				<div class="menu_icon" id="color_mode_toggle" :title="colorThemeTitle" @click="toggleColorMode()">
 					<fa :icon="['fa', ($colorMode.preference == 'dark' ? 'moon' : ($colorMode.preference == 'light' ? 'sun' : 'lightbulb'))]" />
@@ -58,13 +63,33 @@ export default {
 		width: 100%;
 		color: var(--dark-text);
 	}
-	
 	#navigation {
 		display: flex;
 		height: 100%;
 		max-width: var(--max-page-width);
 		margin: auto;
 		justify-content: space-between;
+	}
+
+	#app_name {
+		display: flex;
+		padding: 0;
+		margin-right: auto;
+		font-weight: bold;
+  		font-size: 20px;
+	}
+	#app_name > * {
+		flex: 0 0 auto;
+		display: flex;
+		padding: 22px 2px;
+		cursor: pointer;
+		align-items: center;
+	}
+	#app_name a.nuxt-link-active, app_name a:hover {
+		color: var(--dark-hover);
+	}
+	#app_name > :hover {
+		color: var(--dark-hover);
 	}
 
 	#home_link {
@@ -74,11 +99,11 @@ export default {
 	#home_link:hover {
 		opacity: 1;
 	}
+
 	#menu {
 		display: flex;
 		padding: 0;
 	}
-
 	#menu > * {
 		flex: 0 0 auto;
 		margin: 0 4px;

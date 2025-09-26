@@ -23,12 +23,11 @@
 </template>
 
 <script>
-
+import builtinPlugins from '~/assets/builtin_plugins.json'
 
 export default {
 	async asyncData({params}) {
-		let response = await fetch(`https://raw.githubusercontent.com/alpinebuster/as-plugins/master/plugins.json`)
-		const plugin_data = await response.json();
+		const plugin_data = builtinPlugins;
 		const plugins = [];
 		for (let key in plugin_data) {
 			plugin_data[key].id = key;

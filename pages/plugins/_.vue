@@ -47,6 +47,8 @@
 
 import Markdown from '@nuxt/markdown'
 
+import builtinPlugins from '~/assets/builtin_plugins.json'
+
 /**
  * Compare two versions
  * @param {string} version1 
@@ -79,8 +81,7 @@ import Markdown from '@nuxt/markdown'
 export default {
 	async asyncData({params}) {
 		let plugin_id = params.pathMatch.replace(/[\\\/]+/, '');
-		let response = await fetch(`https://raw.githubusercontent.com/alpinebuster/as-plugins/master/plugins.json`)
-		const plugins = await response.json();
+		const plugins = builtinPlugins;
 
 		let commits_response = await fetch(`https://api.github.com/repos/alpinebuster/as-plugins/commits?path=plugins/${plugin_id}.js`);
 		let commits = await commits_response.json();
@@ -118,7 +119,7 @@ export default {
 
 		let about = plugin.about;
 		if (!about && plugin.new_repository_format) {
-			const api_path = 'https://cdn.jsdelivr.net/gh/alpinebuster/as-plugins/plugins';
+			const api_path = 'https://web.alpinebuster.top/builtin_plugins';
 			let url = `${api_path}/${plugin_id}/about.md`;
 			let result = await fetch(url).catch(() => {
 				console.error('about.md missing for plugin ' + plugin_id);
