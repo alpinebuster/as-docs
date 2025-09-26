@@ -19,7 +19,6 @@
 				<nuxt-link to='/quickstart'>Quickstart</nuxt-link>
 				<nuxt-link to='/wiki'>Documentations</nuxt-link>
 				<nuxt-link to='/plugins'>Plugins</nuxt-link>
-				<nuxt-link to='/downloads'>Download</nuxt-link>
 				<div class="menu_icon" id="color_mode_toggle" :title="colorThemeTitle" @click="toggleColorMode()">
 					<fa :icon="['fa', ($colorMode.preference == 'dark' ? 'moon' : ($colorMode.preference == 'light' ? 'sun' : 'lightbulb'))]" />
 				</div>
