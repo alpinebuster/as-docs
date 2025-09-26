@@ -23,14 +23,14 @@ Returns: *any*
 Extended by: [KeyframeDataPoint](keyframe#keyframedatapoint)
 
 
-## Blockbench
+## AS
 #### Global Reference
 
 
 ## Deletable
 Extended by: [KeybindItem](action#keybinditem), [Codec](codec#codec-1), [ModelFormat](format#modelformat), [ModelLoader](format#modelloader), [Menu](menu#menu-1), [Preview](preview#preview-1), [Setting](settings#setting), [ValidatorCheck](validator#validatorcheck), [Property](misc#property)
 
-<reference path="./blockbench.d.ts"/>
+<reference path="./as.d.ts"/>
 
 ### new Deletable()
 Creates a new Deletable
@@ -46,7 +46,7 @@ Creates a new Deletable
 
 Type: *boolean*
 
-True if Blockbench runs as a native app
+True if AS runs as a native app
 
 
 ## VuePrismEditor
@@ -69,7 +69,7 @@ Creates a new Property
 * `name`: *string*
 * `options`: PropertyOptions (Optional)
 	* `default`: *any* (Optional)
-	* `condition`: [ConditionResolvable](https://github.com/JannisX11/blockbench-types/blob/main/types/util.d.ts#L1) (Optional)
+	* `condition`: [ConditionResolvable](https://github.com/as/as-types/blob/main/types/util.d.ts#L1) (Optional)
 	* `exposed`: *boolean* (Optional)
 	* `label`: *string* (Optional)
 	* `options`: *any* (Optional) - Options used for select types
@@ -96,8 +96,8 @@ Creates a new Property
 | isVector2 | *boolean* |  |
 | isInstance | *boolean* |  |
 | enum_values | Array of *string* |  |
-| merge_validation | *undefined* or [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/misc.d.ts#L209) |  |
-| condition | [ConditionResolvable](https://github.com/JannisX11/blockbench-types/blob/main/types/util.d.ts#L1) |  |
+| merge_validation | *undefined* or [See types](https://github.com/as/as-types/blob/8049169/types/misc.d.ts#L209) |  |
+| condition | [ConditionResolvable](https://github.com/as/as-types/blob/main/types/util.d.ts#L1) |  |
 | exposed | *boolean* |  |
 | label | *any* |  |
 
@@ -151,7 +151,7 @@ Returns: *string*
 
 | Property | Type | Description |
 | -------- | ---- | ----------- |
-| data | [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/misc.d.ts#L232) | Translation data for the current language |
+| data | [See types](https://github.com/as/as-types/blob/8049169/types/misc.d.ts#L232) | Translation data for the current language |
 | code | *string* | Two letter code indicating the currently selected language |
 
 ### addTranslations( language, strings )
@@ -159,7 +159,7 @@ Add translations for custom translation strings
 
 ##### Arguments:
 * `language`: *string* - Two letter language code, e. G. 'en'
-* `strings`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/misc.d.ts#L244) - Object listing the translation keys and values
+* `strings`: [See types](https://github.com/as/as-types/blob/8049169/types/misc.d.ts#L244) - Object listing the translation keys and values
 
 
 
@@ -196,7 +196,7 @@ Returns: *number*
 ## Pressing
 #### Global Variable
 
-Type: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/misc.d.ts#L268)
+Type: [See types](https://github.com/as/as-types/blob/8049169/types/misc.d.ts#L268)
 
 
 ## isStringNumber( value )

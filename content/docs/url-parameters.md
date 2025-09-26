@@ -1,13 +1,13 @@
 ---
 title: Web App URL Parameters
-description: How to provide integration with the Blockbench web app using URL parameters
+description: How to provide integration with the AS web app using URL parameters
 authors:
-  - JannisX11
+  - alpinebuster
 ---
 
 # Web App URL Parameters
 
-URL parameters (also known as query strings) are specific parameters that can be passed to the [Blockbench web app](https://web.blockbench.net) when opening it via link. These can be used to integrate Blockbench with other apps, for example by opening a model via a link.
+URL parameters (also known as query strings) are specific parameters that can be passed to the [AS web app](https://web.ai-stomatology.tech) when opening it via link. These can be used to integrate AS with other apps, for example by opening a model via a link.
 
 When passing parameters, make sure to encode them correctly using [encodeURIComponent](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent).
 
@@ -19,7 +19,7 @@ When passing parameters, make sure to encode them correctly using [encodeURIComp
 
 **Parameters**: `loadtype`, `loadname`, `loaddata`
 
-You can create a link to open a specific model in Blockbench, using a combination of these parameters:
+You can create a link to open a specific model in AS, using a combination of these parameters:
 
 * `loadtype` (enum): How to load the provided data
   * `json`: Load the data as JSON
@@ -30,7 +30,7 @@ You can create a link to open a specific model in Blockbench, using a combinatio
 
 **Example**:
 ```
-https://web.blockbench.net?loadtype=image&loadname=smiley&loaddata=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAAXNSR0IArs4c6QAAADFJREFUGFdj/H+Z4b9amA7DrVVXGGA0I0iQAQ0wqmrq/AepggGQarBKEAMGQAqwagcAH0YYw0zbfWUAAAAASUVORK5CYII=
+https://web.ai-stomatology.tech?loadtype=image&loadname=smiley&loaddata=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAAXNSR0IArs4c6QAAADFJREFUGFdj/H+Z4b9amA7DrVVXGGA0I0iQAQ0wqmrq/AepggGQarBKEAMGQAqwagcAH0YYw0zbfWUAAAAASUVORK5CYII=
 ```
 
 
@@ -38,13 +38,13 @@ https://web.blockbench.net?loadtype=image&loadname=smiley&loaddata=data%3Aimage%
 
 **Parameters**: `m`
 
-Load models from Blockbench's built-in sharing service (File > Export > Share...).
+Load models from AS's built-in sharing service (File > Export > Share...).
 
 * `m`: The ID of the model
 
 **Example**: (this link will probably have expired by the time you are reading this)
 ```
-https://web.blockbench.net?m=vsLdlR
+https://web.ai-stomatology.tech?m=vsLdlR
 ```
 
 
@@ -58,7 +58,7 @@ On opening, prompt the user to install certain plugins.
 
 **Example**:
 ```
-https://web.blockbench.net?plugins=animation_sliders,plaster
+https://web.ai-stomatology.tech?plugins=animation_sliders,plaster
 ```
 
 
@@ -73,14 +73,14 @@ A session token of an active edit session can be provided. This will prompt the 
 
 **Example**: (not an existing session)
 ```
-https://web.blockbench.net?session=jx5elzheyzh00000
+https://web.ai-stomatology.tech?session=jx5elzheyzh00000
 ```
 
 ### Additional data
 
-For deeper integration, additional query parameters that are not natively supported by Blockbench can be added to the URL. You can then use a custom plugin to access and process them accordingly.
+For deeper integration, additional query parameters that are not natively supported by AS can be added to the URL. You can then use a custom plugin to access and process them accordingly.
 
 Query parameter values can be accessed as follows:
 ```javascript
-Blockbench.queries['my-query']
+AS.queries['my-query']
 ```

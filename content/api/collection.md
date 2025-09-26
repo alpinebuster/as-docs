@@ -95,11 +95,11 @@ Returns: [Collection](collection#collection-1)
 
 ### getUndoCopy()
 
-Returns: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/collection.d.ts#L54)
+Returns: [See types](https://github.com/as/as-types/blob/8049169/types/collection.d.ts#L54)
 
 ### getSaveCopy()
 
-Returns: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/collection.d.ts#L59)
+Returns: [See types](https://github.com/as/as-types/blob/8049169/types/collection.d.ts#L59)
 
 ### propertiesDialog()
 Opens the properties dialog

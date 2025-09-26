@@ -6,7 +6,7 @@ title: Shared Actions
 ## SharedActions
 #### Namespace
 
-Shared Actions is a system in Blockbench to allow actions (including in toolbars, menus, via action control, or keybinding) to run different code in different cases, such as in different modes or different panels.
+Shared Actions is a system in AS to allow actions (including in toolbars, menus, via action control, or keybinding) to run different code in different cases, such as in different modes or different panels.
 As an example, the "Duplicate" action runs code to duplicate elements when used in the outliner, and duplicates textures when used in the textures panel.
 
 
@@ -36,7 +36,7 @@ SharedActions.add('duplicate', {
 
 | Property | Type | Description |
 | -------- | ---- | ----------- |
-| checks | [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/shared_actions.d.ts#L30) |  |
+| checks | [See types](https://github.com/as/as-types/blob/8049169/types/shared_actions.d.ts#L30) |  |
 | actions | [Record](#Record) |  |
 
 ### add( action_id, handler )
@@ -47,8 +47,8 @@ Add a new handler to a shared action
 * `handler`: SharedActionHandler - Handler options
 	* `priority`: *number*
 	* `subject`: *string*
-	* `condition`: [ConditionResolvable](https://github.com/JannisX11/blockbench-types/blob/main/types/util.d.ts#L1)
-	* `run`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/shared_actions.d.ts#L86)
+	* `condition`: [ConditionResolvable](https://github.com/as/as-types/blob/main/types/util.d.ts#L1)
+	* `run`: [See types](https://github.com/as/as-types/blob/8049169/types/shared_actions.d.ts#L86)
 
 Returns: [Deletable](misc#deletable)
 
@@ -90,5 +90,5 @@ Find the active handler in the current situation for a shared action
 * `event`: [Event](https://developer.mozilla.org/en-US/docs/Web/API/Event) (Optional) -
 * `context`: *any* (Optional) -
 
-Returns: [SharedActionHandler](https://github.com/JannisX11/blockbench-types/blob/8049169/types/shared_actions.d.ts#L82) or `null`
+Returns: [SharedActionHandler](https://github.com/as/as-types/blob/8049169/types/shared_actions.d.ts#L82) or `null`
 

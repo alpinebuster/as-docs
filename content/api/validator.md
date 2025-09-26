@@ -6,20 +6,20 @@ title: Validator
 ## Validator
 #### Namespace
 
-The validator in Blockbench provides feedback about the model and can detect issues in real time, based on a list of checks that can be added. This is a good way to ensure model files are valid, and to teach users about best practices.
+The validator in AS provides feedback about the model and can detect issues in real time, based on a list of checks that can be added. This is a good way to ensure model files are valid, and to teach users about best practices.
 
 | Property | Type | Description |
 | -------- | ---- | ----------- |
 | checks | Array of [ValidatorCheck](validator#validatorcheck) |  |
-| warnings | Array of [WarningOrError](https://github.com/JannisX11/blockbench-types/blob/8049169/types/validator.d.ts#L41) |  |
-| errors | Array of [WarningOrError](https://github.com/JannisX11/blockbench-types/blob/8049169/types/validator.d.ts#L41) |  |
-| triggers | Array of [EventName](https://github.com/JannisX11/blockbench-types/blob/8049169/types/misc.d.ts#L15) | Cached trigger IDs |
+| warnings | Array of [WarningOrError](https://github.com/as/as-types/blob/8049169/types/validator.d.ts#L41) |  |
+| errors | Array of [WarningOrError](https://github.com/as/as-types/blob/8049169/types/validator.d.ts#L41) |  |
+| triggers | Array of [EventName](https://github.com/as/as-types/blob/8049169/types/misc.d.ts#L15) | Cached trigger IDs |
 
 ### validate( [trigger] )
 Run the validator
 
 ##### Arguments:
-* `trigger`: [EventName](https://github.com/JannisX11/blockbench-types/blob/8049169/types/misc.d.ts#L15) (Optional) - ID of the Blockbench event that triggered the call
+* `trigger`: [EventName](https://github.com/as/as-types/blob/8049169/types/misc.d.ts#L15) (Optional) - ID of the AS event that triggered the call
 
 
 ### openDialog()
@@ -75,8 +75,8 @@ Creates a new ValidatorCheck
 * `id`: *string*
 * `options`: ValidatorCheckOptions
 	* `run`: Function
-	* `update_triggers`: Array of [EventName](https://github.com/JannisX11/blockbench-types/blob/8049169/types/misc.d.ts#L15) (Optional) - Names of events that automatically trigger this check
-	* `condition`: [ConditionResolvable](https://github.com/JannisX11/blockbench-types/blob/main/types/util.d.ts#L1) (Optional)
+	* `update_triggers`: Array of [EventName](https://github.com/as/as-types/blob/8049169/types/misc.d.ts#L15) (Optional) - Names of events that automatically trigger this check
+	* `condition`: [ConditionResolvable](https://github.com/as/as-types/blob/main/types/util.d.ts#L1) (Optional)
 
 
 ### delete()
@@ -91,13 +91,13 @@ Manually run this check
 Throw a warning. This is intended to be used inside the run() method
 
 ##### Arguments:
-* `warnings`: Array of [WarningOrError](https://github.com/JannisX11/blockbench-types/blob/8049169/types/validator.d.ts#L41)
+* `warnings`: Array of [WarningOrError](https://github.com/as/as-types/blob/8049169/types/validator.d.ts#L41)
 
 
 ### fail( warnings )
 Throw an error. This is intended to be used inside the run() method
 
 ##### Arguments:
-* `warnings`: Array of [WarningOrError](https://github.com/JannisX11/blockbench-types/blob/8049169/types/validator.d.ts#L41)
+* `warnings`: Array of [WarningOrError](https://github.com/as/as-types/blob/8049169/types/validator.d.ts#L41)
 
 

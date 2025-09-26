@@ -4,7 +4,7 @@ title: Utils
 
 # Utils
 
-Blockbench comes with a bunch of custom utility functions to make the life of developers easier.
+AS comes with a bunch of custom utility functions to make the life of developers easier.
 
 ## General Things
 
@@ -27,7 +27,7 @@ returns true if `uuid` is in fact a UUID.
 Returns a short random unique identifier using the given `length` and the characters [a-zA-Z0-9].
 
 #### autoStringify( object: Object )
-Compiles the `object` to a JSON string using the Blockbench custom JSON compiler under consideration of the minified output setting.
+Compiles the `object` to a JSON string using the AS custom JSON compiler under consideration of the minified output setting.
 
 #### pathToName( path: String[, extension: String] )
 Turns the file path `path` into the corresponding file name, including file extension of extension is set to true.
@@ -43,7 +43,7 @@ Returns the extension of a file path or name.
 
 ### Colors
 
-Blockbench uses [Spectrum](https://bgrins.github.io/spectrum/) as a Color picker and [tinycolor](https://github.com/bgrins/TinyColor) as a color handling and conversion library.
+AS uses [Spectrum](https://bgrins.github.io/spectrum/) as a Color picker and [tinycolor](https://github.com/bgrins/TinyColor) as a color handling and conversion library.
 
 ### 3D Editor
 

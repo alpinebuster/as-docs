@@ -8,7 +8,7 @@ Properties are used to dynamically assign properties to existing classes that ar
 The advantages of using properties include:
 
 * Value of property is properly handled by the Undo system
-* Property is stored in and loaded from .bbmodel files.
+* Property is stored in and loaded from .asmodel files.
 * Property is copied when copy-pasting or duplicating an object
 
 Properties are supported on the following classes:

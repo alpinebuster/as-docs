@@ -6,7 +6,7 @@ title: Timeline
 ## Timeline
 #### Namespace
 
-<reference path="./blockbench.d.ts"/>
+<reference path="./as.d.ts"/>
 
 | Property | Type | Description |
 | -------- | ---- | ----------- |

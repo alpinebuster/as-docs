@@ -1,8 +1,8 @@
 ---
 title: Logos and Brand Assets
-description: Frequently Asked Questions about the Blockbench app
+description: Frequently Asked Questions about the AS app
 authors:
-  - JannisX11
+  - alpinebuster
 ---
 
 # Logos and Brand Assets
@@ -42,23 +42,23 @@ authors:
 		<img width="150px" style="display: block;" src="/images/logos/icon.png">
 		<label>Main Logo</label>
 	</a>
-	<a href="/images/logos/blockbench_inverted.png" target="_blank" style="display: inline-block; text-align: center; margin: 10px" rel="noopener noreferrer">
-		<img width="180px" style="display: block;" src="/images/logos/blockbench_inverted.png">
+	<a href="/images/logos/as_inverted.png" target="_blank" style="display: inline-block; text-align: center; margin: 10px" rel="noopener noreferrer">
+		<img width="180px" style="display: block;" src="/images/logos/as_inverted.png">
 		<label>White Logo</label>
 	</a>
-	<a href="/images/logos/blockbench_logo_text.png" target="_blank" style="display: inline-block; text-align: center; margin: 10px" rel="noopener noreferrer">
-		<img width="300px" style="display: block;" src="/images/logos/blockbench_logo_text.png">
+	<a href="/images/logos/as_logo_text.png" target="_blank" style="display: inline-block; text-align: center; margin: 10px" rel="noopener noreferrer">
+		<img width="300px" style="display: block;" src="/images/logos/as_logo_text.png">
 		<label>Logo with Text</label>
 	</a>
 	<p style="opacity: 0.7;">More logos and SVG versions can be found in the logo kit</p>
 </div>
 
-<a href="/download_files/blockbench_logo_kit_v1.zip" target="_blank" rel="noopener noreferrer">
+<a href="/download_files/as_logo_kit_v1.zip" target="_blank" rel="noopener noreferrer">
 	<button>Download Logo Kit</button>
 </a>
 
 ## Usage Guidelines
 
-- You can use the Blockbench logo to give credit or link to Blockbench.
-- Do not use the Blockbench logo or name as or in your own logo or name.
-- Do not use the Blockbench logo for products or projects in a way that it may look like it is officially associated with Blockbench, if it is not associated with Blockbench.
+- You can use the AS logo to give credit or link to AS.
+- Do not use the AS logo or name as or in your own logo or name.
+- Do not use the AS logo for products or projects in a way that it may look like it is officially associated with AS, if it is not associated with AS.

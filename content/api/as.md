@@ -1,35 +1,35 @@
 ---
-title: Blockbench
+title: AS
 ---
 
-# Blockbench
+# AS
 ## NativeGlobals
 #### Global Variable
 
-Type: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/blockbench.d.ts#L510)
+Type: [See types](https://github.com/as/as-types/blob/8049169/types/as.d.ts#L510)
 
-Provides access to global Javascript/DOM variables that are overwritten by Blockbench's own variables
+Provides access to global Javascript/DOM variables that are overwritten by AS's own variables
 
 
-## Blockbench
+## AS
 #### Namespace
 
-<reference path="./blockbench.d.ts"/>
+<reference path="./as.d.ts"/>
 
 | Property | Type | Description |
 | -------- | ---- | ----------- |
 | platform | `"web"` or `"win32"` or `"darwin"` or `"linux"` |  |
-| version | *string* | Blockbench version number |
-| queries | [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/blockbench.d.ts#L175) or *undefined* | URL queries when opened as web app using a link that contained queries |
-| openTime | [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) | Time when Blockbench was opened |
+| version | *string* | AS version number |
+| queries | [See types](https://github.com/as/as-types/blob/8049169/types/as.d.ts#L175) or *undefined* | URL queries when opened as web app using a link that contained queries |
+| openTime | [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) | Time when AS was opened |
 
 ### reload()
-Reloads the Blockbench window
+Reloads the AS window
 
 
 
 ### isNewerThan( version )
-checks if Blockbench is newer than the specified version
+checks if AS is newer than the specified version
 
 ##### Arguments:
 * `version`: *string* - semver string
@@ -37,7 +37,7 @@ checks if Blockbench is newer than the specified version
 Returns: *boolean*
 
 ### isOlderThan( version )
-checks if Blockbench is older than the specified version
+checks if AS is older than the specified version
 
 ##### Arguments:
 * `version`: *string* - semver string
@@ -101,16 +101,16 @@ Opens a message box
 	* `message`: *string* (Optional)
 	* `icon`: *string* (Optional)
 	* `width`: *number* (Optional)
-	* `commands`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/misc.d.ts#L133) (Optional) - Display a list of actions to do in the dialog. When clicked, the message box closes with the string ID of the command as first argument.
-	* `checkboxes`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/misc.d.ts#L146) (Optional) - Adds checkboxes to the bottom of the message box
-* `callback`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/blockbench.d.ts#L243) (Optional)
+	* `commands`: [See types](https://github.com/as/as-types/blob/8049169/types/misc.d.ts#L133) (Optional) - Display a list of actions to do in the dialog. When clicked, the message box closes with the string ID of the command as first argument.
+	* `checkboxes`: [See types](https://github.com/as/as-types/blob/8049169/types/misc.d.ts#L146) (Optional) - Adds checkboxes to the bottom of the message box
+* `callback`: [See types](https://github.com/as/as-types/blob/8049169/types/as.d.ts#L243) (Optional)
 
 
 ### textPrompt( title, value, callback )
 ##### Arguments:
 * `title`: *string*
 * `value`: *string*
-* `callback`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/blockbench.d.ts#L253)
+* `callback`: [See types](https://github.com/as/as-types/blob/8049169/types/as.d.ts#L253)
 
 
 ### showToastMessage()
@@ -132,7 +132,7 @@ Shows a system notification
 ##### Arguments:
 * `title`: *string* - Title
 * `text`: *string* - Text
-* `icon`: *string* (Optional) - Url or data url pointing to an icon. Defaults to Blockbench icon
+* `icon`: *string* (Optional) - Url or data url pointing to an icon. Defaults to AS icon
 
 
 ### addFlag( flag )
@@ -152,12 +152,12 @@ Shows a system notification
 Returns: *boolean*
 
 ### dispatchEvent( event_name[, data] )
-Dispatches a Blockbench event.
-If you're using TypeScript, You can call this with the type param <EventName> to get the default event names in Blockbench, or leave the param blank for custom events.
+Dispatches a AS event.
+If you're using TypeScript, You can call this with the type param <EventName> to get the default event names in AS, or leave the param blank for custom events.
 
 
 ```ts
-Blockbench.dispatchEvent<EventName>(...)
+AS.dispatchEvent<EventName>(...)
 ```
 
 ##### Arguments:
@@ -166,45 +166,45 @@ Blockbench.dispatchEvent<EventName>(...)
 
 
 ### addListener( event_names, callback )
-Adds a listener to a Blockbench event.
-If you're using TypeScript, You can call this with the type param <EventName> to get the default event names in Blockbench, or leave the param blank for custom events.
+Adds a listener to a AS event.
+If you're using TypeScript, You can call this with the type param <EventName> to get the default event names in AS, or leave the param blank for custom events.
 
 
 ```ts
-Blockbench.addListener<EventName>(...)
+AS.addListener<EventName>(...)
 ```
 
 ##### Arguments:
 * `event_names`: [E](#E)
-* `callback`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/blockbench.d.ts#L299)
+* `callback`: [See types](https://github.com/as/as-types/blob/8049169/types/as.d.ts#L299)
 
 
 ### on( event_names, callback )
-Adds a listener to a Blockbench event.
-If you're using TypeScript, You can call this with the type param <EventName> to get the default event names in Blockbench, or leave the param blank for custom events.
+Adds a listener to a AS event.
+If you're using TypeScript, You can call this with the type param <EventName> to get the default event names in AS, or leave the param blank for custom events.
 
 
 ```ts
-Blockbench.on<EventName>(...)
+AS.on<EventName>(...)
 ```
 
 ##### Arguments:
 * `event_names`: [E](#E)
-* `callback`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/blockbench.d.ts#L308)
+* `callback`: [See types](https://github.com/as/as-types/blob/8049169/types/as.d.ts#L308)
 
 
 ### removeListener( event_names, callback )
-Removes a listener from a Blockbench event.
-If you're using TypeScript, You can call this with the type param <EventName> to get the default event names in Blockbench, or leave the param blank for custom events.
+Removes a listener from a AS event.
+If you're using TypeScript, You can call this with the type param <EventName> to get the default event names in AS, or leave the param blank for custom events.
 
 
 ```ts
-Blockbench.removeListener<EventName>(...)
+AS.removeListener<EventName>(...)
 ```
 
 ##### Arguments:
 * `event_names`: [E](#E)
-* `callback`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/blockbench.d.ts#L319)
+* `callback`: [See types](https://github.com/as/as-types/blob/8049169/types/as.d.ts#L319)
 
 
 ### findFileFromContent( base_directories, options, check_file )
@@ -227,8 +227,8 @@ Reads the content from the specified files. Desktop app only.
 
 ##### Arguments:
 * `files`: Array of *string*
-* `options`: [ReadOptions](https://github.com/JannisX11/blockbench-types/blob/8049169/types/blockbench.d.ts#L82) (Optional)
-* `callback`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/file_system.d.ts#L39) (Optional)
+* `options`: [ReadOptions](https://github.com/as/as-types/blob/8049169/types/as.d.ts#L82) (Optional)
+* `callback`: [See types](https://github.com/as/as-types/blob/8049169/types/file_system.d.ts#L39) (Optional)
 
 ### read( files[, options, callback] )
 Reads the content from the specified files. Desktop app only.
@@ -236,9 +236,9 @@ Reads the content from the specified files. Desktop app only.
 ##### Arguments:
 * `files`: Array of *string*
 * `options`: ReadOptions (Optional)
-	* `readtype`: [ReadType](https://github.com/JannisX11/blockbench-types/blob/8049169/types/blockbench.d.ts#L81) or [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/blockbench.d.ts#L83) (Optional)
+	* `readtype`: [ReadType](https://github.com/as/as-types/blob/8049169/types/as.d.ts#L81) or [See types](https://github.com/as/as-types/blob/8049169/types/as.d.ts#L83) (Optional)
 	* `errorbox`: *boolean* (Optional)
-* `callback`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/blockbench.d.ts#L328) (Optional)
+* `callback`: [See types](https://github.com/as/as-types/blob/8049169/types/as.d.ts#L328) (Optional)
 
 
 ### readFile( files[, options, callback] )
@@ -246,8 +246,8 @@ Reads the content from the specified files. Desktop app only.
 
 ##### Arguments:
 * `files`: Array of *string*
-* `options`: [ReadOptions](https://github.com/JannisX11/blockbench-types/blob/8049169/types/blockbench.d.ts#L82) (Optional)
-* `callback`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/file_system.d.ts#L47) (Optional)
+* `options`: [ReadOptions](https://github.com/as/as-types/blob/8049169/types/as.d.ts#L82) (Optional)
+* `callback`: [See types](https://github.com/as/as-types/blob/8049169/types/file_system.d.ts#L47) (Optional)
 
 ### readFile( files[, options, callback] )
 Reads the content from the specified files. Desktop app only.
@@ -255,9 +255,9 @@ Reads the content from the specified files. Desktop app only.
 ##### Arguments:
 * `files`: Array of *string*
 * `options`: ReadOptions (Optional)
-	* `readtype`: [ReadType](https://github.com/JannisX11/blockbench-types/blob/8049169/types/blockbench.d.ts#L81) or [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/blockbench.d.ts#L83) (Optional)
+	* `readtype`: [ReadType](https://github.com/as/as-types/blob/8049169/types/as.d.ts#L81) or [See types](https://github.com/as/as-types/blob/8049169/types/as.d.ts#L83) (Optional)
 	* `errorbox`: *boolean* (Optional)
-* `callback`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/blockbench.d.ts#L336) (Optional)
+* `callback`: [See types](https://github.com/as/as-types/blob/8049169/types/as.d.ts#L336) (Optional)
 
 
 ### writeFile( file_path, options[, callback] )
@@ -265,8 +265,8 @@ Writes a file to the file system. Desktop app only.
 
 ##### Arguments:
 * `file_path`: *string*
-* `options`: [WriteOptions](https://github.com/JannisX11/blockbench-types/blob/8049169/types/blockbench.d.ts#L87)
-* `callback`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/file_system.d.ts#L62) (Optional)
+* `options`: [WriteOptions](https://github.com/as/as-types/blob/8049169/types/as.d.ts#L87)
+* `callback`: [See types](https://github.com/as/as-types/blob/8049169/types/file_system.d.ts#L62) (Optional)
 
 ### writeFile( file_path, options[, callback] )
 Writes a file to the file system. Desktop app only.
@@ -275,16 +275,16 @@ Writes a file to the file system. Desktop app only.
 * `file_path`: *string*
 * `options`: WriteOptions
 	* `content`: *string* or [ArrayBuffer](#ArrayBuffer) (Optional)
-	* `savetype`: [WriteType](https://github.com/JannisX11/blockbench-types/blob/8049169/types/blockbench.d.ts#L86) or [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/blockbench.d.ts#L89) (Optional)
+	* `savetype`: [WriteType](https://github.com/as/as-types/blob/8049169/types/as.d.ts#L86) or [See types](https://github.com/as/as-types/blob/8049169/types/as.d.ts#L89) (Optional)
 	* `custom_writer`: Function (Optional)
-* `callback`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/blockbench.d.ts#L345) (Optional)
+* `callback`: [See types](https://github.com/as/as-types/blob/8049169/types/as.d.ts#L345) (Optional)
 
 
 ### pickDirectory( options )
 Pick a directory. Desktop app only.
 
 ##### Arguments:
-* `options`: [PickDirOptions](https://github.com/JannisX11/blockbench-types/blob/8049169/types/blockbench.d.ts#L92)
+* `options`: [PickDirOptions](https://github.com/as/as-types/blob/8049169/types/as.d.ts#L92)
 
 Returns: *string* or *undefined*
 ### pickDirectory( options )
@@ -302,38 +302,38 @@ Returns: *any*
 @ts-ignore
 
 ##### Arguments:
-* `options`: [ImportOptions](https://github.com/JannisX11/blockbench-types/blob/8049169/types/blockbench.d.ts#L103)
-* `callback`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/file_system.d.ts#L104) (Optional)
+* `options`: [ImportOptions](https://github.com/as/as-types/blob/8049169/types/as.d.ts#L103)
+* `callback`: [See types](https://github.com/as/as-types/blob/8049169/types/file_system.d.ts#L104) (Optional)
 
 Returns: *any*
 
 ### export( options[, callback] )
 ##### Arguments:
-* `options`: [ExportOptions](https://github.com/JannisX11/blockbench-types/blob/8049169/types/blockbench.d.ts#L125)
-* `callback`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/file_system.d.ts#L129) (Optional)
+* `options`: [ExportOptions](https://github.com/as/as-types/blob/8049169/types/as.d.ts#L125)
+* `callback`: [See types](https://github.com/as/as-types/blob/8049169/types/file_system.d.ts#L129) (Optional)
 
 Returns: *any*
 
 ### addDragHandler( id, options[, callback] )
 ##### Arguments:
 * `id`: *string*
-* `options`: [DragHandlerOptions](https://github.com/JannisX11/blockbench-types/blob/8049169/types/blockbench.d.ts#L147)
-* `callback`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/file_system.d.ts#L156) (Optional)
+* `options`: [DragHandlerOptions](https://github.com/as/as-types/blob/8049169/types/as.d.ts#L147)
+* `callback`: [See types](https://github.com/as/as-types/blob/8049169/types/file_system.d.ts#L156) (Optional)
 
 Returns: [Deletable](misc#deletable)
 ### addDragHandler( id, options[, callback] )
-Adds a drag handler that handles dragging and dropping files into Blockbench
+Adds a drag handler that handles dragging and dropping files into AS
 
 ##### Arguments:
 * `id`: *string*
 * `options`: DragHandlerOptions
-	* `readtype`: [ReadType](https://github.com/JannisX11/blockbench-types/blob/8049169/types/blockbench.d.ts#L81) or [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/blockbench.d.ts#L83) (Optional)
+	* `readtype`: [ReadType](https://github.com/as/as-types/blob/8049169/types/as.d.ts#L81) or [See types](https://github.com/as/as-types/blob/8049169/types/as.d.ts#L83) (Optional)
 	* `errorbox`: *boolean* (Optional)
-	* `extensions`: Array of *string* or [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/blockbench.d.ts#L151) - Allowed file extensions
-	* `condition`: [ConditionResolvable](https://github.com/JannisX11/blockbench-types/blob/main/types/util.d.ts#L1) (Optional) - Whether or not to enable the drag handler
-	* `element`: *string* or [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) or [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/blockbench.d.ts#L159) (Optional) - Drop target element
+	* `extensions`: Array of *string* or [See types](https://github.com/as/as-types/blob/8049169/types/as.d.ts#L151) - Allowed file extensions
+	* `condition`: [ConditionResolvable](https://github.com/as/as-types/blob/main/types/util.d.ts#L1) (Optional) - Whether or not to enable the drag handler
+	* `element`: *string* or [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) or [See types](https://github.com/as/as-types/blob/8049169/types/as.d.ts#L159) (Optional) - Drop target element
 	* `propagate`: *boolean* (Optional) - If true, the drop will work on all child elements of the specified element
-* `callback`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/blockbench.d.ts#L378) (Optional)
+* `callback`: [See types](https://github.com/as/as-types/blob/8049169/types/as.d.ts#L378) (Optional)
 
 Returns: [Deletable](misc#deletable)
 
@@ -353,7 +353,7 @@ Returns: [Deletable](misc#deletable)
 	* `icon`: *string* (Optional)
 	* `expire`: *number* (Optional)
 	* `color`: *string* (Optional)
-	* `click`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/misc.d.ts#L258) (Optional)
+	* `click`: [See types](https://github.com/as/as-types/blob/8049169/types/misc.d.ts#L258) (Optional)
 
 Returns: [Deletable](misc#deletable)
 
@@ -362,7 +362,7 @@ Returns: [Deletable](misc#deletable)
 * `css`: *string*
 
 ### addCSS( css )
-Adds custom CSS code to Blockbench, globally. Returns an object that is deletable
+Adds custom CSS code to AS, globally. Returns an object that is deletable
 
 ##### Arguments:
 * `css`: *string* - CSS string

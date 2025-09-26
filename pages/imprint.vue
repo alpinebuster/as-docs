@@ -3,14 +3,16 @@
 		<div class="content">
 			
 			<h1>Imprint</h1>
-			<p>Information provided according to Sec. 5 German Telemedia Act (TMG)</p>
+			<p>Information provided according to China BeiAn</p>
 			<h3 id="m46">Service Provider</h3>
-			<p>Jannis Petersen<br>
-			Freudenhof 1<br>
-			24991 Freienwill<br>
-			Germany</p>
+			<p>
+			alpinebuster<br>
+			Dajian District<br>
+			641000 Sichuan<br>
+			China
+			</p>
 			<h4>Contact</h4>
-			<p>E-Mail: info (at) blockbench dot net</p>
+			<p>E-Mail: info (at) ai-stomatology dot tech</p>
 
 		</div>
 	</div>

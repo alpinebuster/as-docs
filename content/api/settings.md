@@ -6,15 +6,15 @@ title: Settings
 ## settings
 #### Global Variable
 
-Type: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/settings.d.ts#L2)
+Type: [See types](https://github.com/as/as-types/blob/8049169/types/settings.d.ts#L2)
 
-<reference path="./blockbench.d.ts"/>
+<reference path="./as.d.ts"/>
 
 
 ## Setting
 Extends: [Deletable](misc#deletable)
 
-Settings can be used to add global configuration options to Blockbench. All settings are listed under File > Preferences > Settings.
+Settings can be used to add global configuration options to AS. All settings are listed under File > Preferences > Settings.
 
 ### new Setting( id, options )
 Creates a new Setting
@@ -25,7 +25,7 @@ Creates a new Setting
 	* `name`: *string*
 	* `type`: `"number"` or `"text"` or `"select"` or `"click"` or `"toggle"` or `"password"` (Optional)
 	* `value`: *string* or *number* or *boolean*
-	* `condition`: [ConditionResolvable](https://github.com/JannisX11/blockbench-types/blob/main/types/util.d.ts#L1) (Optional)
+	* `condition`: [ConditionResolvable](https://github.com/as/as-types/blob/main/types/util.d.ts#L1) (Optional)
 	* `category`: *string*
 	* `description`: *string* (Optional)
 	* `min`: *number* (Optional) - launch_setting?: boolean
@@ -33,7 +33,7 @@ Creates a new Setting
 	* `step`: *number* (Optional)
 	* `icon`: *string* (Optional)
 	* `click`: Function (Optional)
-	* `options`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/settings.d.ts#L19) (Optional)
+	* `options`: [See types](https://github.com/as/as-types/blob/8049169/types/settings.d.ts#L19) (Optional)
 	* `onChange`: Function (Optional)
 
 
@@ -48,14 +48,14 @@ Creates a new Setting
 | name | *string* |  |
 | description | *string* |  |
 | category | *string* |  |
-| launch_setting | *boolean* | If true, the setting can be used by the main process before initializing the Blockbench window. This is not available to custom settings created by plugins. |
+| launch_setting | *boolean* | If true, the setting can be used by the main process before initializing the AS window. This is not available to custom settings created by plugins. |
 | min | *number* |  |
 | max | *number* |  |
 | step | *number* |  |
 | icon | *string* |  |
-| options | [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/settings.d.ts#L56) |  |
+| options | [See types](https://github.com/as/as-types/blob/8049169/types/settings.d.ts#L56) |  |
 | hidden | *boolean* |  |
-| onChange | [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/settings.d.ts#L60) |  |
+| onChange | [See types](https://github.com/as/as-types/blob/8049169/types/settings.d.ts#L60) |  |
 
 ### delete()
 
@@ -87,7 +87,7 @@ Triggers the setting, as if selected in action control. This toggles boolean set
 Opens the settings dialog
 
 ##### Arguments:
-* `options`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/settings.d.ts#L84) (Optional) -
+* `options`: [See types](https://github.com/as/as-types/blob/8049169/types/settings.d.ts#L84) (Optional) -
 
 
 ### saveLocalStorages()

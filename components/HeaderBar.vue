@@ -3,7 +3,7 @@
 		<div id="navigation">
 
 			<nuxt-link id="home_link" to='/'>
-				<img src="~assets/blockbench_logo_text_white.svg" alt="Blockbench" height="32px" />
+				<img src="~assets/as_logo_text_white.svg" alt="AS" height="32px" />
 			</nuxt-link>
 
 			<div id="mobile_menu_toggle" @click="show_menu = !show_menu">
@@ -11,18 +11,10 @@
 			</div>
 
 			<nav id="menu" :class="{folded: !show_menu}" @click="show_menu = false">
-				<nuxt-link to='/downloads'>Download</nuxt-link>
 				<nuxt-link to='/quickstart'>Quickstart</nuxt-link>
-				<nuxt-link to='/gallery'>Gallery</nuxt-link>
-				<a href='https://contests.blockbench.net' target="_blank">Contests</a>
 				<nuxt-link to='/plugins'>Plugins</nuxt-link>
 				<nuxt-link to='/wiki'>Wiki</nuxt-link>
-				<a class="menu_icon" href="https://bsky.app/profile/blockbench.net" target="_blank" rel="noopener" title="Bluesky"><fa :icon="['fab', 'bluesky']" /></a>
-				<a class="menu_icon" href="https://twitter.com/blockbench" target="_blank" rel="noopener" title="Twitter"><fa :icon="['fab', 'twitter']" /></a>
-				<a class="menu_icon" href="https://reddit.com/r/blockbench" target="_blank" rel="noopener" title="Reddit"><fa :icon="['fab', 'reddit-alien']" /></a>
-				<a class="menu_icon" href="https://github.com/JannisX11/blockbench" target="_blank" rel="noopener" title="Github"><fa :icon="['fab', 'github']" /></a>
-				<a class="menu_icon" href="https://discord.gg/blockbench" target="_blank" rel="noopener" title="Discord"><fa :icon="['fab', 'discord']" /></a>
-
+				<nuxt-link to='/downloads'>Download</nuxt-link>
 				<div class="menu_icon" id="color_mode_toggle" :title="colorThemeTitle" @click="toggleColorMode()">
 					<fa :icon="['fa', ($colorMode.preference == 'dark' ? 'moon' : ($colorMode.preference == 'light' ? 'sun' : 'lightbulb'))]" />
 				</div>

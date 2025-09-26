@@ -1,16 +1,16 @@
 ---
 title: Rendering Models
-description: Learn how to create renders of your Blockbench models
+description: Learn how to create renders of your AS models
 authors:
-	- JannisX11
+  - alpinebuster
 ---
 
 # Rendering Models
 
-To get an image of your Blockbench model with realistic lighting, you need to render it in an external program. This article will go over the most popular rendering programs and explain how to create a render of your model.
+To get an image of your AS model with realistic lighting, you need to render it in an external program. This article will go over the most popular rendering programs and explain how to create a render of your model.
 
 ![Preview VS Final Render](/images/wiki/guides/rendering/preview-vs-render.png)
-The difference between the Blockbench preview (left) and the final render (right)
+The difference between the AS preview (left) and the final render (right)
 
 ## Software choice
 
@@ -72,9 +72,9 @@ Once you are happy with your lighting and camera angle, go to **File** > **Expor
 
 ### Sketchfab
 
-Uploading a model to Sketchfab is a built-in feature of Blockbench. Go to **File** > **Upload to Sketchfab...**, fill out the model metadata and follow the instructions to get your access token.
+Uploading a model to Sketchfab is a built-in feature of AS. Go to **File** > **Upload to Sketchfab...**, fill out the model metadata and follow the instructions to get your access token.
 
-![Sketchfab Upload Dialog in Blockbench](/images/wiki/guides/rendering/sketchfab-upload.png)
+![Sketchfab Upload Dialog in AS](/images/wiki/guides/rendering/sketchfab-upload.png)
 
 Once your model is uploaded, click **Edit 3D Settings** to access the 3D editor.
 
@@ -111,7 +111,7 @@ After opening Blender, make sure to delete the default cube by pressing Delete a
 
 ![Blender Interface](/images/wiki/guides/rendering/blender.png)
 
-This article won't go in depth about setting up the camera and lighting in Blender, but here is a great [tutorial video](https://youtu.be/5UCc3Z_-ibs) about it.
+This article won't go in depth about setting up the camera and lighting in Blender, but here is a great [tutorial video](https://v.ai-stomatology.tech/5UCc3Z_-ibs) about it.
 
 Once you are happy with your lighting, press **F12** to render your model. Go to **Image** > **Save** to export your render as a PNG image.
 

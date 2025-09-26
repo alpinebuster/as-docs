@@ -124,7 +124,7 @@ Returns: [See types]()
 
 ### compileForBedrock()
 
-Returns: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/texture_group.d.ts#L58)
+Returns: [See types](https://github.com/as/as-types/blob/8049169/types/texture_group.d.ts#L58)
 
 ### getFilePath()
 

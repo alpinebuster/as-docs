@@ -6,7 +6,7 @@ authors:
 ---
 
 # Minecraft Style Guide
-This set of guidelines covers the properties of the Minecraft art style. It is intended to help you create models and textures that fit right into the vanilla game and to unify the terminology for the community to give more efficient and constructive feedback. Please keep in mind that not all of the mentioned principles apply universally to non-vanilla art styles or to art unrelated to Minecraft. If you plan to create Minecraft art and aren't fully familiar with the technical aspects of it, reading [Blockbench Overview & Tips](/wiki/guides/blockbench-overview-tips) is highly recommended. It contains materials on how to properly use Blockbench and take full advantage of its features.
+This set of guidelines covers the properties of the Minecraft art style. It is intended to help you create models and textures that fit right into the vanilla game and to unify the terminology for the community to give more efficient and constructive feedback. Please keep in mind that not all of the mentioned principles apply universally to non-vanilla art styles or to art unrelated to Minecraft. If you plan to create Minecraft art and aren't fully familiar with the technical aspects of it, reading [AS Overview & Tips](/wiki/guides/as-overview-tips) is highly recommended. It contains materials on how to properly use AS and take full advantage of its features.
 
 ## Modeling
 ### Element Count
@@ -26,11 +26,11 @@ Minecraft models utilize planes (elements with only 2 faces) and transparency, o
 ![Planes](/images/wiki/guides/minecraft_style_guide/planes.png)
 
 ### UV Mapping
-The UV map defines how a texture is applied to the model. In Minecraft, a pixel on the texture corresponds to a pixel on the model (1 unit of scale in Blockbench). It is very important that the ratio of pixels is preserved on the model as well, i.e. that the texture does not get squashed or stretched.
+The UV map defines how a texture is applied to the model. In Minecraft, a pixel on the texture corresponds to a pixel on the model (1 unit of scale in AS). It is very important that the ratio of pixels is preserved on the model as well, i.e. that the texture does not get squashed or stretched.
 
 ![UV Ratio](/images/wiki/guides/minecraft_style_guide/uv_ratio.png)
 
-In per-face UV mapping, Blockbench offers the Auto UV feature, which correctly scales the mapping of a face.
+In per-face UV mapping, AS offers the Auto UV feature, which correctly scales the mapping of a face.
 
 ![Auto UV](/images/wiki/guides/minecraft_style_guide/auto_uv.png)
 
@@ -39,7 +39,7 @@ In box UV mapping, the map of the elements is unwrapped automatically and works 
 ![Box UV](/images/wiki/guides/minecraft_style_guide/box_uv.png)
 
 ### Mixels
-Much like pixels are picture elements (pix + el), mixels are elements of mixed resolutions, be it 2D or 3D. Most low-spec art (digitally restrictive art) avoids mixels altogether. Minecraft art, generally speaking, does not allow mixels (with the notable exception of slightly inflated elements on some models). Mixels on models are manifested as elements smaller than 1px (or 1 unit of scale in Blockbench) or overly inflated elements.
+Much like pixels are picture elements (pix + el), mixels are elements of mixed resolutions, be it 2D or 3D. Most low-spec art (digitally restrictive art) avoids mixels altogether. Minecraft art, generally speaking, does not allow mixels (with the notable exception of slightly inflated elements on some models). Mixels on models are manifested as elements smaller than 1px (or 1 unit of scale in AS) or overly inflated elements.
 
 ![Model Mixels](/images/wiki/guides/minecraft_style_guide/model_mixels.png)
 
@@ -126,7 +126,7 @@ All drawn items fit within a 16x16 grid.
 ### Block Textures
 Block textures need to look good on their own, as well as when placed next to each other. Placing several blocks of the same kind next to each other is called tiling. If a portion of the texture visibly repeats, revealing the tiling pattern, it is called a tiling artifact and is to be corrected.
 
-Blockbench can be used to make the block texture directly (in Paint mode) or just as a live 3D preview of a texture created in an external image editor. The best way to preview tiling is by creating a wall of 3x3 blocks.
+AS can be used to make the block texture directly (in Paint mode) or just as a live 3D preview of a texture created in an external image editor. The best way to preview tiling is by creating a wall of 3x3 blocks.
 
 It is important to check tiling before doing too much shading. An early version of the texture with two or three shades is enough. After checking for tiling, you can proceed with shading, but still regularly check for tiling as you shade.
 
@@ -134,7 +134,7 @@ It is important to check tiling before doing too much shading. An early version 
 
 ### Entity Textures
 Entity textures use box UV mapping and follow a special set of texturing guidelines. The top and front of the entity need to be brighter than the bottom and back. This applies to shading the faces individually, as well as how the faces are shaded relative to each other (e.g. the top face will be noticeably brighter than the bottom face).
-1. Generate a texture template to make the texturing process easier. Blockbench automatically maps the elements too.
+1. Generate a texture template to make the texturing process easier. AS automatically maps the elements too.
 2. Sketch the color distribution, add a shadow and a highlight.
 3. Add more shades to the palette.
 4. Define the material by editing the relative position of clusters of certain shades. Get rid of banding and any other shading artifacts from the previous steps.

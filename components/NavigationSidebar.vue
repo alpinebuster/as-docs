@@ -5,7 +5,7 @@
 		</div>
 		<nav id="navigation_wrapper">
 
-			<div id="nav_title">Blockbench Wiki</div>
+			<div id="nav_title">AS Wiki</div>
 
 			<SearchBar v-model="search_term" />
 
@@ -49,7 +49,7 @@ export default {
 		categories: [
 			{id: 'home', title: 'Home', folded: false},
 			{id: 'guides', title: 'Guides', folded: false, pages: []},
-			{id: 'blockbench', title: 'Blockbench', folded: false, pages: []},
+			{id: 'as', title: 'AS', folded: false, pages: []},
 			{id: 'docs', title: 'Documentation', folded: false, pages: []},
 			{id: 'api', title: 'API Reference', folded: false, pages: []},
 		],

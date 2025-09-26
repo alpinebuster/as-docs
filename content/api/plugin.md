@@ -4,7 +4,7 @@ title: Plugin
 
 # Plugin
 ## BBPlugin
-A Blockbench plugin. "BBPlugin" is the Typescript alias to the regular name "Plugin", which is also valid in Javascript projects.
+A AS plugin. "BBPlugin" is the Typescript alias to the regular name "Plugin", which is also valid in Javascript projects.
 
 ### new BBPlugin( id, options )
 Creates a new BBPlugin
@@ -20,11 +20,11 @@ Creates a new BBPlugin
 	* `icon`: *string*
 	* `tags`: Array (Optional) - Plugin tags that will show up in the plugin store. You can provide up to 3 tags.
 	* `variant`: `"both"` or `"desktop"` or `"web"` - Where the plugin can be installed. Desktop refers to the electron app, web refers to the web app and PWA
-	* `min_version`: *string* (Optional) - Minimum Blockbench version in which the plugin can be installed
-	* `max_version`: *string* (Optional) - Maximum Blockbench version in which the plugin can be installed
+	* `min_version`: *string* (Optional) - Minimum AS version in which the plugin can be installed
+	* `max_version`: *string* (Optional) - Maximum AS version in which the plugin can be installed
 	* `await_loading`: *boolean* (Optional) - Set to true if the plugin must finish loading before a project is opened, i. e. because it adds a format
 	* `new_repository_format`: *boolean* (Optional) - Use the new repository format where plugin, iron, and about are stored in a separate folder
-	* `contributes`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/plugin.d.ts#L45) (Optional) - Can be used to specify which features a plugin adds. This allows Blockbench to be aware of and suggest even plugins that are not installed.
+	* `contributes`: [See types](https://github.com/as/as-types/blob/8049169/types/plugin.d.ts#L45) (Optional) - Can be used to specify which features a plugin adds. This allows AS to be aware of and suggest even plugins that are not installed.
 	* `has_changelog`: *boolean* (Optional)
 	* `deprecation_note`: *string* (Optional) - In combination with a "Deprecated" tag, this can be used to provide context on why a plugin is deprecated
 	* `website`: *string* (Optional) - Link to the plugin's website
@@ -52,7 +52,7 @@ Creates a new BBPlugin
 | min_version | *string* |  |
 | max_version | *string* |  |
 | tags | Array of *string* |  |
-| contributes | [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/plugin.d.ts#L117) | Can be used to specify which features a plugin adds. This allows Blockbench to be aware of and suggest even plugins that are not installed. |
+| contributes | [See types](https://github.com/as/as-types/blob/8049169/types/plugin.d.ts#L117) | Can be used to specify which features a plugin adds. This allows AS to be aware of and suggest even plugins that are not installed. |
 | has_changelog | *boolean* |  |
 | deprecation_note | *string* | In combination with a "Deprecated" tag, this can be used to provide context on why a plugin is deprecated |
 | website | *string* | Link to the plugin's website |
@@ -71,11 +71,11 @@ Creates a new BBPlugin
 	* `icon`: *string*
 	* `tags`: Array (Optional) - Plugin tags that will show up in the plugin store. You can provide up to 3 tags.
 	* `variant`: `"both"` or `"desktop"` or `"web"` - Where the plugin can be installed. Desktop refers to the electron app, web refers to the web app and PWA
-	* `min_version`: *string* (Optional) - Minimum Blockbench version in which the plugin can be installed
-	* `max_version`: *string* (Optional) - Maximum Blockbench version in which the plugin can be installed
+	* `min_version`: *string* (Optional) - Minimum AS version in which the plugin can be installed
+	* `max_version`: *string* (Optional) - Maximum AS version in which the plugin can be installed
 	* `await_loading`: *boolean* (Optional) - Set to true if the plugin must finish loading before a project is opened, i. e. because it adds a format
 	* `new_repository_format`: *boolean* (Optional) - Use the new repository format where plugin, iron, and about are stored in a separate folder
-	* `contributes`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/plugin.d.ts#L45) (Optional) - Can be used to specify which features a plugin adds. This allows Blockbench to be aware of and suggest even plugins that are not installed.
+	* `contributes`: [See types](https://github.com/as/as-types/blob/8049169/types/plugin.d.ts#L45) (Optional) - Can be used to specify which features a plugin adds. This allows AS to be aware of and suggest even plugins that are not installed.
 	* `has_changelog`: *boolean* (Optional)
 	* `deprecation_note`: *string* (Optional) - In combination with a "Deprecated" tag, this can be used to provide context on why a plugin is deprecated
 	* `website`: *string* (Optional) - Link to the plugin's website
@@ -113,11 +113,11 @@ Returns: [BBPlugin](plugin#bbplugin)
 	* `icon`: *string*
 	* `tags`: Array (Optional) - Plugin tags that will show up in the plugin store. You can provide up to 3 tags.
 	* `variant`: `"both"` or `"desktop"` or `"web"` - Where the plugin can be installed. Desktop refers to the electron app, web refers to the web app and PWA
-	* `min_version`: *string* (Optional) - Minimum Blockbench version in which the plugin can be installed
-	* `max_version`: *string* (Optional) - Maximum Blockbench version in which the plugin can be installed
+	* `min_version`: *string* (Optional) - Minimum AS version in which the plugin can be installed
+	* `max_version`: *string* (Optional) - Maximum AS version in which the plugin can be installed
 	* `await_loading`: *boolean* (Optional) - Set to true if the plugin must finish loading before a project is opened, i. e. because it adds a format
 	* `new_repository_format`: *boolean* (Optional) - Use the new repository format where plugin, iron, and about are stored in a separate folder
-	* `contributes`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/plugin.d.ts#L45) (Optional) - Can be used to specify which features a plugin adds. This allows Blockbench to be aware of and suggest even plugins that are not installed.
+	* `contributes`: [See types](https://github.com/as/as-types/blob/8049169/types/plugin.d.ts#L45) (Optional) - Can be used to specify which features a plugin adds. This allows AS to be aware of and suggest even plugins that are not installed.
 	* `has_changelog`: *boolean* (Optional)
 	* `deprecation_note`: *string* (Optional) - In combination with a "Deprecated" tag, this can be used to provide context on why a plugin is deprecated
 	* `website`: *string* (Optional) - Link to the plugin's website
@@ -149,7 +149,7 @@ Returns: *string*
 | Property | Type | Description |
 | -------- | ---- | ----------- |
 | all | Array of [BBPlugin](plugin#bbplugin) | All loaded plugins, including plugins from the store that are not installed |
-| installed | Array of [PluginInstalledData](https://github.com/JannisX11/blockbench-types/blob/8049169/types/plugin.d.ts#L154) | Data about which plugins are installed |
+| installed | Array of [PluginInstalledData](https://github.com/as/as-types/blob/8049169/types/plugin.d.ts#L154) | Data about which plugins are installed |
 | dialog | [Dialog](dialog#dialog-1) | The plugins window |
 | api_path | *string* | The currently used path to the plugin API |
 

@@ -2,15 +2,15 @@
 	<div class="content">
 		<h1>Welcome to the Wiki!</h1>
 
-		<p>Welcome to the Blockbench Wiki, the central place for knowledge about Blockbench!</p>
-		<p>If you are new to Blockbench, make sure to check out the <nuxt-link to="/quickstart">Quickstart Wizard</nuxt-link> to learn about the different formats and find beginner tutorials!</p>
+		<p>Welcome to the AS Wiki, the central place for knowledge about AS!</p>
+		<p>If you are new to AS, make sure to check out the <nuxt-link to="/quickstart">Quickstart Wizard</nuxt-link> to learn about the different formats and find beginner tutorials!</p>
 
 		<img src="~assets/wiki/wiki.png" id="wiki_main_image" width="938" alt="Wiki Illustration" >
 
 		<div id="wiki_recommendations">
-			<nuxt-link to="/wiki/guides/blockbench-overview-tips">
+			<nuxt-link to="/wiki/guides/as-overview-tips">
 				<h4>Overview & Tips</h4>
-				<p>The fundamentals of Blockbench and how to use it efficiently</p>
+				<p>The fundamentals of AS and how to use it efficiently</p>
 			</nuxt-link>
 			<nuxt-link to="/wiki/guides/model-rendering">
 				<h4>Rendering Models</h4>
@@ -18,7 +18,7 @@
 			</nuxt-link>
 			<nuxt-link to="/wiki/docs/plugin">
 				<h4>Creating a Plugin</h4>
-				<p>Learn how to write, test, and submit a Blockbench plugin</p>
+				<p>Learn how to write, test, and submit a AS plugin</p>
 			</nuxt-link>
 		</div>
 	</div>
@@ -31,17 +31,17 @@ export default {
 	layout: 'wiki',
 	head() {
 		return {
-			title: `Blockbench Wiki`,
+			title: `AS Wiki`,
 			meta: [
-				{ hid: 'description', name: 'description', content: 'Welcome to the Blockbench Wiki, the central place for knowledge about Blockbench!' },
+				{ hid: 'description', name: 'description', content: 'Welcome to the AS Wiki, the central place for knowledge about AS!' },
 				// Open Graph
-				{ hid: 'og:title', property: 'og:title', content: `Blockbench Wiki` },
-				{ hid: 'og:description', property: 'og:description', content: 'Welcome to the Blockbench Wiki, the central place for knowledge about Blockbench!' },
+				{ hid: 'og:title', property: 'og:title', content: `AS Wiki` },
+				{ hid: 'og:description', property: 'og:description', content: 'Welcome to the AS Wiki, the central place for knowledge about AS!' },
 				// Twitter Card
-				{ hid: 'twitter:title', name: 'twitter:title', content: `Blockbench Wiki` },
-				{ hid: 'twitter:description', name: 'twitter:description', content: 'Welcome to the Blockbench Wiki, the central place for knowledge about Blockbench!' },
+				{ hid: 'twitter:title', name: 'twitter:title', content: `AS Wiki` },
+				{ hid: 'twitter:description', name: 'twitter:description', content: 'Welcome to the AS Wiki, the central place for knowledge about AS!' },
 				// Img
-				{ hid: 'og:image', name: 'og:image', property: 'og:image', content: 'https://www.blockbench.net/images/wiki/wiki.png' },
+				{ hid: 'og:image', name: 'og:image', property: 'og:image', content: 'https://www.ai-stomatology.tech/images/wiki/wiki.png' },
 				{ hid: 'twitter:card', name: 'twitter:card', property: 'twitter:card', content: 'summary_large_image' }
 			]
 		}

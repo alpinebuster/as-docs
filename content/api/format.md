@@ -4,16 +4,16 @@ title: Format
 
 # Format
 ## ModelFormat
-Extends: [FormatOptions](https://github.com/JannisX11/blockbench-types/blob/8049169/types/format.d.ts#L48), [Deletable](misc#deletable)
+Extends: [FormatOptions](https://github.com/as/as-types/blob/8049169/types/format.d.ts#L48), [Deletable](misc#deletable)
 
-<reference path="./blockbench.d.ts"/>
+<reference path="./as.d.ts"/>
 
 ### new ModelFormat( id, options )
 Creates a new ModelFormat
 
 ##### Arguments:
 * `id`: *string*
-* `options`: [FormatOptions](https://github.com/JannisX11/blockbench-types/blob/8049169/types/format.d.ts#L48)
+* `options`: [FormatOptions](https://github.com/as/as-types/blob/8049169/types/format.d.ts#L48)
 
 ### new ModelFormat( options )
 *Alternative constructor signature*
@@ -60,7 +60,7 @@ Creates a new ModelFormat
 | java_cube_shading_properties | *boolean* | Enables properties for Minecraft Java block/item models related to block shading (shading option and light emission value) |
 | cullfaces | *boolean* | Enables cullfaces, the ability on faces in Minecraft block models to set a direction, that, if covered by another block, will cause the face to unrender |
 | node_name_regex | *string* | A set of characters that is allowed in node names (names of elements and groups that can be referenced externally, this does not apply to cubes or meshes) |
-| render_sides | `"front"` or `"double"` or `"back"` or [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/format.d.ts#L223) | Set the default render sides for textures |
+| render_sides | `"front"` or `"double"` or `"back"` or [See types](https://github.com/as/as-types/blob/8049169/types/format.d.ts#L223) | Set the default render sides for textures |
 | id | *string* |  |
 | icon | *string* |  |
 | name | *string* |  |
@@ -68,11 +68,11 @@ Creates a new ModelFormat
 | category | *string* |  |
 | target | *string* or Array of *string* |  |
 | confidential | *boolean* |  |
-| condition | [ConditionResolvable](https://github.com/JannisX11/blockbench-types/blob/main/types/util.d.ts#L1) |  |
+| condition | [ConditionResolvable](https://github.com/as/as-types/blob/main/types/util.d.ts#L1) |  |
 | show_on_start_screen | *boolean* |  |
-| format_page | [FormatPage](https://github.com/JannisX11/blockbench-types/blob/8049169/types/format.d.ts#L3) |  |
+| format_page | [FormatPage](https://github.com/as/as-types/blob/8049169/types/format.d.ts#L3) |  |
 | codec | [Codec](codec#codec-1) |  |
-| cube_size_limiter | [CubeSizeLimiter](https://github.com/JannisX11/blockbench-types/blob/8049169/types/format.d.ts#L17) | Options to limit the size of cubes |
+| cube_size_limiter | [CubeSizeLimiter](https://github.com/as/as-types/blob/8049169/types/format.d.ts#L17) | Options to limit the size of cubes |
 
 ### onActivation()
 
@@ -120,13 +120,13 @@ The current format
 ## Formats
 #### Global Variable
 
-Type: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/format.d.ts#L275)
+Type: [See types](https://github.com/as/as-types/blob/8049169/types/format.d.ts#L275)
 
 
 ## ModelLoader
 Extends: [Deletable](misc#deletable)
 
-<reference path="./blockbench.d.ts"/>
+<reference path="./as.d.ts"/>
 
 ### new ModelLoader( id, options )
 Creates a new ModelLoader
@@ -141,10 +141,10 @@ Creates a new ModelLoader
 	* `category`: *string* (Optional)
 	* `target`: *string* or Array of *string* (Optional)
 	* `confidential`: *boolean* (Optional)
-	* `condition`: [ConditionResolvable](https://github.com/JannisX11/blockbench-types/blob/main/types/util.d.ts#L1) (Optional)
+	* `condition`: [ConditionResolvable](https://github.com/as/as-types/blob/main/types/util.d.ts#L1) (Optional)
 	* `format_page`: FormatPage (Optional)
 		* `component`: [Vue.Component](https://v2.vuejs.org/v2/guide/components.html) (Optional)
-		* `content`: Array of *string* or [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/format.d.ts#L6) (Optional)
+		* `content`: Array of *string* or [See types](https://github.com/as/as-types/blob/8049169/types/format.d.ts#L6) (Optional)
 		* `button_text`: *string* (Optional)
 	* `onFormatPage`: Function (Optional)
 	* `onStart`: Function (Optional)
@@ -162,9 +162,9 @@ Creates a new ModelLoader
 | category | *string* |  |
 | target | *string* or Array of *string* |  |
 | confidential | *boolean* |  |
-| condition | [ConditionResolvable](https://github.com/JannisX11/blockbench-types/blob/main/types/util.d.ts#L1) |  |
+| condition | [ConditionResolvable](https://github.com/as/as-types/blob/main/types/util.d.ts#L1) |  |
 | show_on_start_screen | *boolean* |  |
-| format_page | [FormatPage](https://github.com/JannisX11/blockbench-types/blob/8049169/types/format.d.ts#L3) |  |
+| format_page | [FormatPage](https://github.com/as/as-types/blob/8049169/types/format.d.ts#L3) |  |
 
 ### onFormatPage()
 

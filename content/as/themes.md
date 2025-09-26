@@ -1,16 +1,16 @@
 ---
 title: Custom Themes
 authors:
-  - JannisX11
+  - alpinebuster
 ---
 
 # Custom Themes
 
-Themes allow you to change the visual appearance of Blockbench. You can drag and drop `.bbtheme` files into Blockbench to load them.
+Themes allow you to change the visual appearance of AS. You can drag and drop `.astheme` files into AS to load them.
 
 ## Creating Themes
 
-Themes can be created using the theme editor in Blockbench. You can open it by going to `File` > `Preferences` > `Theme...`.
+Themes can be created using the theme editor in AS. You can open it by going to `File` > `Preferences` > `Theme...`.
 
 ### Colors and Fonts
 
@@ -26,7 +26,7 @@ If you want to define one or multiple backup fonts in case the first one is not 
 
 ### Custom CSS
 
-Blockbench is built using web technology. If you want to further customize the appearance of Blockbench, you can use the style language of the web: CSS.
+AS is built using web technology. If you want to further customize the appearance of AS, you can use the style language of the web: CSS.
 
 You can enter CSS rules into the Custom CSS editor at the bottom of the theme dialog. For example, use this code to give dialogs a frosted glass background:
 
@@ -45,6 +45,6 @@ If you are new to CSS and you want to learn more, check out the [W3Schools CSS T
 
 Once you are happy with your theme, you can export it as a file using the `Export Theme` button in the dialog handle bar.
 You can personally share the file with friends.
-If you want to share the theme with the Blockbench community, you can post it in the #bb-themes channel on the [Blockbench Discord server](https://discord.gg/blockbench).
+If you want to share the theme with the AS community, you can post it in the #as-themes channel on the [AS Chat Server](https://chat.alpinebuster.top/as).
 Make sure to include a name, description and preview image.
 

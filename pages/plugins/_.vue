@@ -1,7 +1,7 @@
 <template>
 	<div class="content_wrapper">
 		<div class="content">
-			<h1>Blockbench Plugins</h1>
+			<h1>AS Plugins</h1>
 
 			<nuxt-link :to="'/plugins'">&lt; Back to plugin list</nuxt-link>
 
@@ -24,7 +24,7 @@
 				<p class="variant" v-if="plugin.variant == 'desktop'">Only for the desktop app</p>
 				<p class="variant" v-if="plugin.variant == 'web'">Only for the web app</p>
 
-				<p class="min_version" v-if="plugin.min_version">Requires Blockbench {{ plugin.min_version }} or newer</p>
+				<p class="min_version" v-if="plugin.min_version">Requires AS {{ plugin.min_version }} or newer</p>
 
 				<p class="last_modified" v-if="last_modified">Last updated: {{ last_modified }}</p>
 
@@ -33,7 +33,7 @@
 			<h3>How to install the plugin</h3>
 
 			<ol>
-				<li>To install the plugin, start Blockbench and open file <b>File</b> menu in the top left corner.</li>
+				<li>To install the plugin, start AS and open file <b>File</b> menu in the top left corner.</li>
 				<li>Select <b>Plugins...</b> to open the built-in plugin browser.</li>
 				<li>Search for the plugin using the search bar on the side.</li>
 				<li>Once you have found it, press the <b>Install</b> button on the right hand side.</li>
@@ -79,10 +79,10 @@ import Markdown from '@nuxt/markdown'
 export default {
 	async asyncData({params}) {
 		let plugin_id = params.pathMatch.replace(/[\\\/]+/, '');
-		let response = await fetch(`https://raw.githubusercontent.com/JannisX11/blockbench-plugins/master/plugins.json`)
+		let response = await fetch(`https://raw.githubusercontent.com/alpinebuster/as-plugins/master/plugins.json`)
 		const plugins = await response.json();
 
-		let commits_response = await fetch(`https://api.github.com/repos/JannisX11/blockbench-plugins/commits?path=plugins/${plugin_id}.js`);
+		let commits_response = await fetch(`https://api.github.com/repos/alpinebuster/as-plugins/commits?path=plugins/${plugin_id}.js`);
 		let commits = await commits_response.json();
 		let last_modified;
 		if (commits && commits.length) {
@@ -118,7 +118,7 @@ export default {
 
 		let about = plugin.about;
 		if (!about && plugin.new_repository_format) {
-			const api_path = 'https://cdn.jsdelivr.net/gh/JannisX11/blockbench-plugins/plugins';
+			const api_path = 'https://cdn.jsdelivr.net/gh/alpinebuster/as-plugins/plugins';
 			let url = `${api_path}/${plugin_id}/about.md`;
 			let result = await fetch(url).catch(() => {
 				console.error('about.md missing for plugin ' + plugin_id);
@@ -143,14 +143,14 @@ export default {
 	},
 	head() {
 		return {
-			title: `${this.plugin.title} - Blockbench Plugin`,
+			title: `${this.plugin.title} - AS Plugin`,
 			meta: [
 				{ hid: 'description', name: 'description', content: this.plugin.description },
 				// Open Graph
-				{ hid: 'og:title', property: 'og:title', content: `${this.plugin.title} - Blockbench` },
+				{ hid: 'og:title', property: 'og:title', content: `${this.plugin.title} - AS` },
 				{ hid: 'og:description', property: 'og:description', content: this.plugin.description },
 				// Twitter Card
-				{ hid: 'twitter:title', name: 'twitter:title', content: `${this.plugin.title} - Blockbench` },
+				{ hid: 'twitter:title', name: 'twitter:title', content: `${this.plugin.title} - AS` },
 				{ hid: 'twitter:description', name: 'twitter:description', content: this.plugin.description }
 			]
 		}

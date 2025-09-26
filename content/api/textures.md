@@ -74,7 +74,7 @@ Creates a new Texture
 | sync_to_project | *string* | The UUID of the project to sync the texture to |
 | canvas | [HTMLCanvasElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement) | The texture's associated canvas. Since 4.9, this is the main source of truth for textures in internal mode. |
 | ctx | [CanvasRenderingContext2D](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D) | The 2D context of the texture's associated canvas. |
-| img | [HTMLImageElement](https://github.com/JannisX11/blockbench-types/blob/8049169/types/global.d.ts#L25) | Texture image element |
+| img | [HTMLImageElement](https://github.com/as/as-types/blob/8049169/types/global.d.ts#L25) | Texture image element |
 | relative_path | *string* |  |
 | menu | [Menu](menu#menu-1) |  |
 
@@ -156,7 +156,7 @@ Generate the Java Block/Item folder property from the file path
 Loads the texture from it's current source
 
 ##### Arguments:
-* `cb`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/textures.d.ts#L194) (Optional) - Callback function
+* `cb`: [See types](https://github.com/as/as-types/blob/8049169/types/textures.d.ts#L194) (Optional) - Callback function
 
 Returns: [Texture](textures#texture)
 
@@ -169,7 +169,7 @@ Returns: [Texture](textures#texture)
 
 ### fromFile( file )
 ##### Arguments:
-* `file`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/textures.d.ts#L196)
+* `file`: [See types](https://github.com/as/as-types/blob/8049169/types/textures.d.ts#L196)
 
 Returns: [Texture](textures#texture)
 
@@ -190,7 +190,7 @@ Does not read
 
 Used internally when loading 
 
-`.bbmodel`
+`.asmodel`
 
  files
 
@@ -347,7 +347,7 @@ Returns: *string*
 Wrapper to do edits to the texture.
 
 ##### Arguments:
-* `callback`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/textures.d.ts#L291) (Optional) -
+* `callback`: [See types](https://github.com/as/as-types/blob/8049169/types/textures.d.ts#L291) (Optional) -
 * `options`: TextureEditOptions (Optional) - Editing options
 	* `method`: `"canvas"` or `"jimp"` (Optional) - Edit method. 'canvas' is default
 	* `edit_name`: *string* (Optional) - Name of the undo entry that is created
@@ -383,7 +383,7 @@ Returns: *string*
 
 ### getMCMetaContent()
 
-Returns: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/textures.d.ts#L308)
+Returns: [See types](https://github.com/as/as-types/blob/8049169/types/textures.d.ts#L308)
 
 ### getAnimationFrameIndices()
 
@@ -422,7 +422,7 @@ If layers are enabled, returns the active layer, otherwise returns the texture. 
 Returns: [Texture](textures#texture) or [TextureLayer](texture_layers#texturelayer)
 
 ### syncToOtherProject()
-When editing the same texture in different tabs (via Edit In Blockbench option), sync changes that were made to the texture to other projects
+When editing the same texture in different tabs (via Edit In AS option), sync changes that were made to the texture to other projects
 
 
 Returns: [Texture](textures#texture)
@@ -572,7 +572,7 @@ Change the size of the matrix. Unless using overrides, the selection gets lost.
 Run a method on each pixel, whether selected or not
 
 ##### Arguments:
-* `callback`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/textures.d.ts#L441) - Function to run per pixel
+* `callback`: [See types](https://github.com/as/as-types/blob/8049169/types/textures.d.ts#L441) - Function to run per pixel
 
 
 ### translate( offset_x, offset_y )
@@ -594,7 +594,7 @@ Mask the provided canvas using the selection
 
 ##### Arguments:
 * `ctx`: [CanvasRenderingContext2D](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D) - Canvas 2D context
-* `offset`: [ArrayVector2](https://github.com/JannisX11/blockbench-types/blob/8049169/types/outliner.d.ts#L4) - Position offset of the canvas, e. g. when using a layer
+* `offset`: [ArrayVector2](https://github.com/as/as-types/blob/8049169/types/outliner.d.ts#L4) - Position offset of the canvas, e. g. when using a layer
 
 
 

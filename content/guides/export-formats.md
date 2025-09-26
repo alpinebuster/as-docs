@@ -2,7 +2,7 @@
 title: 3D Export
 description: An overview of the different export formats and how to transfer your model into other programs
 authors:
-	- JannisX11
+	- alpinebuster
 ---
 
 
@@ -12,13 +12,13 @@ authors:
 
 ## Introduction
 
-You have created a model in Blockbench, and now you want to use it outside of the program? Blockbench comes with several 3D export formats that are compatible with external apps. So whether you want to create a render of your model, use it in your own Unity, Unreal, or Godot game, or even 3D print it, chances are there is a format for you!
+You have created a model in AS, and now you want to use it outside of the program? AS comes with several 3D export formats that are compatible with external apps. So whether you want to create a render of your model, use it in your own Unity, Unreal, or Godot game, or even 3D print it, chances are there is a format for you!
 
 All export formats are available from the menu under File > Export. But there are differences between the formats. Each one has its unique advantages and disadvantages, so you will need to find the format that works best for your use-case.
 
 This article will go over the common export formats, help you find the right one for you, and also explain how you can import your models into some common programs.
 
-For guides on how to export your models to specialized formats, such as 3D models for individual games like Minecraft, check out the [Quickstart Guide](https://www.blockbench.net/quickstart/) instead.
+For guides on how to export your models to specialized formats, such as 3D models for individual games like Minecraft, check out the [Quickstart Guide](https://www.ai-stomatology.tech/quickstart/) instead.
 
 
 
@@ -123,7 +123,7 @@ FBX is a proprietary 3D format by Autodesk. It is widely used for 3D games and m
 
 #### Disadvantages
 
-* Not compatible with Blender, since Blender can only import binary FBX and Blockbench can only export ASCII FBX
+* Not compatible with Blender, since Blender can only import binary FBX and AS can only export ASCII FBX
 
 
 ### DAE (Collada)

@@ -10,15 +10,15 @@ Extends: [OutlinerNode](outliner#outlinernode)
 Creates a new Group
 
 ##### Arguments:
-* `options`: *string* or [GroupOptions](https://github.com/JannisX11/blockbench-types/blob/8049169/types/group.d.ts#L1)
+* `options`: *string* or [GroupOptions](https://github.com/as/as-types/blob/8049169/types/group.d.ts#L1)
 
 
 | Property | Type | Description |
 | -------- | ---- | ----------- |
 | name | *string* |  |
 | children | Array of [OutlinerNode](outliner#outlinernode) |  |
-| origin | [ArrayVector3](https://github.com/JannisX11/blockbench-types/blob/8049169/types/outliner.d.ts#L3) |  |
-| rotation | [ArrayVector3](https://github.com/JannisX11/blockbench-types/blob/8049169/types/outliner.d.ts#L3) |  |
+| origin | [ArrayVector3](https://github.com/as/as-types/blob/8049169/types/outliner.d.ts#L3) |  |
+| rotation | [ArrayVector3](https://github.com/as/as-types/blob/8049169/types/outliner.d.ts#L3) |  |
 | reset | *boolean* |  |
 | shade | *boolean* |  |
 | selected | *boolean* |  |
@@ -28,7 +28,7 @@ Creates a new Group
 | ik_enabled | *boolean* |  |
 | ik_chain_length | *number* |  |
 | texture | *string* |  |
-| skin_original_origin | [ArrayVector3](https://github.com/JannisX11/blockbench-types/blob/8049169/types/outliner.d.ts#L3) |  |
+| skin_original_origin | [ArrayVector3](https://github.com/as/as-types/blob/8049169/types/outliner.d.ts#L3) |  |
 | bedrock_binding | *string* |  |
 | cem_animations | Array of *any* |  |
 | cem_attach | *boolean* |  |
@@ -42,7 +42,7 @@ Creates a new Group
 
 ### extend( options )
 ##### Arguments:
-* `options`: [GroupOptions](https://github.com/JannisX11/blockbench-types/blob/8049169/types/group.d.ts#L1)
+* `options`: [GroupOptions](https://github.com/as/as-types/blob/8049169/types/group.d.ts#L1)
 
 Returns: [Group](group#group-1)
 
@@ -97,7 +97,7 @@ Returns: Array of [OutlinerNode](outliner#outlinernode)
 Move the origin of a bone to a specific location without visually affecting the position of it's content.
 
 ##### Arguments:
-* `origin`: [ArrayVector3](https://github.com/JannisX11/blockbench-types/blob/8049169/types/outliner.d.ts#L3)
+* `origin`: [ArrayVector3](https://github.com/as/as-types/blob/8049169/types/outliner.d.ts#L3)
 
 Returns: [Group](group#group-1)
 
@@ -129,7 +129,7 @@ Returns: *any*
 
 ### forEachChild( callback[, type, for_self] )
 ##### Arguments:
-* `callback`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/group.d.ts#L103)
+* `callback`: [See types](https://github.com/as/as-types/blob/8049169/types/group.d.ts#L103)
 * `type`: *any* (Optional)
 * `for_self`: *boolean* (Optional)
 
@@ -260,7 +260,7 @@ Type: [BoneAnimator](animation#boneanimator)
 ### hasAny
 Static Property
 
-Type: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/group.d.ts#L45)
+Type: [See types](https://github.com/as/as-types/blob/8049169/types/group.d.ts#L45)
 
 
 ### preview_controller
@@ -278,6 +278,6 @@ Type: [Record](#Record)
 ### uuids
 Static Property
 
-Type: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/outliner.d.ts#L64)
+Type: [See types](https://github.com/as/as-types/blob/8049169/types/outliner.d.ts#L64)
 
 

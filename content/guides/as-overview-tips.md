@@ -1,37 +1,32 @@
 ---
-title: Blockbench Overview & Tips
-description: The fundamentals of Blockbench and how to use it efficiently
+title: AS Overview & Tips
+description: The fundamentals of AS and how to use it efficiently
 authors:
   - MasterianoX
 ---
 
-# Blockbench Overview & Tips
+# AS Overview & Tips
 
 ## Community
 
-### Discord
-Join the [Blockbench Discord server](https://discord.gg/blockbench/), it is the heart of the Blockbench community! You can discuss WIP projects, share finished models, ask questions, collaborate, participate in events, or just hang out with the community.
-
-### Sketchfab
-Sketchfab is a platform to publish, share, discover, buy and sell 3D, VR and AR content. Many Blockbench artists already use it to showcase their work.
-
-You can upload models from Blockbench directly to Sketchfab, by going to "File" > "Export" > "Upload to Sketchfab". Once on Sketchfab, you can change lighting and effects and create renders or share your model. You can also build your portfolio or embed models into your website.
+### Chat Server
+Join the [AS Chat Server](https://chat.alpinebuster.top/as/), it is the heart of the AS community! You can discuss WIP projects, share finished models, ask questions, collaborate, participate in events, or just hang out with the community.
 
 ### Sharing Models
-You can easily share Blockbench models with others. Go to "File" > "Export" > "Share", copy the short link and send it to someone. They can click the link to view or edit the model in the web app.
+You can easily share AS models with others. Go to "File" > "Export" > "Share", copy the short link and send it to someone. They can click the link to view or edit the model in the web app.
 
-### Streamer Mode
-If you stream Blockbench, but don't want your audience to see other projects you worked on, enable Streamer Mode in the Settings ("File" > "Preferences" > "Settings..." > "General"). It will hide potentially sensitive information like unreleased projects.
+### Presentation Mode
+If you stream AS, but don't want your audience to see other projects you worked on, enable Presentation Mode in the Settings ("File" > "Preferences" > "Settings..." > "General"). It will hide potentially sensitive information like unreleased projects.
 
-![streamer Mode](/images/wiki/guides/blockbench_guide/streamer_mode.png)
+![Presentation Mode](/images/wiki/guides/as_guide/presentation_mode.png)
 
 ## Interface
-The default Blockbench interface consists of the Viewport (1, red), Left Sidebar (2, blue), Right Sidebar (3, pink), Menu Bar (4, yellow), Main Toolbar (5, orange), Mode Tabs (6, white) and Status Bar (7, green). The sidebars contain different panels (e.g. Outliner, UV Panel...) depending on the interface mode (Edit, Paint, Animate, Display).
+The default AS interface consists of the Viewport (1, red), Left Sidebar (2, blue), Right Sidebar (3, pink), Menu Bar (4, yellow), Main Toolbar (5, orange), Mode Tabs (6, white) and Status Bar (7, green). The sidebars contain different panels (e.g. Outliner, UV Panel...) depending on the interface mode (Edit, Paint, Animate, Display).
 
-![Blockbench Interface](/images/wiki/guides/blockbench_guide/blockbench_interface.png)
+![AS Interface](/images/wiki/guides/as_guide/as_interface.png)
 
 ### Viewport
-An axis (plural axes) is a reference line in a coordinate system that defines a dimension. In a 3D space there are three axes: X, Y and Z. In Blockbench X represents width, Y height and Z length. The origin of the coordinate system is the point of intersection between the three axes, i.e. its coordinates are (0, 0, 0). The coordinates get higher in the + direction (from the origin to where the arrow points) of each axis and lower in the - direction (from the origin to away from where the arrow points) of each axis.
+An axis (plural axes) is a reference line in a coordinate system that defines a dimension. In a 3D space there are three axes: X, Y and Z. In AS X represents width, Y height and Z length. The origin of the coordinate system is the point of intersection between the three axes, i.e. its coordinates are (0, 0, 0). The coordinates get higher in the + direction (from the origin to where the arrow points) of each axis and lower in the - direction (from the origin to away from where the arrow points) of each axis.
 
 The coordinate grid is made up of equally spaced intersecting lines (starting from the axes). The different grid options can be toggled in "Settings" > "Grid".
 * Small Grid: single 1x1 meter pixel-accurate grid and axes
@@ -92,7 +87,7 @@ The Status Bar contains sidebar toggle arrows and easily accessible information 
 * Model Identifier: text that states the name of the model identifier (it can be edited in "File" > "Project...")
 * Available modifier keys for the current tool, if available
 * Automatic warnings or errors regarding the current model
-* FPS Indicator: number of frames per second displayed in Blockbench at any given moment
+* FPS Indicator: number of frames per second displayed in AS at any given moment
 
 ### Sliders
 The interface contains numeric sliders in various places and for various purposes, for example to adjust element transformation, to control the brush size, etc.
@@ -101,7 +96,7 @@ Sliders are a combo input type that supports various methods of input:
 * **Arrows**: Hover over the input. Two arrows pointing to the right and left appear. Press those arrows to increase and decrease the value.
 * **Manual Input**: Click the number once to activate text editing. Enter a new numeric value. Press Enter of click elsewhere to confirm the change.
 * **Double Click**: Double-click the number to reset the value back to 0 or the respective default value.
-* **Expressions**: Click the number once to activate text editing. Manual input supports math expressions using [MolangJS](https://github.com/JannisX11/MolangJS) [syntax](https://bedrock.dev/docs/stable/Molang).
+* **Expressions**: Click the number once to activate text editing. Manual input supports math expressions using [MolangJS](https://github.com/alpinebuster/MolangJS) [syntax](https://bedrock.dev/docs/stable/Molang).
     The advantage of this is that the expression will be applied to each instance separately. For example, you can enter `math.random(-30, 30)` into the rotation value of your selected cubes. This will randomize the rotation for all cubes, and each cube will end up with a different rotation.
     You can prefix your expression with `+`, `+-`, `*` or `/` to add to, subtract from, multiply, or divide by the previous value respectively. For example, typing `*2` into a size input field will double the size value of all selected elements.
     You can also use `val` or `n` in your expression as a placeholder for the previous value.
@@ -131,19 +126,19 @@ Elements can be selected in the Viewport and Outliner by left-clicking.
 ### Screenshots
 Press Ctrl + P to capture a screenshot (the keybinding can be changed in the Preferences). Alternatively, open the Preview menu (right click in the Viewport or click the 3 dots in the top right corner of the Viewport) and select "Screenshot Model". In the Preview menu, you can also select one of the preset angles, or create, save and load your own before taking the screenshot.
 
-![Angles](/images/wiki/guides/blockbench_guide/angles.png)
+![Angles](/images/wiki/guides/as_guide/angles.png)
 
 ### Background Image
-You can load background images into Blockbench. A background can be helpful to customize the interface, to load a reference image or to be used as a blueprint. Open the Preview menu (right click in the Viewport or click the 3 dots in the top right corner of the Viewport) to load and edit background images.
+You can load background images into AS. A background can be helpful to customize the interface, to load a reference image or to be used as a blueprint. Open the Preview menu (right click in the Viewport or click the 3 dots in the top right corner of the Viewport) to load and edit background images.
 
 ### View Mode
 Press Z to switch between Textured, Solid and Wireframe Mode. The Solid Mode enables you to view the shape of the model without the texture. The Wireframe Mode only shows the shape outlines, allowing you to see through the model and align cubes and pivot points more easily.
 
 ### Backups
-Losing progress is rarely a concern with Blockbench because it creates automatic backups once every 10 minutes by default (you can adjust the interval length in the Settings). Click "Help" > "Open Backup Folder" and locate the right backup file.
+Losing progress is rarely a concern with AS because it creates automatic backups once every 10 minutes by default (you can adjust the interval length in the Settings). Click "Help" > "Open Backup Folder" and locate the right backup file.
 
 ### Progressive Web App
-You can install Blockbench as a Progressive Web App. This is an in-between of the desktop app and the web app and is particularly useful on Phones and Tablets. PWAs launch in full screen and work offline! Find installation instructions on the [Download page](https://blockbench.net/downloads/).
+You can install AS as a Progressive Web App. This is an in-between of the desktop app and the web app and is particularly useful on Phones and Tablets. PWAs launch in full screen and work offline! Find installation instructions on the [Download page](https://ai-stomatology.tech/downloads/).
 
 ## Edit Mode
 
@@ -155,7 +150,7 @@ The Textures Panel contains a list of all imported textures and two actions - Im
 The Element Panel contains toolbars with sets of sliders for Position, Size, Pivot Point and Rotation. Next to the Size sliders, there is also the Inflate slider and, next to the Pivot Point sliders, there is the Center Pivot action.
 
 ### Tools & Actions
-![Edit Main Toolbar](/images/wiki/guides/blockbench_guide/edit_main_toolbar.png)
+![Edit Main Toolbar](/images/wiki/guides/as_guide/edit_main_toolbar.png)
 
 The Main Toolbar in Edit Mode offers the following tools by default:
 * Move: Translate elements and bones.
@@ -171,42 +166,42 @@ Transform spaces (Global, Bone, Local) define how elements/bones and their pivot
 ### Bones & Parenting
 Parenting is the process of attaching bones to each other in a hierarchical order. Child bones can be manipulated on their own, but they are also forced to follow the parent bones. It is crucial for posing and animation. The best bone structure is one that allows for the most intuitive bone manipulation (e.g. if the torso moves, the arms should follow). Parenting should be done outward, from proximal bones (closer to the center of the body) to distal bones (away from the body). Along with parenting, setting the pivot points correctly is the most important part of creating the bone structure. Posing and animating can also be done outward (as seen in the image below marked with numbers 1-4). For a cleaner workflow, bones should have a consistent naming convention.
 
-![Parenting](/images/wiki/guides/blockbench_guide/parenting.png)
+![Parenting](/images/wiki/guides/as_guide/parenting.png)
 
 ### Pivot Points
 A pivot point is the center of rotation of a bone. It should not be placed randomly (left-most example in the image below) because that can lead to issues with animation and/or later edits of the model. The center of rotation is usually not supposed to be at the center of geometry (middle example in the image below). As a general rule, the pivot point should be at the center of the joint (point of attachment between two bones; right-most example in the image below).
 
-![Pivot Points](/images/wiki/guides/blockbench_guide/pivot_points.png)
+![Pivot Points](/images/wiki/guides/as_guide/pivot_points.png)
 
 The pivot point can be set in the viewport using the Pivot Tool (found in the Main Toolbar) or in the sidebar using sliders (found in the Element panel). The pivot point can also be centered to the selection using the button next to the Pivot Point sliders.
 
-![Pivot Tool](/images/wiki/guides/blockbench_guide/pivot_tool.png)
+![Pivot Tool](/images/wiki/guides/as_guide/pivot_tool.png)
 
 ### Vertex Snap
-In order to fix cracks and slight imperfections in the position of certain elements, you can use Blockbench’s Vertex Snap tool. This is a method of moving vertices of one element to coincide exactly with the vertices of another element. You should select "Vertex Snap" in the Main Toolbar and select "Move" or "Scale" in the drop-down, depending on the action you wish to perform.
+In order to fix cracks and slight imperfections in the position of certain elements, you can use AS’s Vertex Snap tool. This is a method of moving vertices of one element to coincide exactly with the vertices of another element. You should select "Vertex Snap" in the Main Toolbar and select "Move" or "Scale" in the drop-down, depending on the action you wish to perform.
 
 1. A cube isn't positioned correctly on the model.
 2. Select the cube you are trying to move (or scale). Click on one of its vertices that needs to be snapped.
 3. Select the cube that you are snapping to and click on one of its vertices (where you're directing vertex of the first cube). A line will appear between the two vertices on hover.
 4. The cube is snapped into the correct position.
 
-![Vertex Snap](/images/wiki/guides/blockbench_guide/vertex_snap.png)
+![Vertex Snap](/images/wiki/guides/as_guide/vertex_snap.png)
 
 Vertex Snap also works as a tape measure. Simply select one vertex and hover over another one. You will see the distance between the two vertices in the status bar.
 
 ### Inflation & Deflation
 The Inflate feature enables you to scale cubes by the same number on all axes (in all directions), while keeping the UV mapping intact regardless of the UV mode (per-face or box UV). The Inflate slider can be found next to the Size sliders in the Element panel.
 
-![Inflate](/images/wiki/guides/blockbench_guide/inflate.png)
+![Inflate](/images/wiki/guides/as_guide/inflate.png)
 
 ### Z-Fighting
 The Z-buffer is a technology of managing the image depth coordinates in 3D graphics, which helps distinguish objects that are rendered from those hidden behind them. Z-fighting is an artifact that occurs due to coplanar cubes (or cubes that are almost coplanar) sharing the same Z-value. It results in fragments of both faces being rendered. To avoid it, the cubes can be moved away from the conflict if the geometry allows it (1) or one of them can be inflated/deflated (2).
 
-![Z-Fighting](/images/wiki/guides/blockbench_guide/z_fighting.png)
+![Z-Fighting](/images/wiki/guides/as_guide/z_fighting.png)
 
 ### Transform
 
-![Transform](/images/wiki/guides/blockbench_guide/transform.png)
+![Transform](/images/wiki/guides/as_guide/transform.png)
 
 The Rotate feature enables you to turn the selected elements by 90° in either direction on any axis. In per-face UV mapping, the mapping of the faces stays intact after performing the rotate action. Box UV cannot preserve the mapping, so it is usually better to use bones for rotating a larger quantity of elements together.
 
@@ -224,7 +219,7 @@ The Textures Panel contains a list of all imported textures and two actions - Im
 The Color Panel contains the Color Bar (with the selected color and its HEX value displayed, as well as Color History). Below it, there are three tabs: Picker (which shows the HSV color picker), Palette (which shows the palette with options to import, export, generate, sort and load a palette) and Both (which shows both the HSV color picker and the palette at the same time). The HSV Color Picker, aside from the hue ribbon and saturation/value coordinate system, contains the HSV sliders and two actions - Add To Palette and Pick Screen Color.
 
 ### Tools & Actions
-![Paint Main Toolbar](/images/wiki/guides/blockbench_guide/paint_main_toolbar.png)
+![Paint Main Toolbar](/images/wiki/guides/as_guide/paint_main_toolbar.png)
 
 Tools that can be found on the Main Toolbar in Paint Mode:
 * Paint Brush: Paint on surfaces of the model or in the UV Editor.
@@ -243,7 +238,7 @@ Actions to speed up the texturing process:
 * Painting Grid: Toggle the pixel grid that covers the textured parts of the model.
 
 ### Texture Preview
-You can use an external image editor and use Blockbench for live 3D preview. For regular pixel art textures, you can directly use Blockbench's pixel art tools without the need for external software.
+You can use an external image editor and use AS for live 3D preview. For regular pixel art textures, you can directly use AS's pixel art tools without the need for external software.
 
 ## Animate Mode
 
@@ -258,7 +253,7 @@ The Timeline gives an overview of the animation and its properties. It consists 
 
 ### Timeline Header
 
-![Timeline Header](/images/wiki/guides/blockbench_guide/timeline_header.png)
+![Timeline Header](/images/wiki/guides/as_guide/timeline_header.png)
 
 In the Timeline Header there are several actions for adjusting the Timeline and previewing the animation.
 * Toggle Graph Editor: switch between Keyframe View and Graph Editor View
@@ -272,7 +267,7 @@ In the Timeline Header there are several actions for adjusting the Timeline and 
 
 ### Timeline Main View
 
-![Timeline Main View](/images/wiki/guides/blockbench_guide/timeline_main_view.png)
+![Timeline Main View](/images/wiki/guides/as_guide/timeline_main_view.png)
 
 The Time Ruler is the strip (at the top of the Main View) that graphically represents time using equally spaced markings (units of time). The blue square bracket on the Time Ruler indicates the end of the animation.
 
@@ -293,7 +288,7 @@ The Scrollbar at the bottom of the panel lets you pan the Main View.
 ### Actions
 "Copy" and "Paste" actions allow you to transfer the values from one Slot to another. The "Apply Preset" action offers a list of default values for different purposes (e.g. items, blocks...). The "New Preset" action is used for adding your own presets (defined values for one or more slots) to the list.
 
-![Display Actions](/images/wiki/guides/blockbench_guide/display_actions.png)
+![Display Actions](/images/wiki/guides/as_guide/display_actions.png)
 
 ### Slots
 The rotation, translation and scale of the model can be defined separately for each slot.

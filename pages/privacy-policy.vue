@@ -4,7 +4,7 @@
 			
 			<h1>Privacy Policy</h1>
 			
-			<p>Last updated: April 27, 2023</p>
+			<p>Last updated: September 26, 2025</p>
 			<p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
 			<p>We use certain data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy.</p>
 			
@@ -16,10 +16,10 @@
 			<p>For the purposes of this Privacy Policy:</p>
 			<ul>
 			<li>
-			<p><strong>Application</strong> means the software program provided by the Company downloaded by You on any electronic device, named Blockbench</p>
+			<p><strong>Application</strong> means the software program provided by the Company downloaded by You on any electronic device, named AS</p>
 			</li>
 			<li>
-			<p><strong>Company</strong> (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to Blockbench.net.</p>
+			<p><strong>Company</strong> (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to AS.net.</p>
 			</li>
 			<li>
 			<p><strong>Cookies</strong> are small files that are placed on Your computer, mobile device or any other device by a website, containing the details of Your browsing history on that website among its many uses.</p>
@@ -37,7 +37,7 @@
 			<p><strong>Service Provider</strong> means any natural or legal person who processes the data on behalf of the Company. It refers to third-party companies or individuals employed by the Company to facilitate the Service, to provide the Service on behalf of the Company, to perform services related to the Service or to assist the Company in analyzing how the Service is used.</p>
 			</li>
 			<li>
-			<p><strong>Website</strong> refers to Blockbench.net, accessible from <a href="https://blockbench.net" rel="external nofollow noopener" target="_blank">https://blockbench.net</a></p>
+			<p><strong>Website</strong> refers to AS main website, accessible from <a href="https://ai-stomatology.tech" rel="external nofollow noopener" target="_blank">https://ai-stomatology.tech</a></p>
 			</li>
 			<li>
 			<p><strong>You</strong> means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.</p>
@@ -47,7 +47,7 @@
 			<h2>Data Collection</h2>
 			<p>We do not knowingly collect any personally identifiable data. We may collect certain anonymized usage data such as installation count that can not be traced back to an individual Device or User.</p>
 
-			<p>If you choose to use the Model Sharing feature (in Blockbench under File > Export > Share...), we will store your model data for the amount of time that was selected by You. You can contact Us if you would like your data to be removed ahead of time.</p>
+			<p>If you choose to use the Model Sharing feature (in AS under File > Export > Share...), we will store your model data for the amount of time that was selected by You. You can contact Us if you would like your data to be removed ahead of time.</p>
 			
 			<p>The security of Your Data is important to Us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While We strive to use commercially acceptable means to protect Your Data, We cannot guarantee its absolute security.</p>
 			
@@ -73,7 +73,7 @@
 			<h2>Contact Us</h2>
 			<p>If you have any questions about this Privacy Policy, You can contact us:</p>
 			<ul>
-				<li>By email: info (at) blockbench dot net</li>
+				<li>By email: info (at) ai-stomatology dot tech</li>
 			</ul>
 		</div>
 	</div>

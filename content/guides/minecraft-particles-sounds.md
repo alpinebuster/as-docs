@@ -2,13 +2,13 @@
 title: Particles and Sounds in MC Bedrock
 description: How to add particles and sounds effects to animations for Minecraft Bedrock Edition
 authors:
-  - JannisX11
+  - alpinebuster
 ---
 
 
 # Particles and Sounds in Minecraft: Bedrock Edition
 
-Blockbench allows users to add particle effects and sounds to animations, preview them, and export them to Minecraft: Bedrock Edition. This guide will teach you how to do just that.
+AS allows users to add particle effects and sounds to animations, preview them, and export them to Minecraft: Bedrock Edition. This guide will teach you how to do just that.
 
 ## Adding Effect Keyframes
 Sounds and particle effects are cued by keyframes. To enable the effect animator, press the "Animate Effects" button above the timeline. In the effects animator, you can add various types of keyframes
@@ -18,13 +18,13 @@ Sounds and particle effects are cued by keyframes. To enable the effect animator
 - Instruction keyframes allow you to run arbitracy MoLang expressions on the entity at any time during the animation.
   This can be used to modify variables in order to switch textures or change other rendering properties.
 
-![Effect animator in Blockbench](/images/wiki/guides/effect-animator.png)
+![Effect animator in AS](/images/wiki/guides/effect-animator.png)
 
 ## Previewing Effects
 
 Once you have added a keyframe, use the "Select Keyframe File" button in the keyframe panel to select a file for the preview.
 For sound effects, this must be an .ogg audio file. For particle files, it must be a .json particle file.
-Once loaded, the effects will preview inside Blockbench.
+Once loaded, the effects will preview inside AS.
 
 For particle effects, you can also select a locator from your model in the keyframe panel. The particle effect will be attached to that specific locator, even if the position of the locator animates. For particle effects, you can also define a script. This script will run when the particle effect is created. Note that in-game the query namespace relates to the entity while the variable namespace exclusively references variables on the particle emitter.
 
@@ -87,10 +87,10 @@ The effect identifier is used to reference a particle effect or sound somewhere 
 }
 ```
 
-### Using the short name in Blockbench
+### Using the short name in AS
 
-Now that the short name is defined, we can use it in the animation. Simply enter the short name into the "Effect" input in the keyframe panel in Blockbench.
+Now that the short name is defined, we can use it in the animation. Simply enter the short name into the "Effect" input in the keyframe panel in AS.
 
-![Keyframe panel in Blockbench with short name placed into the effect input](/images/wiki/guides/keyframe-panel.png)
+![Keyframe panel in AS with short name placed into the effect input](/images/wiki/guides/keyframe-panel.png)
 
 Now the sound or particle effect should work inside Minecraft!

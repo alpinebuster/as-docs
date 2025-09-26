@@ -1,7 +1,7 @@
 <script>
 	export default {
 		fetch({ params, redirect }) {
-			redirect(301, "/wiki/blockbench/localization");
+			redirect(301, "/wiki/as/localization");
 		}
 	};
 </script>

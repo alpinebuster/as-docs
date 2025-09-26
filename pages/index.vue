@@ -2,82 +2,25 @@
 	<div>
 		<section class="download">
 			<content class="content">
-				<img id="main_logo" src="~assets/blockbench_logo_text_white.svg" alt="Blockbench" height="72px" />
+				<img id="main_logo" src="~assets/as_logo_text_white.svg" alt="AS" height="128px" />
 
-				<h3>A low-poly 3D model editor</h3>
+				<h3>A tooth model editor with the power of AI and WASM</h3>
 
 				<div class="buttons">
 					<button><a href="/downloads">Download</a></button>
-					<button class="webapp"><a href="https://web.blockbench.net" target="_blank" rel="noopener">Open Web App</a></button>
+					<button class="webapp"><a href="https://web.ai-stomatology.tech" target="_blank" rel="noopener">Open Web App</a></button>
 				</div>
 
-				<img id="front_page_app" src="~assets/front_page_app.png" alt="Blockbench Interface" />
-			</content>
-		</section>
-		
-		<section class="showcase">
-			<content class="content">
-				<h2>Made in Blockbench!</h2>
-				<div id="sketchfab_viewer" v-if="!sketchfab_cookies_accepted">
-					<h4>View awesome Blockbench models in 3D!</h4>
-					<p>The viewer is powered by Sketchfab and uses Sketchfab cookies. To learn more, check out the <a href="https://sketchfab.com/privacy" target="_blank" rel="noopener noreferrer">Sketchfab Privacy Policy</a>.</p>
-					<button @click="acceptSketchfabCookies()">Accept and View Models</button>
-				</div>
-				<iframe v-else id="sketchfab_viewer" title="Sketchfab Model Gallery" width="1000" height="720" :src="sketchfab_cookies_accepted ? 'https://sketchfab.com/playlists/embed?collection=98346534947c4e229ced71854c9ede1a&autostart=0' : ''"
-					frameborder="0" allow="autoplay; fullscreen; vr" allowvr=""
-					allowfullscreen="" mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""
-				></iframe>
-			</content>
-		</section>
-
-		<section class="users">
-			<content class="content">
-				<h2>Who's using Blockbench</h2>
-				<div id="blockbench_user_list">
-					<a href="https://everbloomgames.com/" target="_blank" rel="noopener">
-						<img class="logo_light_mode" src="~assets/companies/everbloom.svg" alt="Everbloom Games Logo">
-						<img class="logo_dark_mode" src="~assets/companies/everbloom_dark.svg" alt="Everbloom Games Logo">
-						Everbloom Games
-					</a>
-					<a href="https://minecraft.net" target="_blank" rel="noopener">
-						<img src="~assets/companies/mccb_logo_primary.png" alt="Mojang Studios Logo">
-						Mojang Studios
-					</a>
-					<a href="https://goblinzstudio.com/game/dungeon-tycoon/" target="_blank" rel="noopener">
-						<img src="~assets/companies/dungeon_tycoon.png" alt="Dungeon Tycoon Logo">
-						Dungeon Tycoon
-					</a>
-					<a href="https://www.cyclone.games" target="_blank" rel="noopener">
-						<img src="~assets/companies/cyclone.svg" alt="Cyclone Logo">
-						Cyclone
-					</a>
-					<a href="https://sparkuniverse.com" target="_blank" rel="noopener">
-						<img src="~assets/companies/spark_logo.png" alt="Spark Universe Logo">
-						Spark Universe
-					</a>
-					<a href="https://noxcrew.com" target="_blank" rel="noopener">
-						<img src="~assets/companies/noxcrew.png" alt="Noxcrew Logo">
-						Noxcrew
-					</a>
-					<a href="https://orevillestudios.com" class="oreville_studios" target="_blank" rel="noopener">
-						<img src="~assets/companies/oreville_studios_logo.svg" alt="Oreville Studios Logo">
-						Oreville Studios
-					</a>
-					<a href="https://www.gamemodeone.com" target="_blank" rel="noopener">
-						<img src="~assets/companies/gamemodeone.svg" alt="Gamemode One Logo">
-						Gamemode One
-					</a>
-					<p>...and many more!</p>
-				</div>
+				<img id="front_page_app" src="~assets/front_page_app.png" alt="AS Interface" />
 			</content>
 		</section>
 		
 		<section class="features">
 			<content class="content split">
 				<div class="text_body">
-					<h3>Low-poly Modeling</h3>
-					<p>Blockbench puts all the tools at your disposal to make the creation process of low-poly models as easy as possible.</p>
-					<p>Use cuboids to get that Minecraft aesthetic, or create complex low-poly shapes using the mesh modeling tools!</p>
+					<h3>Mesh Modeling</h3>
+					<p>AS puts all the tools at your disposal to make the creation process of models as easy as possible.</p>
+					<p>Use cuboids to get that aesthetic, or create complex shapes using the mesh modeling tools!</p>
 				</div>
 				<div>
 					<img src="~assets/features/flower_pot.png" alt="Modeling Illustration" />
@@ -88,7 +31,7 @@
 				<div class="text_body">
 					<h3>Texturing Tools</h3>
 					<p>Create, edit and paint texture right inside the program. Create or import palettes, paint, or draw shapes.</p>
-					<p>Blockbench can automatically create a UV map and template for your model so that you can start painting right away.</p>
+					<p>AS can automatically create a UV map and template for your model so that you can start painting right away.</p>
 					<p>You can paint directly on the model in 3D space, use the 2D texture editor, or connect your favorite external image editor or pixel art software.</p>
 				</div>
 				<div>
@@ -99,8 +42,8 @@
 			<content class="content split">
 				<div class="text_body">
 					<h3>Animations</h3>
-					<p>Blockbench comes with a powerful animation editor. Rig your model, then use position, rotation and scale keyframes to bring it to life. Use the graph editor to fine-tune your creation.</p>
-					<p><a target="_blank" rel="noopener" href="https://sketchfab.com/jannisx11/collections/blockbench-animations">View Blockbench animations...</a></p>
+					<p>AS comes with a powerful animation editor. Rig your model, then use position, rotation and scale keyframes to bring it to life. Use the graph editor to fine-tune your creation.</p>
+					<p><a target="_blank" rel="noopener" href="https://ai-stomatology.tech/collections/as-animations">View AS animations...</a></p>
 				</div>
 				<div>
 					<img src="~assets/features/animation.png" alt="Animation Illustration" />
@@ -110,10 +53,10 @@
 			<content class="content split">
 				<div class="text_body">
 					<h3>Plugins</h3>
-					<p>Customize Blockbench with the built-in plugin store.</p>
-					<p>Plugins extend the functionality of Blockbench beyond what it's already capable of. They add new tools, support for new export formats, or model generators.</p>
-					<p>You can also create your own plugin to extend Blockbench or to support your own format.</p>
-					<p><nuxt-link to="/plugins">Browse Blockbench plugins...</nuxt-link></p>
+					<p>Customize AS with the built-in plugin store.</p>
+					<p>Plugins extend the functionality of AS beyond what it's already capable of. They add new tools, support for new export formats, or model generators.</p>
+					<p>You can also create your own plugin to extend AS or to support your own format.</p>
+					<p><nuxt-link to="/plugins">Browse AS plugins...</nuxt-link></p>
 				</div>
 				<div>
 					<img src="~assets/features/plugins.png" alt="Plugin Illustration" />
@@ -122,13 +65,26 @@
 
 			<content class="content split">
 				<div class="text_body">
-					<h3>Free & Open Source</h3>
-					<p>Blockbench is free to use for any type of project, forever, no strings attached.</p>
-					<p>The project is open source under the GPL license.</p>
-					<p><a target="_blank" rel="noopener" href="https://github.com/JannisX11/blockbench">View the source code...</a></p>
+					<h3>Free</h3>
+					<p>AS is free to use for any type of project, forever, no strings attached.</p>
+					<p>The project is under the GPL license.</p>
 				</div>
 				<div>
-					<img src="~assets/features/open_source.png" alt="Open Source Illustration" />
+					<img src="~assets/features/open_source.png" alt="Free Illustration" />
+				</div>
+			</content>
+		</section>
+
+		<section class="users">
+			<content class="content">
+				<h2>Who's using AS</h2>
+				<div id="as_user_list">
+					<a href="https://alpinebuster.top/" target="_blank" rel="noopener">
+						<img class="logo_light_mode" src="~assets/companies/hxkq_horizontal_bg.png" alt="HXKQ Logo">
+						<img class="logo_dark_mode" src="~assets/companies/hxkq_horizontal_logo.png" alt="HXKQ Logo">
+						HXKQ
+					</a>
+					<p>...and many more!</p>
 				</div>
 			</content>
 		</section>
@@ -257,7 +213,7 @@ export default {
 		background-color: var(--light-background);
 		text-align: center;
 	}
-	#blockbench_user_list > a {
+	#as_user_list > a {
 		display: inline-block;
 		height: 110px;
 		min-width: 220px;
@@ -267,27 +223,27 @@ export default {
 		color: var(--light-subtle);
 		transition: background-color 300ms ease, transform 300ms ease;
 	}
-	#blockbench_user_list {
+	#as_user_list {
 		text-align: center;
 	}
-	#blockbench_user_list > a:hover {
+	#as_user_list > a:hover {
 		background-color: var(--light-ui);
 		transform: translateY(-3px);
 	}
-	#blockbench_user_list > a > img {
+	#as_user_list > a > img {
 		height: 60px;
 		display: block;
 		margin: auto;
 		margin-bottom: 4px;
 	}
 
-	.dark-mode #blockbench_user_list .oreville_studios img {
+	.dark-mode #as_user_list .oreville_studios img {
 		filter: invert(1);
 	}
-	html:not(.dark-mode) #blockbench_user_list img.logo_dark_mode {
+	html:not(.dark-mode) #as_user_list img.logo_dark_mode {
 		display: none;
 	}
-	html.dark-mode #blockbench_user_list img.logo_light_mode {
+	html.dark-mode #as_user_list img.logo_light_mode {
 		display: none;
 	}
 

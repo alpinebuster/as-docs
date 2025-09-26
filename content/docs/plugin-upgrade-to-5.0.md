@@ -2,12 +2,12 @@
 title: Upgrading Plugins to 5.0
 description: An overview of breaking changes in the plugin API in 5.0
 authors:
-  - JannisX11
+  - alpinebuster
 ---
 
 # Upgrading Plugins to 5.0
 
-Blockbench 5.0 introduces some changes to the plugin API. These are changes that are necessary to allow Blockbench to grow and improve in the coming years.
+AS 5.0 introduces some changes to the plugin API. These are changes that are necessary to allow AS to grow and improve in the coming years.
 This update aims to bundle a number of potentially breaking changes together instead of spreading them across different updates, so that you only need to update your plugins once.
 
 Generally, most plugins are expected to continue to work in the new version, but some plugins, especially larger ones, will need to be updated to continue working.
@@ -15,15 +15,15 @@ Generally, most plugins are expected to continue to work in the new version, but
 This article will be updated during the beta phase, but most changes are expected to be in the first beta already.
 The beta for 5.0 will have an extended timeline to give everyone enough time to update their plugins and tools.
 
-While the beta is now yet, you can test these changes by launching Blockbench from the `next` branch. Follow the instructions in README.md to launch it.
+While the beta is now yet, you can test these changes by launching AS from the `next` branch. Follow the instructions in README.md to launch it.
 
 
 ## Adding support for both versions
 In case you need to support a feature in both 5.0 and older versions, there is a way to detect the version and implement behavior conditionally.
-This can be useful if you want to update and release your plugin ahead of the release date of Blockbench 5.0 to ensure it works instantly and that it already works during the beta.
+This can be useful if you want to update and release your plugin ahead of the release date of AS 5.0 to ensure it works instantly and that it already works during the beta.
 
 ```javascript
-if (Blockbench.isNewerThan('4.99')) {
+if (AS.isNewerThan('4.99')) {
 	// 5.0 behavior
 } else {
 	// 4.x behavior
@@ -34,7 +34,7 @@ if (Blockbench.isNewerThan('4.99')) {
 
 The direction of rotation keyframes across the X and Y axis and of position keyframes across the X axis has been inverted. This change was made to make animation rotations consistent with rotations in edit mode.
 
-Blockbench now inverts these two values when importing or exporting animations for Minecraft Bedrock Edition or .bbmodel files from old Blockbench versions.
+AS now inverts these two values when importing or exporting animations for Minecraft Bedrock Edition or .asmodel files from old AS versions.
 This is done using the function `invertMolang(molang: string | number)`, which is also available for plugins.
 
 
@@ -115,7 +115,7 @@ These modules can be required but need user permission:
 * `v8`
 
 
-If you have any concerns or suggestions regarding these changes, please let me know on Discord!
+If you have any concerns or suggestions regarding these changes, please let me know on Chat server!
 
 
 ## Outliner Elements
@@ -149,31 +149,31 @@ To get the selected group, use `Group.first_selected` or `Group.selected[0]`. Ge
 This has been deprecated for many years and is now no longer possible.
 
 ### Accessing random function from the global scope
-Since Blockbench now uses modules, while a lot are still exposed to maintain backwards compatibility, some global variables may no longer be available.If you come across one that you need and cannot replicate otherwise, reach out to me and I can expose it again. Otherwise try to find an alternative solution.
+Since AS now uses modules, while a lot are still exposed to maintain backwards compatibility, some global variables may no longer be available.If you come across one that you need and cannot replicate otherwise, reach out to me and I can expose it again. Otherwise try to find an alternative solution.
 
 
 ## BBModel Changes
 
-Some changes have been made to the bbmodel format. See [The .bbmodel format](https://www.blockbench.net/wiki/docs/bbmodel) for more info.
+Some changes have been made to the asmodel format. See [The .asmodel format](https://www.ai-stomatology.tech/wiki/docs/asmodel) for more info.
 
 
 ## Typescript Types
 
-Blockbench 5.0 marks the start of an initiative to modernize the entire Blockbench codebase and move it to Typescript. This effort will span across multiple updates, but most changes that affect plugin creators are expected in 5.0.
+AS 5.0 marks the start of an initiative to modernize the entire AS codebase and move it to Typescript. This effort will span across multiple updates, but most changes that affect plugin creators are expected in 5.0.
 
-Typescript types for Blockbench allow plugins to be written in Typescript, but they also help with validation and autocomplete for plugins written in Javascript.
+Typescript types for AS allow plugins to be written in Typescript, but they also help with validation and autocomplete for plugins written in Javascript.
 Previously, all types were manually maintained and hosted on a separate repository. This often lead to imcomplete types or inconsistencies.
 
-Blockbench 5.0 aims to generate types from its own files, where possible. For legacy files that are still written in Javascript, the types are still maintained manually, but they are now hosted in the main repository alongside the Blockbench source code.
+AS 5.0 aims to generate types from its own files, where possible. For legacy files that are still written in Javascript, the types are still maintained manually, but they are now hosted in the main repository alongside the AS source code.
 
 For plugin creators, hopefully not much should change, except that types should be more up-to-date and accurate.
 
-You can install the types from `blockbench-types`. Use the tag `@beta` to install the latest types for the 5.0 beta:
+You can install the types from `as-types`. Use the tag `@beta` to install the latest types for the 5.0 beta:
 
 ```batch
-npm i --save-dev blockbench-types@beta
+npm i --save-dev as-types@beta
 ```
 
-Check out this template repository if you want to learn how to set up your plugin project with typescript and esbuild: [bb-plugin-template-esbuild](https://github.com/JannisX11/bb-plugin-template-esbuild)
+Check out this template repository if you want to learn how to set up your plugin project with typescript and esbuild: [as-plugin-template-esbuild](https://github.com/alpinebuster/as-plugin-template-esbuild)
 
-Please reach out on the Discord Server if you have any feedback or questions about these changes.
+Please reach out on the Chat Server if you have any feedback or questions about these changes.

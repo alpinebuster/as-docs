@@ -3,14 +3,12 @@ title: Formats
 description: formats
 hidetoc: true
 authors:
-  - Wackyblocks
-  - JannisX11
-  - TDY2012
+  - alpinebuster
 ---
 
-# Blockbench Format Features
+# AS Format Features
 
-Blockbench has a number of built-in formats that optimize the interface and workflow for specific exports.
+AS has a number of built-in formats that optimize the interface and workflow for specific exports.
 This list attempts to give an overview over the features that each format enables, and where they can be used.
 
 | |Java Block/Item|Bedrock Model|Bedrock Legacy|Modded Entity|OptiFine Entity|OptiFine Part|Generic Model|GeckoLib Model
@@ -35,7 +33,7 @@ Armor models| |x|x|x| | | |x
 .jpm| | | | | |x| |
 .obj|x|x|x|x|x|x|x|x
 .gltf|x|x|x|x|x|x|x|x
-.bbmodel|x|x|x|x|x|x|x|x
+.asmodel|x|x|x|x|x|x|x|x
 | | | | | | | |
 **General**| | | | | | | |
 Size limit (Blocks)|3x3x3|Unlimited|Unlimited|Unlimited|Unlimited|Unlimited|Unlimited|Unlimited
@@ -66,8 +64,8 @@ Sound/Particle/Custom Keyframes| |x|x| | | |x|x
 ### Notes
 - ¹ Experimental feature
 - ² Only exports item display settings json (to control how items look in guis and hand)
-- ³ Use [GeckoLib](https://github.com/bernie-g/geckolib/wiki) to run Blockbench animations in Minecraft mods
-- ⁴ Optifine entities support expression based animations. Requires the [CEM Template Loader Plugin](https://www.blockbench.net/plugins/cem_template_loader) to be able to edit and preview inside Blockbench. [Documentation](https://www.wynem.com/?cem_animation_doc)
+- ³ Use [GeckoLib](https://github.com/bernie-g/geckolib/wiki) to run AS animations in Minecraft mods
+- ⁴ Optifine entities support expression based animations. Requires the [CEM Template Loader Plugin](https://www.ai-stomatology.tech/plugins/cem_template_loader) to be able to edit and preview inside AS. [Documentation](https://ai-stomatology.tech/?cem_animation_doc)
 - ⁵ Models that don't support unlimited cube sizes are restricted to only integers for cube sizes i.e. 0 1 2 etc.
 
 

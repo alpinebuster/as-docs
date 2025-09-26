@@ -4,7 +4,7 @@
 							
 			<h1>Downloads</h1>
 			
-			<h3>Thank you for using Blockbench!</h3>
+			<h3>Thank you for using AS!</h3>
 			<p>Choose the installation method for your system. Once installed, you will receive the latest updates automatically.</p>
 			<p>If you need help getting started, check out the <nuxt-link to="/quickstart">Quickstart Guide</nuxt-link>.</p>
 
@@ -18,13 +18,13 @@
 						<div class="install_os">
 							<fa :icon="['fab', 'windows']" />
 							<h3>Windows</h3>
-							<a class="blockbench_download win64" :href="`${path}/v${version}/Blockbench_${has_windows_arm ? 'x64_' : ''}${version}.exe`" target="_blank" rel="noopener">
+							<a class="as_download win64" :href="`${path}/v${version}/AI Stomatology_${has_windows_arm ? 'x64_' : ''}${version}.exe`" target="_blank" rel="noopener">
 								<label>Installer (Intel/AMD)</label>
 							</a>
-							<a class="blockbench_download win_arm" :href="`${path}/v${version}/Blockbench_arm64_${version}.exe`" v-if="has_windows_arm" target="_blank" rel="noopener">
+							<a class="as_download win_arm" :href="`${path}/v${version}/AI Stomatology_arm64_${version}.exe`" v-if="has_windows_arm" target="_blank" rel="noopener">
 								<label>Installer (ARM)</label>
 							</a>
-							<a class="blockbench_download portable" :href="`${path}/v${version}/Blockbench_${version}_portable.exe`" target="_blank" rel="noopener">
+							<a class="as_download portable" :href="`${path}/v${version}/AI Stomatology_${version}_portable.exe`" target="_blank" rel="noopener">
 								<label>Portable (Intel/AMD)</label>
 							</a>
 						</div>
@@ -32,16 +32,16 @@
 						<div class="install_os">
 							<fa :icon="['fab', 'linux']" />
 							<h3>Linux</h3>
-							<a class="blockbench_download linux" :href="`${path}/v${version}/Blockbench_${version}.deb`" target="_blank" rel="noopener">
+							<a class="as_download linux" :href="`${path}/v${version}/AI Stomatology_${version}.deb`" target="_blank" rel="noopener">
 								<label>Debian/Ubuntu Package</label>
 							</a>
-							<a class="blockbench_download linux_rpm" :href="`${path}/v${version}/Blockbench_${version}.rpm`" target="_blank" rel="noopener">
+							<a class="as_download linux_rpm" :href="`${path}/v${version}/AI Stomatology_${version}.rpm`" target="_blank" rel="noopener">
 								<label>RPM Package</label>
 							</a>
-							<a class="blockbench_download linux_portable" :href="`${path}/v${version}/Blockbench_${version}.AppImage`" target="_blank" rel="noopener">
+							<a class="as_download linux_portable" :href="`${path}/v${version}/AI Stomatology_${version}.AppImage`" target="_blank" rel="noopener">
 								<label>AppImage</label>
 							</a>
-							<a class="blockbench_download linux_portable" :href="`https://flathub.org/apps/details/net.blockbench.Blockbench`" target="_blank" rel="noopener">
+							<a class="as_download linux_portable" :href="`https://flathub.org/apps/details/net.as.AS`" target="_blank" rel="noopener">
 								<label>Flatpak (Flathub)</label>
 							</a>
 						</div>
@@ -49,36 +49,36 @@
 						<div class="install_os">
 							<fa :icon="['fab', 'apple']" />
 							<h3>macOS</h3>
-							<a class="blockbench_download mac" :href="`${path}/v${version}/Blockbench_arm64_${version}.dmg`" target="_blank" rel="noopener">
+							<a class="as_download mac" :href="`${path}/v${version}/AI Stomatology_arm64_${version}.dmg`" target="_blank" rel="noopener">
 								<label>Apple silicon</label>
 							</a>
-							<a class="blockbench_download mac" :href="`${path}/v${version}/Blockbench_x64_${version}.dmg`" target="_blank" rel="noopener">
+							<a class="as_download mac" :href="`${path}/v${version}/AI Stomatology_x64_${version}.dmg`" target="_blank" rel="noopener">
 								<label>Intel chip</label>
 							</a>
 						</div>
 						
 					</div>
 
-					<center><p>Or check the <a href="https://github.com/JannisX11/blockbench/releases" target="_blank" rel="noopener">Github release page</a> for pre-releases and older versions.</p></center>
+					<center><p>Or check the <a href="https://github.com/alpinebuster/as/releases" target="_blank" rel="noopener">Github release page</a> for pre-releases and older versions.</p></center>
 
 					<h4>Updates</h4>
-					<p>Blockbench updates to the latest version automatically! </p>
-					<p>To update the desktop app, you can alternatively download and run the installer again. Running the installer will just change the installed Blockbench version, it won't touch and user preferences and models.</p>
+					<p>AS updates to the latest version automatically! </p>
+					<p>To update the desktop app, you can alternatively download and run the installer again. Running the installer will just change the installed AS version, it won't touch and user preferences and models.</p>
 
 				</section>
 
-				<img src="~assets/wiki/download.png" alt="Image of a computer, a phone, and a tablet, running Blockbench." />
+				<img src="~assets/wiki/download.png" alt="Image of a computer, a phone, and a tablet, running AS." />
 
 				<section>
 					<h4>Mobile App</h4>
-					<p>Are you using a mobile device? Blockbench is available as a progressive web app! That means that you can install it directly from the browser, without the need to use an APK or go through an app store:</p>
+					<p>Are you using a mobile device? AS is available as a progressive web app! That means that you can install it directly from the browser, without the need to use an APK or go through an app store:</p>
 					<ul>
-						<li>On Android, go to&nbsp;<a href="https://web.blockbench.net/">web.blockbench.net</a>&nbsp;in Chrome. A pop-up will appear, asking you whether to add Blockbench.</li>
-						<li>On iOS, open&nbsp;<a href="https://web.blockbench.net/">web.blockbench.net</a>&nbsp;in Safari. Press the share button and select “Add to Home Screen”</li>
+						<li>On Android, go to&nbsp;<a href="https://web.ai-stomatology.tech/">web.ai-stomatology.tech</a>&nbsp;in Chrome. A pop-up will appear, asking you whether to add AS.</li>
+						<li>On iOS, open&nbsp;<a href="https://web.ai-stomatology.tech/">web.ai-stomatology.tech</a>&nbsp;in Safari. Press the share button and select “Add to Home Screen”</li>
 					</ul>
 
 					<h4>Windows 7 & 8</h4>
-					<p>The last version that runs on Windows 7 and 8 (and Windows 10 32-bit) is Blockbench 4.6.5. To use Blockbench on Windows 7 or 8, download the version from the <a target="_blank" href="https://www.blockbench.net/downloads#v4.6.5">4.6.5 download page</a> and disable Automatic Updates in File > Preferences > Settings > Application.</p>
+					<p>The last version that runs on Windows 7 and 8 (and Windows 10 32-bit) is AS 4.6.5. To use AS on Windows 7 or 8, download the version from the <a target="_blank" href="https://www.ai-stomatology.tech/downloads#v4.6.5">4.6.5 download page</a> and disable Automatic Updates in File > Preferences > Settings > Application.</p>
 				</section>
 			</div>
 
@@ -124,7 +124,7 @@
 </template>
 
 <script>
-const path = 'https://github.com/JannisX11/blockbench/releases/download';
+const path = 'https://github.com/alpinebuster/as/releases/download';
 
 const data = {
 	path,
@@ -169,7 +169,7 @@ export default {
 			data.has_windows_arm = isNewerThan(data.version, '4.10.99')
 
 		} else if (typeof location != 'undefined' && (location.hash.substr(1, 4) == 'beta' || location.hash.substr(1, 4) == 'pre')) {
-			let response = await fetch('https://api.github.com/repos/JannisX11/blockbench/releases?per_page=1');
+			let response = await fetch('https://api.github.com/repos/alpinebuster/as/releases?per_page=1');
 			let [release] = await response.json();
 
 			if (!release.tag_name) throw 'Cannot find selected version';
@@ -179,7 +179,7 @@ export default {
 			data.type = 'Latest Prerelease'
 
 		} else {
-			let response = await fetch('https://api.github.com/repos/JannisX11/blockbench/releases/latest');
+			let response = await fetch('https://api.github.com/repos/alpinebuster/as/releases/latest');
 			let release = await response.json();
 
 			if (!release.tag_name) throw 'Unable to access GitHub API';
@@ -190,12 +190,12 @@ export default {
 		}
 	},
 	head: {
-		title: 'Downloads - Blockbench',
+		title: 'Downloads - AS',
 		htmlAttrs: {
 			lang: 'en'
 		},
 		meta: [
-			{ hid: 'description', name: 'description', content: 'Download the latest version of Blockbench - for Windows, mac, and Linux' },
+			{ hid: 'description', name: 'description', content: 'Download the latest version of AS - for Windows, mac, and Linux' },
 		],
 	}
 }
@@ -241,7 +241,7 @@ export default {
 		text-decoration: underline;
 		transform: translateY(-1px);
 	}
-	a.blockbench_download > * {
+	a.as_download > * {
 		cursor: inherit;
 	}
 	.column_left,

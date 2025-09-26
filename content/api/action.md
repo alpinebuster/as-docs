@@ -6,7 +6,7 @@ title: Action
 ## BarItems
 #### Global Variable
 
-Type: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L9)
+Type: [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L9)
 
 
 ## Keybind
@@ -31,7 +31,7 @@ Create a keybind
 | ctrl | *boolean* |  |
 | shift | *boolean* |  |
 | alt | *boolean* |  |
-| variations | [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L51) |  |
+| variations | [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L51) |  |
 
 ### set( keys )
 ##### Arguments:
@@ -155,7 +155,7 @@ Extends: [Deletable](misc#deletable)
 
 Extended by: [BarItem](action#baritem), [Mode](mode#mode-1)
 
-<reference path="./blockbench.d.ts"/>
+<reference path="./as.d.ts"/>
 
 ### new KeybindItem( id, options )
 Creates a new KeybindItem
@@ -164,13 +164,13 @@ Creates a new KeybindItem
 * `id`: *string*
 * `options`: KeybindItemOptions
 	* `keybind`: [Keybind](action#keybind) (Optional)
-	* `variations`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L124) (Optional)
+	* `variations`: [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L124) (Optional)
 
 
 | Property | Type | Description |
 | -------- | ---- | ----------- |
 | keybind | [Keybind](action#keybind) |  |
-| variations | [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L131) |  |
+| variations | [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L131) |  |
 
 ### delete()
 
@@ -199,11 +199,11 @@ Creates a new BarItem
 ##### Arguments:
 * `id`: *string*
 * `options`: BarItemOptions
-	* `variations`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L124) (Optional)
+	* `variations`: [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L124) (Optional)
 	* `name`: *string* (Optional)
 	* `description`: *string* (Optional)
 	* `icon`: *string* (Optional)
-	* `condition`: [ConditionResolvable](https://github.com/JannisX11/blockbench-types/blob/main/types/util.d.ts#L1) (Optional)
+	* `condition`: [ConditionResolvable](https://github.com/as/as-types/blob/main/types/util.d.ts#L1) (Optional)
 	* `category`: *string* (Optional)
 	* `keybind`: [Keybind](action#keybind) (Optional)
 
@@ -214,7 +214,7 @@ Creates a new BarItem
 | Property | Type | Description |
 | -------- | ---- | ----------- |
 | keybind | [Keybind](action#keybind) |  |
-| variations | [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L131) |  |
+| variations | [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L131) |  |
 | id | *string* |  |
 | node | [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) |  |
 | nodes | Array of [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) |  |
@@ -280,24 +280,24 @@ Returns: [BarItem](action#baritem)
 Adds an event listener to the item
 
 ##### Arguments:
-* `event_name`: [ActionEventName](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L139) - The event type to listen for
-* `callback`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L188) -
+* `event_name`: [ActionEventName](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L139) - The event type to listen for
+* `callback`: [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L188) -
 
 
 ### once( event_name, callback )
 Adds a single-use event listener to the item
 
 ##### Arguments:
-* `event_name`: [ActionEventName](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L139) - The event type to listen for
-* `callback`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L194) -
+* `event_name`: [ActionEventName](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L139) - The event type to listen for
+* `callback`: [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L194) -
 
 
 ### removeListener( event_name, callback )
 Removes an event listener from the item
 
 ##### Arguments:
-* `event_name`: [ActionEventName](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L139) -
-* `callback`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L200) -
+* `event_name`: [ActionEventName](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L139) -
+* `callback`: [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L200) -
 
 
 ### dispatchEvent( event, args )
@@ -323,11 +323,11 @@ Creates a new Action
 ##### Arguments:
 * `id`: *string*
 * `options`: ActionOptions
-	* `variations`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L124) (Optional)
+	* `variations`: [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L124) (Optional)
 	* `name`: *string* (Optional)
 	* `description`: *string* (Optional)
 	* `icon`: *string* (Optional)
-	* `condition`: [ConditionResolvable](https://github.com/JannisX11/blockbench-types/blob/main/types/util.d.ts#L1) (Optional)
+	* `condition`: [ConditionResolvable](https://github.com/as/as-types/blob/main/types/util.d.ts#L1) (Optional)
 	* `category`: *string* (Optional)
 	* `keybind`: [Keybind](action#keybind) (Optional)
 	* `click`: Function
@@ -342,13 +342,13 @@ Creates a new Action
 | Property | Type | Description |
 | -------- | ---- | ----------- |
 | keybind | [Keybind](action#keybind) |  |
-| variations | [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L131) |  |
+| variations | [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L131) |  |
 | id | *string* |  |
 | node | [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) |  |
 | nodes | Array of [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) |  |
 | side_menu | [Menu](menu#menu-1) or [ToolConfig](dialog#toolconfig) | Provide a menu that belongs to the action, and gets displayed as a small arrow next to it in toolbars. |
 | tool_config | [ToolConfig](dialog#toolconfig) | Provide a window with additional configutation related to the action |
-| click | [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L226) |  |
+| click | [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L226) |  |
 
 ### conditionMet()
 
@@ -411,24 +411,24 @@ Returns: [Action](action#action-1)
 Adds an event listener to the item
 
 ##### Arguments:
-* `event_name`: [ActionEventName](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L139) - The event type to listen for
-* `callback`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L188) -
+* `event_name`: [ActionEventName](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L139) - The event type to listen for
+* `callback`: [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L188) -
 
 
 ### once( event_name, callback )
 Adds a single-use event listener to the item
 
 ##### Arguments:
-* `event_name`: [ActionEventName](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L139) - The event type to listen for
-* `callback`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L194) -
+* `event_name`: [ActionEventName](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L139) - The event type to listen for
+* `callback`: [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L194) -
 
 
 ### removeListener( event_name, callback )
 Removes an event listener from the item
 
 ##### Arguments:
-* `event_name`: [ActionEventName](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L139) -
-* `callback`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L200) -
+* `event_name`: [ActionEventName](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L139) -
+* `callback`: [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L200) -
 
 
 ### dispatchEvent( event, args )
@@ -487,11 +487,11 @@ Creates a new Toggle
 ##### Arguments:
 * `id`: *string*
 * `options`: ToggleOptions
-	* `variations`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L124) (Optional)
+	* `variations`: [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L124) (Optional)
 	* `name`: *string* (Optional)
 	* `description`: *string* (Optional)
 	* `icon`: *string* (Optional)
-	* `condition`: [ConditionResolvable](https://github.com/JannisX11/blockbench-types/blob/main/types/util.d.ts#L1) (Optional)
+	* `condition`: [ConditionResolvable](https://github.com/as/as-types/blob/main/types/util.d.ts#L1) (Optional)
 	* `category`: *string* (Optional)
 	* `keybind`: [Keybind](action#keybind) (Optional)
 	* `click`: Function
@@ -508,13 +508,13 @@ Creates a new Toggle
 | Property | Type | Description |
 | -------- | ---- | ----------- |
 | keybind | [Keybind](action#keybind) |  |
-| variations | [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L131) |  |
+| variations | [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L131) |  |
 | id | *string* |  |
 | node | [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) |  |
 | nodes | Array of [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) |  |
 | side_menu | [Menu](menu#menu-1) or [ToolConfig](dialog#toolconfig) | Provide a menu that belongs to the action, and gets displayed as a small arrow next to it in toolbars. |
 | tool_config | [ToolConfig](dialog#toolconfig) | Provide a window with additional configutation related to the action |
-| click | [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L226) |  |
+| click | [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L226) |  |
 | value | *boolean* |  |
 
 ### conditionMet()
@@ -578,24 +578,24 @@ Returns: [Toggle](action#toggle)
 Adds an event listener to the item
 
 ##### Arguments:
-* `event_name`: [ActionEventName](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L139) - The event type to listen for
-* `callback`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L188) -
+* `event_name`: [ActionEventName](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L139) - The event type to listen for
+* `callback`: [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L188) -
 
 
 ### once( event_name, callback )
 Adds a single-use event listener to the item
 
 ##### Arguments:
-* `event_name`: [ActionEventName](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L139) - The event type to listen for
-* `callback`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L194) -
+* `event_name`: [ActionEventName](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L139) - The event type to listen for
+* `callback`: [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L194) -
 
 
 ### removeListener( event_name, callback )
 Removes an event listener from the item
 
 ##### Arguments:
-* `event_name`: [ActionEventName](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L139) -
-* `callback`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L200) -
+* `event_name`: [ActionEventName](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L139) -
+* `callback`: [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L200) -
 
 
 ### dispatchEvent( event, args )
@@ -665,11 +665,11 @@ Creates a new Tool
 ##### Arguments:
 * `id`: *string*
 * `options`: ToolOptions
-	* `variations`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L124) (Optional)
+	* `variations`: [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L124) (Optional)
 	* `name`: *string* (Optional)
 	* `description`: *string* (Optional)
 	* `icon`: *string* (Optional)
-	* `condition`: [ConditionResolvable](https://github.com/JannisX11/blockbench-types/blob/main/types/util.d.ts#L1) (Optional)
+	* `condition`: [ConditionResolvable](https://github.com/as/as-types/blob/main/types/util.d.ts#L1) (Optional)
 	* `category`: *string* (Optional)
 	* `keybind`: [Keybind](action#keybind) (Optional)
 	* `click`: Function
@@ -686,7 +686,7 @@ Creates a new Tool
 	* `toolbar`: *string* (Optional)
 	* `alt_tool`: *string* (Optional)
 	* `modes`: Array of *string* (Optional)
-	* `allowed_view_modes`: [ViewMode](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L304) (Optional)
+	* `allowed_view_modes`: [ViewMode](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L304) (Optional)
 	* `paintTool`: *boolean* (Optional)
 	* `brush`: BrushOptions (Optional)
 		* `blend_modes`: *boolean* - Enable the input for blend modes when this tool is selected
@@ -695,7 +695,7 @@ Creates a new Tool
 		* `softness`: *boolean* - Enable the input for softness when this tool is selected
 		* `opacity`: *boolean* - Enable the input for opacity when this tool is selected
 		* `offset_even_radius`: *boolean* - When the brush size is an even number, offset the snapping by half a pixel so that even size brush strokes can be correctly centered
-		* `floor_coordinates`: *boolean* or [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L367) - Set whether the brush coordinates get floored to snap to the nearest pixel.
+		* `floor_coordinates`: *boolean* or [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L367) - Set whether the brush coordinates get floored to snap to the nearest pixel.
 		* `changePixel`: Function
 		* `onStrokeStart`: Function
 		* `onStrokeMove`: Function
@@ -706,13 +706,13 @@ Creates a new Tool
 | Property | Type | Description |
 | -------- | ---- | ----------- |
 | keybind | [Keybind](action#keybind) |  |
-| variations | [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L131) |  |
+| variations | [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L131) |  |
 | id | *string* |  |
 | node | [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) |  |
 | nodes | Array of [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) |  |
 | side_menu | [Menu](menu#menu-1) or [ToolConfig](dialog#toolconfig) | Provide a menu that belongs to the action, and gets displayed as a small arrow next to it in toolbars. |
 | tool_config | [ToolConfig](dialog#toolconfig) | Provide a window with additional configutation related to the action |
-| click | [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L226) |  |
+| click | [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L226) |  |
 | animation_channel | *string* |  |
 
 ### conditionMet()
@@ -776,24 +776,24 @@ Returns: [Tool](action#tool)
 Adds an event listener to the item
 
 ##### Arguments:
-* `event_name`: [ActionEventName](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L139) - The event type to listen for
-* `callback`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L188) -
+* `event_name`: [ActionEventName](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L139) - The event type to listen for
+* `callback`: [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L188) -
 
 
 ### once( event_name, callback )
 Adds a single-use event listener to the item
 
 ##### Arguments:
-* `event_name`: [ActionEventName](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L139) - The event type to listen for
-* `callback`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L194) -
+* `event_name`: [ActionEventName](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L139) - The event type to listen for
+* `callback`: [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L194) -
 
 
 ### removeListener( event_name, callback )
 Removes an event listener from the item
 
 ##### Arguments:
-* `event_name`: [ActionEventName](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L139) -
-* `callback`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L200) -
+* `event_name`: [ActionEventName](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L139) -
+* `callback`: [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L200) -
 
 
 ### dispatchEvent( event, args )
@@ -858,11 +858,11 @@ Creates a new Widget
 ##### Arguments:
 * `id`: *string*
 * `options`: WidgetOptions
-	* `variations`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L124) (Optional)
+	* `variations`: [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L124) (Optional)
 	* `name`: *string* (Optional)
 	* `description`: *string* (Optional)
 	* `icon`: *string* (Optional)
-	* `condition`: [ConditionResolvable](https://github.com/JannisX11/blockbench-types/blob/main/types/util.d.ts#L1) (Optional)
+	* `condition`: [ConditionResolvable](https://github.com/as/as-types/blob/main/types/util.d.ts#L1) (Optional)
 	* `category`: *string* (Optional)
 	* `keybind`: [Keybind](action#keybind) (Optional)
 	* `id`: *string* (Optional)
@@ -871,7 +871,7 @@ Creates a new Widget
 | Property | Type | Description |
 | -------- | ---- | ----------- |
 | keybind | [Keybind](action#keybind) |  |
-| variations | [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L131) |  |
+| variations | [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L131) |  |
 | id | *string* |  |
 | node | [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) |  |
 | nodes | Array of [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) |  |
@@ -937,24 +937,24 @@ Returns: [Widget](action#widget)
 Adds an event listener to the item
 
 ##### Arguments:
-* `event_name`: [ActionEventName](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L139) - The event type to listen for
-* `callback`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L188) -
+* `event_name`: [ActionEventName](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L139) - The event type to listen for
+* `callback`: [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L188) -
 
 
 ### once( event_name, callback )
 Adds a single-use event listener to the item
 
 ##### Arguments:
-* `event_name`: [ActionEventName](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L139) - The event type to listen for
-* `callback`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L194) -
+* `event_name`: [ActionEventName](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L139) - The event type to listen for
+* `callback`: [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L194) -
 
 
 ### removeListener( event_name, callback )
 Removes an event listener from the item
 
 ##### Arguments:
-* `event_name`: [ActionEventName](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L139) -
-* `callback`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L200) -
+* `event_name`: [ActionEventName](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L139) -
+* `callback`: [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L200) -
 
 
 ### dispatchEvent( event, args )
@@ -977,13 +977,13 @@ Creates a new NumSlider
 
 ##### Arguments:
 * `id`: *string*
-* `options`: [NumSliderOptions](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L459)
+* `options`: [NumSliderOptions](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L459)
 
 
 | Property | Type | Description |
 | -------- | ---- | ----------- |
 | keybind | [Keybind](action#keybind) |  |
-| variations | [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L131) |  |
+| variations | [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L131) |  |
 | id | *string* |  |
 | node | [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) |  |
 | nodes | Array of [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) |  |
@@ -1049,24 +1049,24 @@ Returns: [NumSlider](action#numslider)
 Adds an event listener to the item
 
 ##### Arguments:
-* `event_name`: [ActionEventName](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L139) - The event type to listen for
-* `callback`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L188) -
+* `event_name`: [ActionEventName](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L139) - The event type to listen for
+* `callback`: [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L188) -
 
 
 ### once( event_name, callback )
 Adds a single-use event listener to the item
 
 ##### Arguments:
-* `event_name`: [ActionEventName](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L139) - The event type to listen for
-* `callback`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L194) -
+* `event_name`: [ActionEventName](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L139) - The event type to listen for
+* `callback`: [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L194) -
 
 
 ### removeListener( event_name, callback )
 Removes an event listener from the item
 
 ##### Arguments:
-* `event_name`: [ActionEventName](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L139) -
-* `callback`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L200) -
+* `event_name`: [ActionEventName](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L139) -
+* `callback`: [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L200) -
 
 
 ### dispatchEvent( event, args )
@@ -1125,7 +1125,7 @@ Returns: [NumSlider](action#numslider)
 
 ### change( modify )
 ##### Arguments:
-* `modify`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L481)
+* `modify`: [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L481)
 
 
 ### get()
@@ -1149,13 +1149,13 @@ Creates a new BarSlider
 
 ##### Arguments:
 * `id`: *string*
-* `options`: [NumSliderOptions](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L459)
+* `options`: [NumSliderOptions](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L459)
 
 
 | Property | Type | Description |
 | -------- | ---- | ----------- |
 | keybind | [Keybind](action#keybind) |  |
-| variations | [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L131) |  |
+| variations | [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L131) |  |
 | id | *string* |  |
 | node | [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) |  |
 | nodes | Array of [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) |  |
@@ -1221,24 +1221,24 @@ Returns: [BarSlider](action#barslider)
 Adds an event listener to the item
 
 ##### Arguments:
-* `event_name`: [ActionEventName](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L139) - The event type to listen for
-* `callback`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L188) -
+* `event_name`: [ActionEventName](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L139) - The event type to listen for
+* `callback`: [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L188) -
 
 
 ### once( event_name, callback )
 Adds a single-use event listener to the item
 
 ##### Arguments:
-* `event_name`: [ActionEventName](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L139) - The event type to listen for
-* `callback`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L194) -
+* `event_name`: [ActionEventName](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L139) - The event type to listen for
+* `callback`: [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L194) -
 
 
 ### removeListener( event_name, callback )
 Removes an event listener from the item
 
 ##### Arguments:
-* `event_name`: [ActionEventName](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L139) -
-* `callback`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L200) -
+* `event_name`: [ActionEventName](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L139) -
+* `callback`: [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L200) -
 
 
 ### dispatchEvent( event, args )
@@ -1276,11 +1276,11 @@ Creates a new BarSelect
 ##### Arguments:
 * `id`: *string*
 * `options`: BarSelectOptions
-	* `variations`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L124) (Optional)
+	* `variations`: [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L124) (Optional)
 	* `name`: *string* (Optional)
 	* `description`: *string* (Optional)
 	* `icon`: *string* (Optional)
-	* `condition`: [ConditionResolvable](https://github.com/JannisX11/blockbench-types/blob/main/types/util.d.ts#L1) (Optional)
+	* `condition`: [ConditionResolvable](https://github.com/as/as-types/blob/main/types/util.d.ts#L1) (Optional)
 	* `category`: *string* (Optional)
 	* `keybind`: [Keybind](action#keybind) (Optional)
 	* `id`: *string* (Optional)
@@ -1291,7 +1291,7 @@ Creates a new BarSelect
 | Property | Type | Description |
 | -------- | ---- | ----------- |
 | keybind | [Keybind](action#keybind) |  |
-| variations | [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L131) |  |
+| variations | [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L131) |  |
 | id | *string* |  |
 | node | [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) |  |
 | nodes | Array of [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) |  |
@@ -1358,24 +1358,24 @@ Returns: [BarSelect](action#barselect)
 Adds an event listener to the item
 
 ##### Arguments:
-* `event_name`: [ActionEventName](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L139) - The event type to listen for
-* `callback`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L188) -
+* `event_name`: [ActionEventName](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L139) - The event type to listen for
+* `callback`: [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L188) -
 
 
 ### once( event_name, callback )
 Adds a single-use event listener to the item
 
 ##### Arguments:
-* `event_name`: [ActionEventName](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L139) - The event type to listen for
-* `callback`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L194) -
+* `event_name`: [ActionEventName](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L139) - The event type to listen for
+* `callback`: [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L194) -
 
 
 ### removeListener( event_name, callback )
 Removes an event listener from the item
 
 ##### Arguments:
-* `event_name`: [ActionEventName](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L139) -
-* `callback`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L200) -
+* `event_name`: [ActionEventName](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L139) -
+* `callback`: [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L200) -
 
 
 ### dispatchEvent( event, args )
@@ -1438,7 +1438,7 @@ Creates a new BarText
 | Property | Type | Description |
 | -------- | ---- | ----------- |
 | keybind | [Keybind](action#keybind) |  |
-| variations | [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L131) |  |
+| variations | [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L131) |  |
 | id | *string* |  |
 | node | [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) |  |
 | nodes | Array of [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) |  |
@@ -1504,24 +1504,24 @@ Returns: [BarText](action#bartext)
 Adds an event listener to the item
 
 ##### Arguments:
-* `event_name`: [ActionEventName](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L139) - The event type to listen for
-* `callback`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L188) -
+* `event_name`: [ActionEventName](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L139) - The event type to listen for
+* `callback`: [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L188) -
 
 
 ### once( event_name, callback )
 Adds a single-use event listener to the item
 
 ##### Arguments:
-* `event_name`: [ActionEventName](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L139) - The event type to listen for
-* `callback`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L194) -
+* `event_name`: [ActionEventName](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L139) - The event type to listen for
+* `callback`: [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L194) -
 
 
 ### removeListener( event_name, callback )
 Removes an event listener from the item
 
 ##### Arguments:
-* `event_name`: [ActionEventName](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L139) -
-* `callback`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L200) -
+* `event_name`: [ActionEventName](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L139) -
+* `callback`: [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L200) -
 
 
 ### dispatchEvent( event, args )
@@ -1560,17 +1560,17 @@ Creates a new ColorPicker
 
 ##### Arguments:
 * `options`: ColorPickerOptions
-	* `variations`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L124) (Optional)
+	* `variations`: [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L124) (Optional)
 	* `name`: *string* (Optional)
 	* `description`: *string* (Optional)
 	* `icon`: *string* (Optional)
-	* `condition`: [ConditionResolvable](https://github.com/JannisX11/blockbench-types/blob/main/types/util.d.ts#L1) (Optional)
+	* `condition`: [ConditionResolvable](https://github.com/as/as-types/blob/main/types/util.d.ts#L1) (Optional)
 	* `category`: *string* (Optional)
 	* `keybind`: [Keybind](action#keybind) (Optional)
 	* `id`: *string* (Optional)
 	* `value`: *string* (Optional)
 	* `palette`: *boolean* (Optional)
-	* `onChange`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L519) (Optional)
+	* `onChange`: [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L519) (Optional)
 
 ### new ColorPicker( id, options )
 *Alternative constructor signature*
@@ -1579,7 +1579,7 @@ Creates a new ColorPicker
 | Property | Type | Description |
 | -------- | ---- | ----------- |
 | keybind | [Keybind](action#keybind) |  |
-| variations | [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L131) |  |
+| variations | [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L131) |  |
 | id | *string* |  |
 | node | [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) |  |
 | nodes | Array of [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) |  |
@@ -1647,24 +1647,24 @@ Returns: [ColorPicker](action#colorpicker)
 Adds an event listener to the item
 
 ##### Arguments:
-* `event_name`: [ActionEventName](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L139) - The event type to listen for
-* `callback`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L188) -
+* `event_name`: [ActionEventName](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L139) - The event type to listen for
+* `callback`: [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L188) -
 
 
 ### once( event_name, callback )
 Adds a single-use event listener to the item
 
 ##### Arguments:
-* `event_name`: [ActionEventName](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L139) - The event type to listen for
-* `callback`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L194) -
+* `event_name`: [ActionEventName](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L139) - The event type to listen for
+* `callback`: [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L194) -
 
 
 ### removeListener( event_name, callback )
 Removes an event listener from the item
 
 ##### Arguments:
-* `event_name`: [ActionEventName](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L139) -
-* `callback`: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L200) -
+* `event_name`: [ActionEventName](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L139) -
+* `callback`: [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L200) -
 
 
 ### dispatchEvent( event, args )
@@ -1710,7 +1710,7 @@ Creates a new Toolbar
 	* `id`: *string*
 	* `name`: *string* (Optional)
 	* `label`: *boolean* (Optional) - If true, the toolbar will display a label abovee
-	* `condition`: [ConditionResolvable](https://github.com/JannisX11/blockbench-types/blob/main/types/util.d.ts#L1) (Optional)
+	* `condition`: [ConditionResolvable](https://github.com/as/as-types/blob/main/types/util.d.ts#L1) (Optional)
 	* `narrow`: *boolean* (Optional) - If true, the toolbar will only take as much width as needed
 	* `vertical`: *boolean* (Optional)
 	* `children`: Array of *string* or [BarItem](action#baritem) - Default content of the toolbar. Separators are available, where _ = separator, + = spaces, # = line break
@@ -1776,9 +1776,9 @@ Returns: *boolean*
 
 | Property | Type | Description |
 | -------- | ---- | ----------- |
-| stored | [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L565) |  |
+| stored | [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L565) |  |
 | editing_bar | *undefined* or [Toolbar](action#toolbar) |  |
-| action_definers | Array of [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/action.d.ts#L567) |  |
+| action_definers | Array of [See types](https://github.com/as/as-types/blob/8049169/types/action.d.ts#L567) |  |
 | condition | *any* |  |
 
 ### defineActions( definer )
@@ -1877,7 +1877,7 @@ Creates a new ToolToolbar
 	* `id`: *string*
 	* `name`: *string* (Optional)
 	* `label`: *boolean* (Optional) - If true, the toolbar will display a label abovee
-	* `condition`: [ConditionResolvable](https://github.com/JannisX11/blockbench-types/blob/main/types/util.d.ts#L1) (Optional)
+	* `condition`: [ConditionResolvable](https://github.com/as/as-types/blob/main/types/util.d.ts#L1) (Optional)
 	* `narrow`: *boolean* (Optional) - If true, the toolbar will only take as much width as needed
 	* `vertical`: *boolean* (Optional)
 	* `children`: Array of *string* or [BarItem](action#baritem) - Default content of the toolbar. Separators are available, where _ = separator, + = spaces, # = line break

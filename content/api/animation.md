@@ -12,7 +12,7 @@ Type: [See types]()
 ## AnimationItem
 Extended by: [Animation](animation#animation-1), [AnimationController](animation_controller#animationcontroller)
 
-<reference path="./blockbench.d.ts"/>
+<reference path="./as.d.ts"/>
 
 ### new AnimationItem()
 Creates a new AnimationItem
@@ -24,7 +24,7 @@ Creates a new AnimationItem
 * `options`: *any* (Optional)
 * `save`: *any* (Optional)
 
-Returns: [AnimationOptions](https://github.com/JannisX11/blockbench-types/blob/8049169/types/animation.d.ts#L9)
+Returns: [AnimationOptions](https://github.com/as/as-types/blob/8049169/types/animation.d.ts#L9)
 
 ### all
 Static Property
@@ -42,7 +42,7 @@ Type: `null` or [Animation](animation#animation-1)
 ## Animation
 Extends: [AnimationItem](animation#animationitem)
 
-In typescript, use `Blockbench.Animation`.
+In typescript, use `AS.Animation`.
 
 ### new Animation( [data] )
 Creates a new Animation
@@ -79,7 +79,7 @@ Creates a new Animation
 | time | *number* |  |
 | effects | [EffectAnimator](animation#effectanimator) |  |
 | markers | Array of [TimelineMarker](animation#timelinemarker) |  |
-| animators | [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/animation.d.ts#L109) |  |
+| animators | [See types](https://github.com/as/as-types/blob/8049169/types/animation.d.ts#L109) |  |
 | saved_name | *string* |  |
 | selected | *boolean* |  |
 | type | *string* |  |
@@ -107,7 +107,7 @@ Returns: [Animation](animation#animation-1)
 * `options`: [See types]() (Optional)
 * `save`: *any* (Optional)
 
-Returns: [AnimationUndoCopy](https://github.com/JannisX11/blockbench-types/blob/8049169/types/animation.d.ts#L22)
+Returns: [AnimationUndoCopy](https://github.com/as/as-types/blob/8049169/types/animation.d.ts#L22)
 
 ### compileBedrockAnimation()
 Compiles the JSON tree of the animation for the Minecraft Bedrock Edition animation format.
@@ -269,7 +269,7 @@ Import a Bedrock animation file
 * `position`: *number*
 * `type`: *string*
 
-Returns: Array of [MolangAutoCompletionItem](https://github.com/JannisX11/blockbench-types/blob/8049169/types/animation.d.ts#L119)
+Returns: Array of [MolangAutoCompletionItem](https://github.com/as/as-types/blob/8049169/types/animation.d.ts#L119)
 
 
 ## GeneralAnimator
@@ -291,8 +291,8 @@ Creates a new GeneralAnimator
 | animation | [Animation](animation#animation-1) |  |
 | expanded | *boolean* |  |
 | selected | *boolean* |  |
-| channels | [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/animation.d.ts#L185) |  |
-| muted | [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/animation.d.ts#L188) |  |
+| channels | [See types](https://github.com/as/as-types/blob/8049169/types/animation.d.ts#L185) |  |
+| muted | [See types](https://github.com/as/as-types/blob/8049169/types/animation.d.ts#L188) |  |
 
 ### select()
 
@@ -312,10 +312,10 @@ Returns: [GeneralAnimator](animation#generalanimator)
 	* `uniform`: *boolean* (Optional)
 	* `interpolation`: *string* (Optional)
 	* `bezier_linked`: *boolean* (Optional)
-	* `bezier_left_time`: [ArrayVector3](https://github.com/JannisX11/blockbench-types/blob/8049169/types/outliner.d.ts#L3) (Optional)
-	* `bezier_left_value`: [ArrayVector3](https://github.com/JannisX11/blockbench-types/blob/8049169/types/outliner.d.ts#L3) (Optional)
-	* `bezier_right_time`: [ArrayVector3](https://github.com/JannisX11/blockbench-types/blob/8049169/types/outliner.d.ts#L3) (Optional)
-	* `bezier_right_value`: [ArrayVector3](https://github.com/JannisX11/blockbench-types/blob/8049169/types/outliner.d.ts#L3) (Optional)
+	* `bezier_left_time`: [ArrayVector3](https://github.com/as/as-types/blob/8049169/types/outliner.d.ts#L3) (Optional)
+	* `bezier_left_value`: [ArrayVector3](https://github.com/as/as-types/blob/8049169/types/outliner.d.ts#L3) (Optional)
+	* `bezier_right_time`: [ArrayVector3](https://github.com/as/as-types/blob/8049169/types/outliner.d.ts#L3) (Optional)
+	* `bezier_right_value`: [ArrayVector3](https://github.com/as/as-types/blob/8049169/types/outliner.d.ts#L3) (Optional)
 * `uuid`: *string* (Optional)
 
 Returns: [_Keyframe](keyframe#keyframe-1)
@@ -326,7 +326,7 @@ Returns: [_Keyframe](keyframe#keyframe-1)
 
 ### getOrMakeKeyframe()
 
-Returns: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/animation.d.ts#L180)
+Returns: [See types](https://github.com/as/as-types/blob/8049169/types/animation.d.ts#L180)
 
 ### toggleMuted( channel )
 ##### Arguments:
@@ -367,8 +367,8 @@ Creates a new BoneAnimator
 | animation | [Animation](animation#animation-1) |  |
 | expanded | *boolean* |  |
 | selected | *boolean* |  |
-| channels | [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/animation.d.ts#L185) |  |
-| muted | [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/animation.d.ts#L188) |  |
+| channels | [See types](https://github.com/as/as-types/blob/8049169/types/animation.d.ts#L185) |  |
+| muted | [See types](https://github.com/as/as-types/blob/8049169/types/animation.d.ts#L188) |  |
 | name | *string* |  |
 | uuid | *string* |  |
 | rotations | Array of [_Keyframe](keyframe#keyframe-1) |  |
@@ -393,10 +393,10 @@ Returns: [BoneAnimator](animation#boneanimator)
 	* `uniform`: *boolean* (Optional)
 	* `interpolation`: *string* (Optional)
 	* `bezier_linked`: *boolean* (Optional)
-	* `bezier_left_time`: [ArrayVector3](https://github.com/JannisX11/blockbench-types/blob/8049169/types/outliner.d.ts#L3) (Optional)
-	* `bezier_left_value`: [ArrayVector3](https://github.com/JannisX11/blockbench-types/blob/8049169/types/outliner.d.ts#L3) (Optional)
-	* `bezier_right_time`: [ArrayVector3](https://github.com/JannisX11/blockbench-types/blob/8049169/types/outliner.d.ts#L3) (Optional)
-	* `bezier_right_value`: [ArrayVector3](https://github.com/JannisX11/blockbench-types/blob/8049169/types/outliner.d.ts#L3) (Optional)
+	* `bezier_left_time`: [ArrayVector3](https://github.com/as/as-types/blob/8049169/types/outliner.d.ts#L3) (Optional)
+	* `bezier_left_value`: [ArrayVector3](https://github.com/as/as-types/blob/8049169/types/outliner.d.ts#L3) (Optional)
+	* `bezier_right_time`: [ArrayVector3](https://github.com/as/as-types/blob/8049169/types/outliner.d.ts#L3) (Optional)
+	* `bezier_right_value`: [ArrayVector3](https://github.com/as/as-types/blob/8049169/types/outliner.d.ts#L3) (Optional)
 * `uuid`: *string* (Optional)
 
 Returns: [_Keyframe](keyframe#keyframe-1)
@@ -407,7 +407,7 @@ Returns: [_Keyframe](keyframe#keyframe-1)
 
 ### getOrMakeKeyframe()
 
-Returns: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/animation.d.ts#L180)
+Returns: [See types](https://github.com/as/as-types/blob/8049169/types/animation.d.ts#L180)
 
 ### toggleMuted( channel )
 ##### Arguments:
@@ -445,20 +445,20 @@ Returns: *boolean*
 
 ### displayRotation( [arr, multiplier] )
 ##### Arguments:
-* `arr`: [ArrayVector3](https://github.com/JannisX11/blockbench-types/blob/8049169/types/outliner.d.ts#L3) or [ArrayVector4](https://github.com/JannisX11/blockbench-types/blob/8049169/types/outliner.d.ts#L2) (Optional)
+* `arr`: [ArrayVector3](https://github.com/as/as-types/blob/8049169/types/outliner.d.ts#L3) or [ArrayVector4](https://github.com/as/as-types/blob/8049169/types/outliner.d.ts#L2) (Optional)
 * `multiplier`: *number* (Optional)
 
 
 ### displayPosition( [arr, multiplier] )
 ##### Arguments:
-* `arr`: [ArrayVector3](https://github.com/JannisX11/blockbench-types/blob/8049169/types/outliner.d.ts#L3) (Optional)
+* `arr`: [ArrayVector3](https://github.com/as/as-types/blob/8049169/types/outliner.d.ts#L3) (Optional)
 * `multiplier`: *number* (Optional)
 
 Returns: [BoneAnimator](animation#boneanimator)
 
 ### displayScale( [arr, multiplier] )
 ##### Arguments:
-* `arr`: [ArrayVector3](https://github.com/JannisX11/blockbench-types/blob/8049169/types/outliner.d.ts#L3) (Optional)
+* `arr`: [ArrayVector3](https://github.com/as/as-types/blob/8049169/types/outliner.d.ts#L3) (Optional)
 * `multiplier`: *number* (Optional)
 
 
@@ -468,7 +468,7 @@ Returns: [BoneAnimator](animation#boneanimator)
 * `allow_expression`: *boolean* (Optional)
 * `axis`: *string* (Optional)
 
-Returns: `false` or [ArrayVector3](https://github.com/JannisX11/blockbench-types/blob/8049169/types/outliner.d.ts#L3)
+Returns: `false` or [ArrayVector3](https://github.com/as/as-types/blob/8049169/types/outliner.d.ts#L3)
 
 ### displayFrame( [multiplier] )
 ##### Arguments:
@@ -494,8 +494,8 @@ Creates a new NullObjectAnimator
 | animation | [Animation](animation#animation-1) |  |
 | expanded | *boolean* |  |
 | selected | *boolean* |  |
-| channels | [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/animation.d.ts#L185) |  |
-| muted | [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/animation.d.ts#L188) |  |
+| channels | [See types](https://github.com/as/as-types/blob/8049169/types/animation.d.ts#L185) |  |
+| muted | [See types](https://github.com/as/as-types/blob/8049169/types/animation.d.ts#L188) |  |
 | name | *string* |  |
 | uuid | *string* |  |
 | rotations | Array of [_Keyframe](keyframe#keyframe-1) |  |
@@ -520,10 +520,10 @@ Returns: [NullObjectAnimator](animation#nullobjectanimator)
 	* `uniform`: *boolean* (Optional)
 	* `interpolation`: *string* (Optional)
 	* `bezier_linked`: *boolean* (Optional)
-	* `bezier_left_time`: [ArrayVector3](https://github.com/JannisX11/blockbench-types/blob/8049169/types/outliner.d.ts#L3) (Optional)
-	* `bezier_left_value`: [ArrayVector3](https://github.com/JannisX11/blockbench-types/blob/8049169/types/outliner.d.ts#L3) (Optional)
-	* `bezier_right_time`: [ArrayVector3](https://github.com/JannisX11/blockbench-types/blob/8049169/types/outliner.d.ts#L3) (Optional)
-	* `bezier_right_value`: [ArrayVector3](https://github.com/JannisX11/blockbench-types/blob/8049169/types/outliner.d.ts#L3) (Optional)
+	* `bezier_left_time`: [ArrayVector3](https://github.com/as/as-types/blob/8049169/types/outliner.d.ts#L3) (Optional)
+	* `bezier_left_value`: [ArrayVector3](https://github.com/as/as-types/blob/8049169/types/outliner.d.ts#L3) (Optional)
+	* `bezier_right_time`: [ArrayVector3](https://github.com/as/as-types/blob/8049169/types/outliner.d.ts#L3) (Optional)
+	* `bezier_right_value`: [ArrayVector3](https://github.com/as/as-types/blob/8049169/types/outliner.d.ts#L3) (Optional)
 * `uuid`: *string* (Optional)
 
 Returns: [_Keyframe](keyframe#keyframe-1)
@@ -534,7 +534,7 @@ Returns: [_Keyframe](keyframe#keyframe-1)
 
 ### getOrMakeKeyframe()
 
-Returns: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/animation.d.ts#L180)
+Returns: [See types](https://github.com/as/as-types/blob/8049169/types/animation.d.ts#L180)
 
 ### toggleMuted( channel )
 ##### Arguments:
@@ -588,8 +588,8 @@ Creates a new EffectAnimator
 | animation | [Animation](animation#animation-1) |  |
 | expanded | *boolean* |  |
 | selected | *boolean* |  |
-| channels | [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/animation.d.ts#L185) |  |
-| muted | [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/animation.d.ts#L188) |  |
+| channels | [See types](https://github.com/as/as-types/blob/8049169/types/animation.d.ts#L185) |  |
+| muted | [See types](https://github.com/as/as-types/blob/8049169/types/animation.d.ts#L188) |  |
 | name | *string* |  |
 | uuid | *string* |  |
 | rotations | Array of [_Keyframe](keyframe#keyframe-1) |  |
@@ -614,10 +614,10 @@ Returns: [EffectAnimator](animation#effectanimator)
 	* `uniform`: *boolean* (Optional)
 	* `interpolation`: *string* (Optional)
 	* `bezier_linked`: *boolean* (Optional)
-	* `bezier_left_time`: [ArrayVector3](https://github.com/JannisX11/blockbench-types/blob/8049169/types/outliner.d.ts#L3) (Optional)
-	* `bezier_left_value`: [ArrayVector3](https://github.com/JannisX11/blockbench-types/blob/8049169/types/outliner.d.ts#L3) (Optional)
-	* `bezier_right_time`: [ArrayVector3](https://github.com/JannisX11/blockbench-types/blob/8049169/types/outliner.d.ts#L3) (Optional)
-	* `bezier_right_value`: [ArrayVector3](https://github.com/JannisX11/blockbench-types/blob/8049169/types/outliner.d.ts#L3) (Optional)
+	* `bezier_left_time`: [ArrayVector3](https://github.com/as/as-types/blob/8049169/types/outliner.d.ts#L3) (Optional)
+	* `bezier_left_value`: [ArrayVector3](https://github.com/as/as-types/blob/8049169/types/outliner.d.ts#L3) (Optional)
+	* `bezier_right_time`: [ArrayVector3](https://github.com/as/as-types/blob/8049169/types/outliner.d.ts#L3) (Optional)
+	* `bezier_right_value`: [ArrayVector3](https://github.com/as/as-types/blob/8049169/types/outliner.d.ts#L3) (Optional)
 * `uuid`: *string* (Optional)
 
 Returns: [_Keyframe](keyframe#keyframe-1)
@@ -628,7 +628,7 @@ Returns: [_Keyframe](keyframe#keyframe-1)
 
 ### getOrMakeKeyframe()
 
-Returns: [See types](https://github.com/JannisX11/blockbench-types/blob/8049169/types/animation.d.ts#L180)
+Returns: [See types](https://github.com/as/as-types/blob/8049169/types/animation.d.ts#L180)
 
 ### toggleMuted( channel )
 ##### Arguments:

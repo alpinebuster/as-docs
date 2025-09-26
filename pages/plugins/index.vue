@@ -1,9 +1,9 @@
 <template>
 	<div class="content">
-		<h1>Blockbench Plugins</h1>
+		<h1>AS Plugins</h1>
 
 		<div>
-			These are all plugins that are available to install in Blockbench through the built-in plugin store.
+			These are all plugins that are available to install in AS through the built-in plugin store.
 			<SearchBar v-model="search_term" />
 		</div>
 
@@ -27,7 +27,7 @@
 
 export default {
 	async asyncData({params}) {
-		let response = await fetch(`https://raw.githubusercontent.com/JannisX11/blockbench-plugins/master/plugins.json`)
+		let response = await fetch(`https://raw.githubusercontent.com/alpinebuster/as-plugins/master/plugins.json`)
 		const plugin_data = await response.json();
 		const plugins = [];
 		for (let key in plugin_data) {
@@ -65,15 +65,15 @@ export default {
 	},
 	head() {
 		return {
-			title: `Plugins - Blockbench`,
+			title: `Plugins - AS`,
 			meta: [
-				{ hid: 'description', name: 'description', content: 'These are all plugins that are available to install in Blockbench through the built-in plugin store.' },
+				{ hid: 'description', name: 'description', content: 'These are all plugins that are available to install in AS through the built-in plugin store.' },
 				// Open Graph
-				{ hid: 'og:title', property: 'og:title', content: `Plugins - Blockbench` },
-				{ hid: 'og:description', property: 'og:description', content: 'These are all plugins that are available to install in Blockbench through the built-in plugin store.' },
+				{ hid: 'og:title', property: 'og:title', content: `Plugins - AS` },
+				{ hid: 'og:description', property: 'og:description', content: 'These are all plugins that are available to install in AS through the built-in plugin store.' },
 				// Twitter Card
-				{ hid: 'twitter:title', name: 'twitter:title', content: `Plugins - Blockbench` },
-				{ hid: 'twitter:description', name: 'twitter:description', content: 'These are all plugins that are available to install in Blockbench through the built-in plugin store.' }
+				{ hid: 'twitter:title', name: 'twitter:title', content: `Plugins - AS` },
+				{ hid: 'twitter:description', name: 'twitter:description', content: 'These are all plugins that are available to install in AS through the built-in plugin store.' }
 			]
 		}
 	}

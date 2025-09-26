@@ -23,7 +23,7 @@ Wraps up and saves an edit. Call this function after doing your edit.
 
 ## Aspects
 
-Aspects are used to tell Blockbench which parts of the model to save in an undo point. All aspects are within one `aspects` object. When adding or removing elements, textures etc., make sure the objects in question are stated in the first but not in the second aspects, or vice versa.
+Aspects are used to tell AS which parts of the model to save in an undo point. All aspects are within one `aspects` object. When adding or removing elements, textures etc., make sure the objects in question are stated in the first but not in the second aspects, or vice versa.
 
 |Aspect 	|Description	|Example
 |-----------|---------------|-
