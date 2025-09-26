@@ -83,8 +83,38 @@ export default {
 		let plugin_id = params.pathMatch.replace(/[\\\/]+/, '');
 		const plugins = builtinPlugins;
 
-		let commits_response = await fetch(`https://api.github.com/repos/alpinebuster/as-plugins/commits?path=plugins/${plugin_id}.js`);
-		let commits = await commits_response.json();
+		const plugin = plugins[plugin_id];
+		if (plugin.min_version && !compareVersions('1.5.2', plugin.min_version)) {
+			plugin.new_repository_format = true;
+		}
+
+
+		const [about_result, commits_result] = await Promise.allSettled([
+			(async () => {
+				if (!plugin.about && plugin.new_repository_format) {
+					const api_path = '/builtin_plugins';
+					let url = `${api_path}/${plugin_id}/about.md`;
+					let res = await fetch(url);
+					return res.ok ? res.text() : null;
+				}
+				return plugin.about;
+			})(),
+			(async () => {
+				let res = await fetch(
+					`https://api.github.com/repos/alpinebuster/as-plugins/commits?path=plugins/${plugin_id}.js`
+				);
+				return res.json();
+			})()
+		]);
+
+		let about = about_result.status === 'fulfilled' ? await about_result.value : null;
+		let commits = commits_result.status === 'fulfilled' ? commits_result.value : null;
+
+		if (about) {
+			let md = new Markdown({ toc: false, sanitize: false });
+			about = await md.toMarkup(about);
+		}
+
 		let last_modified;
 		if (commits && commits.length) {
 			let then = Date.parse(commits[0].commit.committer.date) / 60000;
@@ -110,28 +140,6 @@ export default {
 				last_modified = `${Math.floor(minutes)} minutes ago`
 
 			}
-		}
-
-		const plugin = plugins[plugin_id];
-		if (plugin.min_version && !compareVersions('4.8.0', plugin.min_version)) {
-			plugin.new_repository_format = true;
-		}
-
-		let about = plugin.about;
-		if (!about && plugin.new_repository_format) {
-			const api_path = 'https://web.alpinebuster.top/builtin_plugins';
-			let url = `${api_path}/${plugin_id}/about.md`;
-			let result = await fetch(url).catch(() => {
-				console.error('about.md missing for plugin ' + plugin_id);
-			});
-			if (result && result.ok) {
-				about = await result.text();
-			}
-		}
-
-		if (about) {
-			let md = new Markdown({ toc: false, sanitize: false });
-			about = await md.toMarkup(about);
 		}
 
 		return {

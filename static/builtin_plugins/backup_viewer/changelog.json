@@ -1,0 +1,40 @@
+{
+  "1.0.0": {
+    "title": "1.0.0",
+    "date": "2022-12-28",
+    "author": "alpinebuster",
+    "categories": [
+      {
+        "title": "New Features",
+        "list": [
+          "Initial release"
+        ]
+      }
+    ]
+  },
+  "2.0.0": {
+    "title": "2.0.0",
+    "date": "2025-03-01",
+    "author": "alpinebuster",
+    "categories": [
+      {
+        "title": "Changes",
+        "list": [
+          "Updated for AS v4.12"
+        ]
+      },
+      {
+        "title": "Technical Changes",
+        "list": [
+          "The plugin has been completely rewritten"
+        ]
+      },
+      {
+        "title": "Bug fixes",
+        "list": [
+          "The backup list no longer disappears after changing tabs"
+        ]
+      }
+    ]
+  }
+}

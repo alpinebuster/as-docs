@@ -1,0 +1,42 @@
+{
+  "1.0.0": {
+    "title": "1.0.0",
+    "date": "2025-01-20",
+    "author": "alpinebuster",
+    "categories": [
+      {
+        "title": "New Features",
+        "list": [
+          "Initial release"
+        ]
+      }
+    ]
+  },
+  "1.0.1": {
+    "title": "1.0.1",
+    "date": "2025-06-08",
+    "author": "alpinebuster",
+    "categories": [
+      {
+        "title": "Bug Fixes",
+        "list": [
+          "Fixed reloading themes that change the viewport size causing the viewport to render incorrectly",
+          "Fixed theme name in theme reload logging"
+        ]
+      }
+    ]
+  },
+  "1.0.2": {
+    "title": "1.0.2",
+    "date": "2025-06-03",
+    "author": "alpinebuster",
+    "categories": [
+      {
+        "title": "Bug Fixes",
+        "list": [
+          "Fixed \"Plugin not installed\" when Live Dev Reloader loads before the watched plugin"
+        ]
+      }
+    ]
+  }
+}

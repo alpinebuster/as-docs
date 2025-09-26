@@ -1,0 +1,27 @@
+[
+  {
+    "id": "buildings",
+    "icon": "home",
+    "scenes": [
+      {
+        "id": "chest_base",
+        "author": "alpinebuster"
+      }
+    ]
+  },
+  {
+    "id": "environment",
+    "icon": "light_mode",
+    "scenes": [
+      {
+        "id": "plains_meadow",
+        "name": "Plains - Meadow",
+        "author": "alpinebuster"
+      },
+      {
+        "id": "waterfall",
+        "author": "alpinebuster"
+      }
+    ]
+  }
+]
