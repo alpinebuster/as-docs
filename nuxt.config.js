@@ -116,7 +116,6 @@ export default {
 	],
 
 	content: {
-		
 		markdown: {
 			prism: {
 				theme: 'prism-themes/themes/prism-material-oceanic.css'
@@ -144,7 +143,7 @@ export default {
 	},
 
 	colorMode: {
-		preference: 'light'
+		preference: 'system'
 	},
 
 	// Modules: https://go.nuxtjs.dev/config-modules
