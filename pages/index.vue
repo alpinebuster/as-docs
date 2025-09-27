@@ -167,7 +167,7 @@ export default {
 		padding: 0;
 	}
 	section.download button a {
-		padding: 20px 28px;
+		padding: 20px 36px;
 		display: block;
 	}
 	section.download button {
@@ -180,6 +180,10 @@ export default {
 	section.download button.webapp {
 		background-color: transparent;
 		border: 2px solid var(--dark-text);
+	}
+	section.download button.webapp:hover {
+		padding-right: 2px;
+		padding-left: 2px;
 	}
 	section.download button.webapp a {
 		padding: 17.5px 25.5px;
