@@ -14,7 +14,7 @@ export default {
 			{ charset: 'utf-8' },
 			{ name: 'viewport', content: 'width=device-width, initial-scale=1' },
 			{ name: 'theme-color', content: '#212e3c' },
-			{ hid: 'description', name: 'description', content: 'An easy to use 3D model editor for meshes and pixel-art' },
+			{ hid: 'description', name: 'description', content: 'A tooth model editor with the power of AI and WASM. To make tooth modeling easy and accessible for dentists.' },
 			{ hid: 'og:image', name: 'og:image', property: 'og:image', content: 'https://ai-stomatology.tech/logo_banner.png' },
 			{ hid: 'twitter:card', name: 'twitter:card', property: 'twitter:card', content: 'summary_large_image' },
 		],

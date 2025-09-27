@@ -4,21 +4,21 @@
 			<fa icon="bars" />
 		</div>
 		<nav id="navigation_wrapper">
-
 			<div id="nav_title">AS Documentations</div>
 
 			<SearchBar v-model="search_term" />
 
 			<ul class="nav_sections" @click="show_menu = false">
-
 				<li v-for="category in categories" :key="category.id">
-
+					<!-- FIXME: [vue-router] Route with name 'wiki' does not exist -->
 					<nuxt-link :to="{ name: 'wiki', params: { slug: category.id } }">{{ category.title }}</nuxt-link>
+					<!-- <nuxt-link :to="getCategoryLink(category)">{{ category.title }}</nuxt-link> -->
 					<div class="category_fold_button" v-if="category.pages && category.pages.length" @click="category.folded = !category.folded">
 						<fa :icon="category.folded ? 'angle-right' : 'angle-down'" />
 					</div>
 					<ul class="nav_pages" v-if="!category.folded">
 						<li v-for="page in category.pages" :key="page.slug">
+							<!-- NOTE: custom prefix -->
 							<nuxt-link :to="'/wiki' + page.path" :title="page.description">{{ page.title }}</nuxt-link>
 						</li>
 					</ul>
@@ -82,7 +82,13 @@ export default {
 				})
 				category.pages.splice(0, category.pages.length, ...pages);
 			})
-			
+		},
+		getCategoryLink(category) {
+			if (category.pages && category.pages.length > 0) {
+				return '/wiki/' + category.id;
+			} else {
+				return '/wiki/';
+			}
 		}
 	},
 	async beforeMount() {
