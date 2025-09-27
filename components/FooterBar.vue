@@ -1,11 +1,11 @@
 <template>
 	<footer id="footer">
 		<div id="footer_content">
-			<label>Last Updated By <a target="_blank" rel="noopener" href="https://github.com/alpinebuster">alpinebuster</a>, September 2025</label>
+			<label>{{ $t('last_updated_by') }} <a target="_blank" rel="noopener" href="https://github.com/alpinebuster">alpinebuster</a>, September 2025</label>
 			<nav>
-				<nuxt-link to='/about'>About</nuxt-link>
-				<nuxt-link to='/imprint'>Imprint</nuxt-link>
-				<nuxt-link to='/privacy-policy'>Privacy Policy</nuxt-link>
+				<nuxt-link :to="localePath('/about')">{{ $t('about') }}</nuxt-link>
+				<nuxt-link :to="localePath('/imprint')">{{ $t('imprint') }}</nuxt-link>
+				<nuxt-link :to="localePath('/privacy-policy')">{{ $t('privacy_policy') }}</nuxt-link>
 			</nav>
 		</div>
 	</footer>

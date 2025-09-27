@@ -3,20 +3,20 @@
 		<h1>Welcome to the Documentations!</h1>
 
 		<p>{{ $t('hello') }}, welcome to the central place for knowledge about AS!</p>
-		<p>If you are new to AS, make sure to check out the <nuxt-link to="/quickstart">Quickstart Wizard</nuxt-link> to learn about the different formats and find beginner tutorials!</p>
+		<p>If you are new to AS, make sure to check out the <nuxt-link :to="localePath('/quickstart')">Quickstart Wizard</nuxt-link> to learn about the different formats and find beginner tutorials!</p>
 
 		<img src="~assets/wiki/wiki.png" id="wiki_main_image" width="938" alt="Wiki Illustration" >
 
 		<div id="wiki_recommendations">
-			<nuxt-link to="/wiki/guides/as-overview-tips">
+			<nuxt-link :to="localePath('/wiki/guides/as-overview-tips')">
 				<h4>Overview & Tips</h4>
 				<p>The fundamentals of AS and how to use it efficiently</p>
 			</nuxt-link>
-			<nuxt-link to="/wiki/guides/model-rendering">
+			<nuxt-link :to="localePath('/wiki/guides/model-rendering')">
 				<h4>Rendering Models</h4>
 				<p>Make beautiful renders of your models!</p>
 			</nuxt-link>
-			<nuxt-link to="/wiki/docs/plugin">
+			<nuxt-link :to="localePath('/wiki/docs/plugin')">
 				<h4>Creating a Plugin</h4>
 				<p>Learn how to write, test, and submit a AS plugin</p>
 			</nuxt-link>

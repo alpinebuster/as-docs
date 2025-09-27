@@ -56,7 +56,7 @@
 					<p>Customize AS with the built-in plugin store.</p>
 					<p>Plugins extend the functionality of AS beyond what it's already capable of. They add new tools, support for new export formats, or model generators.</p>
 					<p>You can also create your own plugin to extend AS or to support your own format.</p>
-					<p><nuxt-link to="/plugins">Browse AS plugins...</nuxt-link></p>
+					<p><nuxt-link :to="localePath('/plugins')">Browse AS plugins...</nuxt-link></p>
 				</div>
 				<div>
 					<img src="~assets/features/plugins.png" alt="Plugin Illustration" />
@@ -79,7 +79,7 @@
 			<content class="content">
 				<h2>Who's using AS</h2>
 				<div id="as_user_list">
-					<a href="https://alpinebuster.top/" target="_blank" rel="noopener">
+					<a href="https://hxkq.org/" target="_blank" rel="noopener">
 						<img class="logo_light_mode" src="~assets/companies/hxkq_horizontal_bg.png" alt="HXKQ Logo">
 						<img class="logo_dark_mode" src="~assets/companies/hxkq_horizontal_logo.png" alt="HXKQ Logo">
 						HXKQ

@@ -5,5 +5,9 @@
   "plugins": "插件",
   "main_desc": "一款结合 AI 和 WASM 的牙齿模型编辑器。",
   "download": "下载",
-  "open_web_app": "打开网页应用"
+  "open_web_app": "打开网页应用",
+  "last_updated_by": "最后更新:",
+  "about": "关于",
+  "imprint": "版权信息",
+  "privacy_policy": "隐私政策"
 }

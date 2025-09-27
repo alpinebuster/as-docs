@@ -1,20 +1,17 @@
 <template>
 	<div>
 		<div class="content">
-							
 			<h1>Downloads</h1>
 			
 			<h3>Thank you for using AS!</h3>
 			<p>Choose the installation method for your system. Once installed, you will receive the latest updates automatically.</p>
-			<p>If you need help getting started, check out the <nuxt-link to="/quickstart">Quickstart Guide</nuxt-link>.</p>
+			<p>If you need help getting started, check out the <nuxt-link :to="localePath('/quickstart')">Quickstart Guide</nuxt-link>.</p>
 
 			<p id="update_title"><b>{{ type }}: </b><span>{{ name }}</span></p>
 
 			<div id="install_options">
 				<section>
-
 					<div id="install_os_section">
-					
 						<div class="install_os">
 							<fa :icon="['fab', 'windows']" />
 							<h3>Windows</h3>
@@ -125,7 +122,7 @@ const path = 'https://github.com/alpinebuster/as/releases/download';
 
 const data = {
 	path,
-	version: '1.0.0',
+	version: '1.5.2',
 	name: '',
 	has_windows_arm: true,
 	type: 'Latest Version',
@@ -134,7 +131,12 @@ const data = {
 export default {
 	data() {return data},
 	async fetch(context) {
-		data.version = '1.1.1';
+		// Default values to ensure the page has data
+		data.version = '1.5.2';
+		data.name = 'AI Stomatology';
+		data.type = 'Default';
+		data.has_windows_arm = true;
+
 		function isNewerThan(string1/*new*/, string2/*old*/) {
 			// Is string1 newer than string2 ?
 			let arr1 = string1.split(/[.-]/);
@@ -158,32 +160,43 @@ export default {
 			}
 			return false;
 		}
-		if (typeof location != 'undefined' && location.hash.length > 5 && location.hash.substr(1, 1) == 'v') {
-			
-			data.version = location.hash.substr(2)
-			data.name = location.hash.substr(2)
-			data.type = 'Selected Version';
-			data.has_windows_arm = isNewerThan(data.version, '4.10.99')
 
-		} else if (typeof location != 'undefined' && (location.hash.substr(1, 4) == 'beta' || location.hash.substr(1, 4) == 'pre')) {
-			let response = await fetch('https://api.github.com/repos/alpinebuster/as/releases?per_page=1');
-			let [release] = await response.json();
+		try {
+			if (typeof location != 'undefined' && location.hash.length > 5 && location.hash.substr(1, 1) == 'v') {
+				data.version = location.hash.substr(2);
+				data.name = location.hash.substr(2);
+				data.type = 'Selected Version';
+				data.has_windows_arm = isNewerThan(data.version, '1.5.2')
+			} else if (
+				typeof location != 'undefined' &&
+				(location.hash.substr(1, 4) == 'beta' || location.hash.substr(1, 4) == 'pre')
+			) {
+				const response = await fetch('https://api.github.com/repos/alpinebuster/as/releases?per_page=1');
+				const releases = await response.json();
+				const [release] = releases;
 
-			if (!release.tag_name) throw 'Cannot find selected version';
+				if (release && release.tag_name) {
+					data.version = release.tag_name.replace(/^v/, '');
+					data.name = release.name;
+					data.type = 'Latest Prerelease';
+				} else {
+					console.warn('Cannot find selected prerelease, using defaults');
+				}
+			} else {
+				const response = await fetch('https://api.github.com/repos/alpinebuster/as/releases/latest');
+				const release = await response.json();
 
-			data.version = release.tag_name.replace(/^v/, '')
-			data.name = release.name
-			data.type = 'Latest Prerelease'
-
-		} else {
-			let response = await fetch('https://api.github.com/repos/alpinebuster/as/releases/latest');
-			let release = await response.json();
-
-			if (!release.tag_name) throw 'Unable to access GitHub API';
-
-			data.version = release.tag_name.replace(/^v/, '')
-			data.name = release.name
-			data.type = 'Latest Version'
+				if (release && release.tag_name) {
+					data.version = release.tag_name.replace(/^v/, '');
+					data.name = release.name;
+					data.type = 'Latest Version';
+				} else {
+					console.warn('Unable to access the RELEASE SERVER API, using defaults');
+				}
+			}
+		} catch (err) {
+			// Display the page using default values
+			console.error('Fetch RELEASE info error:', err);
 		}
 	},
 	head: {

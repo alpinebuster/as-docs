@@ -5,5 +5,9 @@
   "plugins": "Plugins",
   "main_desc": "A tooth model editor with the power of AI and WASM.",
   "download": "Download",
-  "open_web_app": "OPEN WEB APP"
+  "open_web_app": "OPEN WEB APP",
+  "last_updated_by": "Last Updated By",
+  "about": "About",
+  "imprint": "Imprint",
+  "privacy_policy": "Privacy Policy"
 }

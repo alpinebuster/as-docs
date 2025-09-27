@@ -1,11 +1,11 @@
 <template>
 	<header>
 		<div id="navigation">
-			<nuxt-link id="home_link" to='/'>
+			<nuxt-link id="home_link" :to="localePath('/')">
 				<img src="~assets/as_logo_text_white.svg" alt="AS" height="32px" />
 			</nuxt-link>
 			<div id="app_name">
-				<nuxt-link to="/">
+				<nuxt-link :to="localePath('/')">
 					<span>AI Stomatology</span>
 				</nuxt-link>
 			</div>
@@ -15,9 +15,9 @@
 			</div>
 
 			<nav id="menu" :class="{folded: !show_menu}" @click="show_menu = false">
-				<nuxt-link to='/quickstart'>{{ $t('quick_start') }}</nuxt-link>
-				<nuxt-link to='/wiki'>{{ $t('documentations') }}</nuxt-link>
-				<nuxt-link to='/plugins'>{{ $t('plugins') }}</nuxt-link>
+				<nuxt-link :to="localePath('/quickstart')">{{ $t('quick_start') }}</nuxt-link>
+				<nuxt-link :to="localePath('/wiki')">{{ $t('documentations') }}</nuxt-link>
+				<nuxt-link :to="localePath('/plugins')">{{ $t('plugins') }}</nuxt-link>
 
 				<LocaleSwitcher />
 				<div class="menu_icon" id="color_mode_toggle" :title="colorThemeTitle" @click="toggleColorMode()">
