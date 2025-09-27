@@ -8,7 +8,7 @@
 
 				<div class="buttons">
 					<button><a href="/downloads">{{ $t('download') }}</a></button>
-					<button class="webapp"><a href="https://web.alpinebuster.top" target="_blank" rel="noopener">{{ $t('open_web_app') }}</a></button>
+					<button class="webapp"><a href="https://as.alpinebuster.top" target="_blank" rel="noopener">{{ $t('open_web_app') }}</a></button>
 				</div>
 
 				<img id="front_page_app" src="~assets/front_page_app.png" alt="AS Interface" />
