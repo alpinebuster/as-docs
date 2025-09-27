@@ -173,7 +173,7 @@ export default {
 		#menu a.nuxt-link-active {
 			border-bottom: none;
 			border-left: 5px solid var(--accent);
-			color: var(--light-hover);
+			color: var(--dark-text);
 		}
 		#menu .menu_icon {
 			display: inline-block;
