@@ -2,7 +2,7 @@
 title: Minecraft Style Guide
 description: Tips for creating art in the Minecraft style
 authors:
-  - MasterianoX
+  - alpinebuster
 ---
 
 # Minecraft Style Guide

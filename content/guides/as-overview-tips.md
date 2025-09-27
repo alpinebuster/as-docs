@@ -2,7 +2,7 @@
 title: AS Overview & Tips
 description: The fundamentals of AS and how to use it efficiently
 authors:
-  - MasterianoX
+  - alpinebuster
 ---
 
 # AS Overview & Tips
