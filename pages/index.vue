@@ -4,11 +4,11 @@
 			<content class="content">
 				<img id="main_logo" src="~assets/as_logo_text_white.svg" alt="AS" height="128px" />
 
-				<h3>A tooth model editor with the power of AI and WASM</h3>
+				<h3>{{ $t('main_desc') }}</h3>
 
 				<div class="buttons">
-					<button><a href="/downloads">Download</a></button>
-					<button class="webapp"><a href="https://web.ai-stomatology.tech" target="_blank" rel="noopener">Open Web App</a></button>
+					<button><a href="/downloads">{{ $t('download') }}</a></button>
+					<button class="webapp"><a href="https://web.alpinebuster.top" target="_blank" rel="noopener">{{ $t('open_web_app') }}</a></button>
 				</div>
 
 				<img id="front_page_app" src="~assets/front_page_app.png" alt="AS Interface" />
@@ -180,6 +180,9 @@ export default {
 	section.download button.webapp {
 		background-color: transparent;
 		border: 2px solid var(--dark-text);
+	}
+	section.download button.webapp a {
+		padding: 17.5px 25.5px;
 	}
 	button a {
 		text-decoration: none;

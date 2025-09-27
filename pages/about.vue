@@ -5,7 +5,7 @@
 			<h1>About</h1>
 
 			<h2>AI Stomatology (AS)</h2>
-			<p>AS is a tooth model editor with the power of AI and WASM. To make tooth modeling easy and accessible for dentists.</p>
+			<p>{{ $t('main_desc') }} To make tooth modeling easy and accessible for dentists.</p>
 
 			<h2>Contributors</h2>
 			<p>The illustrations on this website were contributed by 

@@ -2,7 +2,7 @@
 	<div class="content">
 		<h1>Welcome to the Documentations!</h1>
 
-		<p>Welcome to the AS Documentations, the central place for knowledge about AS!</p>
+		<p>{{ $t('hello') }}, welcome to the central place for knowledge about AS!</p>
 		<p>If you are new to AS, make sure to check out the <nuxt-link to="/quickstart">Quickstart Wizard</nuxt-link> to learn about the different formats and find beginner tutorials!</p>
 
 		<img src="~assets/wiki/wiki.png" id="wiki_main_image" width="938" alt="Wiki Illustration" >
@@ -59,6 +59,7 @@ export default {
 		display: flex;
 		flex-wrap: wrap;
 		gap: 10px;
+		justify-content: center;
 	}
 	#wiki_recommendations a {
 		padding: 2px 10px;

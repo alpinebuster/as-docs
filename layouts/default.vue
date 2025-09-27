@@ -16,8 +16,6 @@ export default {
 </script>
 
 <style>
-
-
 #page_flow {
 	min-height: 100vh;
 	display: flex;

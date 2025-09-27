@@ -35,6 +35,8 @@ export default {
 		display: flex;
 		flex-direction: row;
 		width: 100%;
+		/* FIXME */
+		/* overflow: hidden auto; */
 	}
 	#wiki_wrapper .content {
 		display: block;

@@ -33,7 +33,7 @@ export default {
 	plugins: [
 	],
 
-  
+
 	router: {
 	},
 
@@ -101,7 +101,7 @@ export default {
 			'/wiki/guides/model-rendering',
 		]
 	},
-  
+
 
 	// Auto import components: https://go.nuxtjs.dev/config-components
 	components: true,
@@ -112,7 +112,7 @@ export default {
 		'@nuxtjs/svg',
 		'@nuxtjs/fontawesome',
 		'@nuxtjs/google-fonts',
-		'@nuxtjs/color-mode'
+		'@nuxtjs/color-mode',
 	],
 
 	content: {
@@ -138,8 +138,8 @@ export default {
 				wght: [300, 400, 500]
 			}
 		},
-        download: true,
-        base64: false
+		download: true,
+		base64: false
 	},
 
 	colorMode: {
@@ -148,7 +148,19 @@ export default {
 
 	// Modules: https://go.nuxtjs.dev/config-modules
 	modules: [
+		'@nuxtjs/i18n',
 	],
+	i18n: {
+		locales: [
+			{ code: 'en', iso: 'en-US', file: 'en.json', name: 'English' },
+			{ code: 'zh', iso: 'zh-CN', file: 'zh.json', name: '中文' }
+		],
+		defaultLocale: 'en',
+		langDir: 'locales/',
+		vueI18n: {
+			fallbackLocale: 'en'
+		}
+	},
 
 	// Build Configuration: https://go.nuxtjs.dev/config-build
 	build: {

@@ -1,7 +1,6 @@
 <template>
 	<header>
 		<div id="navigation">
-
 			<nuxt-link id="home_link" to='/'>
 				<img src="~assets/as_logo_text_white.svg" alt="AS" height="32px" />
 			</nuxt-link>
@@ -16,9 +15,11 @@
 			</div>
 
 			<nav id="menu" :class="{folded: !show_menu}" @click="show_menu = false">
-				<nuxt-link to='/quickstart'>Quickstart</nuxt-link>
-				<nuxt-link to='/wiki'>Documentations</nuxt-link>
-				<nuxt-link to='/plugins'>Plugins</nuxt-link>
+				<nuxt-link to='/quickstart'>{{ $t('quick_start') }}</nuxt-link>
+				<nuxt-link to='/wiki'>{{ $t('documentations') }}</nuxt-link>
+				<nuxt-link to='/plugins'>{{ $t('plugins') }}</nuxt-link>
+
+				<LocaleSwitcher />
 				<div class="menu_icon" id="color_mode_toggle" :title="colorThemeTitle" @click="toggleColorMode()">
 					<fa :icon="['fa', ($colorMode.preference == 'dark' ? 'moon' : ($colorMode.preference == 'light' ? 'sun' : 'lightbulb'))]" />
 				</div>
@@ -29,6 +30,7 @@
 </template>
 
 <script>
+import LocaleSwitcher from './LocaleSwitcher.vue';
 
 export default {
 	name: 'HeaderBar',
@@ -131,7 +133,7 @@ export default {
 		font-size: 20px;
 	}
 	#color_mode_toggle {
-		margin-left: 16px;
+		margin-left: 0px;
 	}
 
 	#mobile_menu_toggle {
@@ -149,10 +151,10 @@ export default {
 			display: block;
 			position: absolute;
 			top: 64px;
-			background-color: var(--light-ui);
-			color: var(--light-text);
+			background-color: var(--dark-ui);
+			color: var(--dark-text);
 			width: 100%;
-			overflow: hidden;
+			/* overflow: hidden; */
 			transform-origin: top;
 			transition: transform 120ms ease;
 			box-shadow: 0 0 4px #00000077;
