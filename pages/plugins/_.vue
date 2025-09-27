@@ -3,10 +3,9 @@
 		<div class="content">
 			<h1>AS Plugins</h1>
 
-			<nuxt-link :to="'/plugins'">&lt; Back to plugin list</nuxt-link>
+			<nuxt-link :to="localePath('/plugins')">&lt; Back to plugin list</nuxt-link>
 
 			<div class="plugin">
-
 				<h2 class="title">{{ plugin.title }}</h2>
 				<span class="version">{{ plugin.version }}</span>
 				<p class="author">by {{ plugin.author }}</p>
@@ -27,7 +26,6 @@
 				<p class="min_version" v-if="plugin.min_version">Requires AS {{ plugin.min_version }} or newer</p>
 
 				<p class="last_modified" v-if="last_modified">Last updated: {{ last_modified }}</p>
-
 			</div>
 
 			<h3>How to install the plugin</h3>
@@ -38,7 +36,6 @@
 				<li>Search for the plugin using the search bar on the side.</li>
 				<li>Once you have found it, press the <b>Install</b> button on the right hand side.</li>
 			</ol>
-
 		</div>
 	</div>
 </template>

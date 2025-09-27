@@ -7,6 +7,7 @@
 				:key="link.id"
 				:class="{ 'toc2': link.depth === 2, 'toc3': link.depth === 3 }"
 				>
+				<!-- NOTE: NO need to use `:to="localePath(`#${link.id}`)"` for anchors!!! -->
 				<nuxt-link :to="`#${link.id}`">{{ link.text }}</nuxt-link>
 			</li>
 		</ul>
